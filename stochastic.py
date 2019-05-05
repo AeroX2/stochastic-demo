@@ -10,6 +10,7 @@ value.
 
 @author: tarah
 """
+import math
 import secrets
 import matplotlib.pyplot as plt
 
@@ -19,6 +20,16 @@ class StochasticNumber:
 
         self.stochnum1 = [1 if random.random() <= prob1 else 0 for n in range(length)]
         self.stochnum2 = [1 if random.random() <= prob2 else 0 for n in range(length)]
+
+        # self.stochnum1 = [1]*math.ceil(length*prob1)
+        # self.stochnum1 += [0]*math.ceil(length*(1-prob1))
+        # random.shuffle(self.stochnum1)
+        # self.stochnum2 = [1]*math.ceil(length*prob2)
+        # self.stochnum2 += [0]*math.ceil(length*(1-prob2))
+        # random.shuffle(self.stochnum2)
+
+        # print(self.stochnum1)
+        # print(self.stochnum2)
 
         #This doesn't seem correct
         #self.stochnum1 = [0 for n in range(length)]
@@ -41,19 +52,20 @@ class StochasticNumber:
                 self.out[k]=self.stochnum1[k]
             else:
                 self.out[k]=self.stochnum2[k]
+            #self.out[k] = self.stochnum1[k] | self.stochnum2[k] #multiply is just logical AND
 
         probOut = float(sum(self.out))/float(self.length)
         return probOut
     
     def multiply(self):
         for k in range(self.length):
-            self.out[k] = self.stochnum1[k] & self.stochnum2[k] #multiply is just logical AND
+            self.out[k] = ~(self.stochnum1[k] ^ self.stochnum2[k]) #multiply is just logical AND
         self.probOut = float(sum(self.out))/float(self.length)
         return self.probOut
 
 #main
 length = 100
-iters = 1000
+iters = 10000
 prob1 = 0.5
 prob2 = 0.25
 
@@ -67,31 +79,33 @@ averageAddList = []
 ROLLING = 30
 
 for i in range(iters):
-    SN = StochasticNumber(length,prob1,prob2)
-    resultAdd.append(SN.add())
+    if (i%1000==0):
+        print(i)
+    SN = StochasticNumber(i+10,prob1,prob2)
+    # resultAdd.append(SN.add())
     resultMult.append(SN.multiply())
-    actualAdd.append(0.5*(prob1+prob2))
-    actualMul.append(prob1*prob2)
+    # actualAdd.append(0.5*(prob1+prob2))
+    # actualMul.append(prob1*prob2)
 
-    if (len(resultMult) > ROLLING):
-        average = sum(resultMult[i-ROLLING:i])
-        averageMulList.append(average / ROLLING)
-    else:
-        averageMulList.append(0)
+    # if (len(resultMult) > ROLLING):
+    #     average = sum(resultMult[i-ROLLING:i])
+    #     averageMulList.append(average / ROLLING)
+    # else:
+    #     averageMulList.append(0)
 
-    if (len(resultAdd) > ROLLING):
-        average = sum(resultAdd[i-ROLLING:i])
-        averageAddList.append(average / ROLLING)
-    else:
-        averageAddList.append(0)
+    # if (len(resultAdd) > ROLLING):
+    #     average = sum(resultAdd[i-ROLLING:i])
+    #     averageAddList.append(average / ROLLING)
+    # else:
+    #     averageAddList.append(0)
     
 
 plt.figure()
-plt.plot(resultAdd) #0.5 x (0.5+0.25) = 0.375 is the expected output for prob1 = 0.5 and prob2 = 0.25
+# plt.plot(resultAdd) #0.5 x (0.5+0.25) = 0.375 is the expected output for prob1 = 0.5 and prob2 = 0.25
 plt.plot(resultMult) #0.5x025 = 0.125 is the expected output for prob1 = 0.5 and prob2 = 0.25
-plt.plot(actualAdd)
-plt.plot(actualMul)
-plt.plot(averageMulList)
-plt.plot(averageAddList)
+# plt.plot(actualAdd)
+# plt.plot(actualMul)
+# plt.plot(averageMulList)
+# plt.plot(averageAddList)
 plt.show()
                     
