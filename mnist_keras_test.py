@@ -65,11 +65,11 @@ class StochasticLayer(Layer):
 
     def call(self, x):
         size = 32
-        # reshaped_x = tf.reshape(x, [-1, 784, 1])
         reshaped_x = tf.expand_dims(x, 2)
         x_tiled = tf.tile(reshaped_x, [1, 1, size])
-        # random_floats = tf.random_uniform([reshaped_x.shape[0], 784, size])
-        random_floats = tf.random_uniform([1, 784, size])
+
+        z = tf.shape(x_tiled)
+        random_floats = tf.random_uniform(z)
 
         cast = tf.cast(x_tiled < random_floats, tf.int32)
         reduction = tf.reduce_sum(cast, 2, keepdims=True)
@@ -101,7 +101,7 @@ model.compile(loss='categorical_crossentropy',
 # K.set_session(sess)
 
 history = model.fit(x_train, y_train,
-                    batch_size=1,
+                    batch_size=batch_size,
                     epochs=epochs,
                     verbose=1,
                     validation_data=(x_test, y_test))
