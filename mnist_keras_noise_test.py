@@ -1,11 +1,3 @@
-'''Trains a simple deep NN on the MNIST dataset.
-Gets to 98.40% test accuracy after 20 epochs
-(there is *a lot* of margin for parameter tuning).
-2 seconds per epoch on a K520 GPU.
-'''
-
-from __future__ import print_function
-
 import keras
 import random
 import tensorflow as tf
@@ -13,6 +5,8 @@ from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.optimizers import RMSprop,Adadelta,Adagrad,Adam
+
+from stochastic_layer import StochasticLayer
 
 def load_noisy_data(path='mnist-with-awgn.mat'):
     # from ..utils.data_utils import get_file
@@ -33,40 +27,6 @@ def load_noisy_data(path='mnist-with-awgn.mat'):
 batch_size = 128
 num_classes = 10
 epochs = 20
-
-from keras import backend as K
-from keras.layers import Layer
-
-class StochasticLayer(Layer):
-
-    def __init__(self, output_dim, **kwargs):
-        self.output_dim = output_dim
-        super(StochasticLayer, self).__init__(**kwargs)
-
-    def build(self, input_shape):
-        # self.kernel = self.add_weight(name='kernel', 
-        #                               shape=(input_shape[1], self.output_dim),
-        #                               initializer='uniform',
-        #                               trainable=True)
-        super(StochasticLayer, self).build(input_shape)  # Be sure to call this at the end
-
-    def call(self, x):
-        size = 32
-        reshaped_x = tf.expand_dims(x, 2)
-        x_tiled = tf.tile(reshaped_x, [1, 1, size])
-
-        z = tf.shape(x_tiled)
-        random_floats = tf.random_uniform(z)
-
-        cast = tf.cast(x_tiled < random_floats, tf.int32)
-        reduction = tf.reduce_sum(cast, 2, keepdims=True)
-        reduction = tf.cast(reduction, tf.float32)
-        reduction /= size
-
-        return reduction
-
-    def compute_output_shape(self, input_shape):
-        return input_shape
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 

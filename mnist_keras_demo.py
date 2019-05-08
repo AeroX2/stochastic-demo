@@ -35,49 +35,14 @@ y_test = keras.utils.to_categorical(y_test, num_classes)
 from keras import backend as K
 from keras.layers import Layer
 
-class MyLayer(Layer):
-
-    def __init__(self, output_dim, **kwargs):
-        self.output_dim = output_dim
-        super(MyLayer, self).__init__(**kwargs)
-
-    def build(self, input_shape):
-        print(input_shape)
-        # Create a trainable weight variable for this layer.
-        self.kernel = self.add_weight(name='kernel', 
-                                      shape=(input_shape[1], self.output_dim),
-                                      initializer='uniform',
-                                      trainable=True)
-        # self.bias = self.add_weight(name='bias', 
-        #                               shape=(784, self.output_dim),
-        #                               initializer='uniform',
-        #                               trainable=True)
-        # self.potential = self.add_weight(name='potential', 
-        #                               shape=(1, 1),
-        #                               initializer='uniform',
-        #                               trainable=True)
-        super(MyLayer, self).build(input_shape)  # Be sure to call this at the end
-
-    def call(self, x):
-        x = K.dot(x, self.kernel)
-        y = K.cas
-        z = K.cast(y, K.floatx())
-        return z #* self.potential
-        
-
-    def compute_output_shape(self, input_shape):
-        return (input_shape[0], self.output_dim)
-
 model = Sequential()
-# model.add(MyLayer(512, input_shape=(784,)))
 model.add(Dense(512, activation='relu', input_shape=(784,)))
-# model.add(Dropout(0.2))
+model.add(Dropout(0.2))
 model.add(Dense(512, activation='relu'))
-# model.add(Dropout(0.2))
+model.add(Dropout(0.2))
 model.add(Dense(num_classes, activation='softmax'))
 
 model.summary()
-
 model.compile(loss='categorical_crossentropy',
               optimizer=RMSprop(),
               metrics=['accuracy'])
