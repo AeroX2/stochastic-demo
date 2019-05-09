@@ -1,11 +1,3 @@
-'''Trains a simple deep NN on the MNIST dataset.
-Gets to 98.40% test accuracy after 20 epochs
-(there is *a lot* of margin for parameter tuning).
-2 seconds per epoch on a K520 GPU.
-'''
-
-from __future__ import print_function
-
 import keras
 import random
 import tensorflow as tf
@@ -37,27 +29,10 @@ batch_size = 128
 num_classes = 10
 epochs = 20
 
-(x_train_m, y_train_m), (x_test_m, y_test_m) = mnist.load_data()
-(x_train_n, y_train_n), (x_test_n, y_test_n) = load_noisy_data()
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-x_train_m = x_train_m.reshape(60000, 784)
-x_test_m = x_test_m.reshape(10000, 784)
-
-import numpy as np
-x_train = np.concatenate((x_train_m, x_train_n))
-y_train = np.concatenate((y_train_m, y_train_n))
-x_test = np.concatenate((x_test_m, x_test_n))
-y_test = np.concatenate((y_test_m, y_test_n))
-
-def shuffle(a,b):
-    rng_state = np.random.get_state()
-    np.random.shuffle(a)
-    np.random.set_state(rng_state)
-    np.random.shuffle(b)
-
-shuffle(x_train, y_train)
-shuffle(x_test, y_test)
-
+x_train = x_train.reshape(60000, 784)
+x_test = x_test.reshape(10000, 784)
 x_train = x_train.astype('float32')
 x_test = x_test.astype('float32')
 x_train /= 255
@@ -69,23 +44,29 @@ print(x_test.shape[0], 'test samples')
 y_train = keras.utils.to_categorical(y_train, num_classes)
 y_test = keras.utils.to_categorical(y_test, num_classes)
 
-print('Normal model')
-model = Sequential()
-model.add(StochasticLayer(784, input_shape=(784,), trainable=False))
-model.add(Dense(512, input_shape=(784,), activation='relu'))
-model.add(Dropout(0.2))
-model.add(Dense(512, activation='relu'))
-model.add(Dropout(0.2))
-model.add(Dense(num_classes, activation='softmax'))
+try:
+    import sys
+    size = 2**int(sys.argv[1])
+except:
+    size = 32
 
-model.compile(loss='categorical_crossentropy',
+print('Stochastic model')
+model_stochastic = Sequential()
+model_stochastic.add(StochasticLayer(784, bit_size=size, input_shape=(784,), trainable=False))
+model_stochastic.add(Dense(512, input_shape=(784,), activation='relu'))
+model_stochastic.add(Dropout(0.2))
+model_stochastic.add(Dense(512, activation='relu'))
+model_stochastic.add(Dropout(0.2))
+model_stochastic.add(Dense(num_classes, activation='softmax'))
+
+model_stochastic.compile(loss='categorical_crossentropy',
               optimizer=RMSprop(),
               metrics=['accuracy'])
-history = model.fit(x_train, y_train,
+history = model_stochastic.fit(x_train, y_train,
                     batch_size=batch_size,
                     epochs=epochs,
                     verbose=verbose,
                     validation_data=(x_test, y_test))
-score = model.evaluate(x_test, y_test, verbose=verbose)
+score = model_stochastic.evaluate(x_test, y_test, verbose=verbose)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])

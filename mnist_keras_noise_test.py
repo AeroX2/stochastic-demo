@@ -24,6 +24,7 @@ def load_noisy_data(path='mnist-with-awgn.mat'):
 
     return (x_train, y_train), (x_test, y_test)
 
+verbose = 2
 batch_size = 128
 num_classes = 10
 epochs = 20
@@ -57,9 +58,9 @@ model.compile(loss='categorical_crossentropy',
 history = model.fit(x_train, y_train,
                     batch_size=batch_size,
                     epochs=epochs,
-                    verbose=1,
+                    verbose=verbose,
                     validation_data=(x_test, y_test))
-score = model.evaluate(x_test, y_test, verbose=1)
+score = model.evaluate(x_test, y_test, verbose=verbose)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
 
@@ -78,16 +79,16 @@ model_stochastic.compile(loss='categorical_crossentropy',
 history = model_stochastic.fit(x_train, y_train,
                     batch_size=batch_size,
                     epochs=epochs,
-                    verbose=1,
+                    verbose=verbose,
                     validation_data=(x_test, y_test))
-score = model_stochastic.evaluate(x_test, y_test, verbose=1)
+score = model_stochastic.evaluate(x_test, y_test, verbose=verbose)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
 
 (x_train, y_train), (x_test, y_test) = load_noisy_data()
-score = model.evaluate(x_test, y_test, verbose=1)
+score = model.evaluate(x_test, y_test, verbose=verbose)
 print('Normal Noisy Test loss:', score[0])
 print('Normal Noisy Test accuracy:', score[1])
-score = model_stochastic.evaluate(x_test, y_test, verbose=1)
+score = model_stochastic.evaluate(x_test, y_test, verbose=verbose)
 print('Stochastic Noisy Test loss:', score[0])
 print('Stochastic Noisy Test accuracy:', score[1])

@@ -4,8 +4,10 @@ from keras.layers import Layer
 
 class StochasticLayer(Layer):
 
-    def __init__(self, output_dim, **kwargs):
+    def __init__(self, output_dim, bit_size = 32, **kwargs):
+        print("Stochastic layer using a bit size of {}".format(bit_size))
         self.output_dim = output_dim
+        self.bit_size = bit_size
         super(StochasticLayer, self).__init__(**kwargs)
 
     def build(self, input_shape):
@@ -16,9 +18,8 @@ class StochasticLayer(Layer):
         super(StochasticLayer, self).build(input_shape)  # Be sure to call this at the end
 
     def call(self, x):
-        size = 32
         reshaped_x = tf.expand_dims(x, 2)
-        x_tiled = tf.tile(reshaped_x, [1, 1, size])
+        x_tiled = tf.tile(reshaped_x, [1, 1, self.bit_size])
 
         z = tf.shape(x_tiled)
         random_floats = tf.random_uniform(z)
@@ -26,7 +27,7 @@ class StochasticLayer(Layer):
         cast = tf.cast(x_tiled < random_floats, tf.int32)
         reduction = tf.reduce_sum(cast, 2, keepdims=True)
         reduction = tf.cast(reduction, tf.float32)
-        reduction /= size
+        reduction /= self.bit_size
 
         return reduction
 
