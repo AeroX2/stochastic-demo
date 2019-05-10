@@ -31,7 +31,7 @@ print('Test loss:', score[0])
 print('Test accuracy:', score[1])
 
 from data import noisy_mnist
-(x_train, y_train), (x_test, y_test) = normal_mnist.data()
+(x_train, y_train), (x_test, y_test) = noisy_mnist.data()
 score = model.evaluate(x_test, y_test, verbose=verbose)
 print('Normal Noisy Test loss:', score[0])
 print('Normal Noisy Test accuracy:', score[1])

@@ -2,7 +2,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.optimizers import RMSprop,Adadelta,Adagrad,Adam
 
-from stochastic_layer import StochasticLayer
+from .stochastic_layer import StochasticLayer
 
 def model():
     model = Sequential()
