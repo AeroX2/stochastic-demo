@@ -18,6 +18,11 @@ def data(path='mnist-with-awgn.gz'):
     x_train, y_train = f['train_x'], f['train_y']
     x_test, y_test = f['test_x'], f['test_y']
 
+    x_train = x_train.astype('float32')
+    x_test = x_test.astype('float32')
+    x_train /= 255
+    x_test /= 255
+
     y_train = y_train.nonzero()[1]
     y_test = y_test.nonzero()[1]
 
