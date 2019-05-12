@@ -1,4 +1,4 @@
-verbose = 2
+verbose = 1
 batch_size = 128
 num_classes = 10
 epochs = 20
@@ -31,10 +31,23 @@ print('Test loss:', score[0])
 print('Test accuracy:', score[1])
 
 from data import noisy_mnist
-(x_train, y_train), (x_test, y_test) = noisy_mnist.data()
+(_, _), (x_test, y_test) = noisy_mnist.data()
 score = model.evaluate(x_test, y_test, verbose=verbose)
 print('Normal Noisy Test loss:', score[0])
 print('Normal Noisy Test accuracy:', score[1])
-score = model_stochastic.evaluate(x_test, y_test, verbose=verbose)
-print('Stochastic Noisy Test loss:', score[0])
-print('Stochastic Noisy Test accuracy:', score[1])
+for _ in range(10):
+    score = model_stochastic.evaluate(x_test, y_test, verbose=verbose)
+    print('Stochastic Noisy Test loss:', score[0])
+    print('Stochastic Noisy Test accuracy:', score[1])
+
+from data import custom_mnist
+(_, _), (x_test, y_test) = custom_mnist.data()
+
+score = model.evaluate(x_test, y_test, verbose=verbose)
+print('Normal Custom Test loss:', score[0])
+print('Normal Custom Test accuracy:', score[1])
+
+for _ in range(10):
+    score = model_stochastic.evaluate(x_test, y_test, verbose=verbose)
+    print('Stochastic Custom Test loss:', score[0])
+    print('Stochastic Custom Test accuracy:', score[1])

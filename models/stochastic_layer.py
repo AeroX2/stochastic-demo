@@ -24,7 +24,7 @@ class StochasticLayer(Layer):
         z = tf.shape(x_tiled)
         random_floats = tf.random_uniform(z)
 
-        cast = tf.cast(x_tiled < random_floats, tf.int32)
+        cast = tf.cast(x_tiled <= random_floats, tf.int8)
         reduction = tf.reduce_sum(cast, 2, keepdims=True)
         reduction = tf.cast(reduction, tf.float32)
         reduction /= self.bit_size

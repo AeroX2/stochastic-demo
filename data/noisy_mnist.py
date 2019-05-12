@@ -26,8 +26,8 @@ def data(path='mnist-with-awgn.gz'):
     y_train = y_train.nonzero()[1]
     y_test = y_test.nonzero()[1]
 
-    from keras.utils import to_categorical
-    y_train = to_categorical(y_train, 10)
-    y_test = to_categorical(y_test, 10)
+    #from keras.utils import to_categorical
+    #y_train = to_categorical(y_train, 10)
+    #y_test = to_categorical(y_test, 10)
 
     return (x_train, y_train), (x_test, y_test)

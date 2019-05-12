@@ -13,8 +13,8 @@ def model():
     model.add(Dropout(0.2))
     model.add(Dense(10, activation='softmax'))
 
-    model.compile(loss='categorical_crossentropy',
-                  optimizer=RMSprop(),
+    model.compile(loss='sparse_categorical_crossentropy',
+                  optimizer='rmsprop',
                   metrics=['accuracy'])
 
     return model
