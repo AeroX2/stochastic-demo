@@ -22,7 +22,7 @@ model.add(Dense(64, activation='relu'))
 model.add(Dense(10, activation='softmax'))
 
 model.compile(loss='sparse_categorical_crossentropy',
-              optimizer='adam',
+              optimizer='rmsprop',
               metrics=['accuracy'])
 
 history = model.fit(x_train, y_train,
@@ -49,7 +49,7 @@ model_stochastic.add(Dense(64, activation='relu'))
 model_stochastic.add(Dense(10, activation='softmax'))
 
 model_stochastic.compile(loss='sparse_categorical_crossentropy',
-              optimizer='adam',
+              optimizer='rmsprop',
               metrics=['accuracy'])
 history = model_stochastic.fit(x_train, y_train,
                     batch_size=batch_size,

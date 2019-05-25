@@ -11,7 +11,7 @@ def model():
     model.add(Dense(10, activation='softmax'))
 
     model.compile(loss='sparse_categorical_crossentropy',
-                  optimizer='adam',
+                  optimizer='rmsprop',
                   metrics=['accuracy'])
 
     return model

@@ -4,7 +4,7 @@ from keras.layers import Layer
 
 class StochasticLayer(Layer):
 
-    def __init__(self, output_dim, bit_size = 4, invert = True, **kwargs):
+    def __init__(self, output_dim, bit_size = 8, invert = False, **kwargs):
         print("Stochastic layer using a bit size of {}".format(bit_size))
         self.output_dim = output_dim
         self.bit_size = bit_size
@@ -26,9 +26,9 @@ class StochasticLayer(Layer):
         random_floats = tf.random_uniform(z)
 
         if (self.invert):
-            cast = tf.cast(random_floats <= x_tiled, tf.int8)
-        else:
             cast = tf.cast(x_tiled <= random_floats, tf.int8)
+        else:
+            cast = tf.cast(random_floats <= x_tiled, tf.int8)
 
         reduction = tf.reduce_sum(cast, 2, keepdims=True)
         reduction = tf.cast(reduction, tf.float32)
