@@ -1,4 +1,4 @@
-verbose = 1
+verbose = 2
 batch_size = 128
 num_classes = 10
 epochs = 20

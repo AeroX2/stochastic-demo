@@ -5,10 +5,13 @@ from keras.layers import Layer
 class StochasticLayer(Layer):
 
     def __init__(self, output_dim, bit_size = 8, invert = False, **kwargs):
-        print("Stochastic layer using a bit size of {}".format(bit_size))
         self.output_dim = output_dim
         self.bit_size = bit_size
         self.invert = invert
+
+        print("Stochastic layer using a bit size of {}".format(self.bit_size))
+        print("Stochastic layer inverted: {}".format(self.invert))
+
         super(StochasticLayer, self).__init__(**kwargs)
 
     def build(self, input_shape):

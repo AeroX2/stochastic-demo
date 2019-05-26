@@ -4,12 +4,12 @@ from keras.optimizers import RMSprop,Adadelta,Adagrad,Adam
 
 from .stochastic_layer import StochasticLayer
 
-def model(size=None):
+def model(bit_size=None):
     model = Sequential()
-    if (size is not None):
+    if (bit_size is None):
         model.add(StochasticLayer(784, input_shape=(784,), trainable=False))
     else:
-        model.add(StochasticLayer(784, input_shape=(784,), size=size, trainable=False))
+        model.add(StochasticLayer(784, input_shape=(784,), bit_size=bit_size, trainable=False))
 
     model.add(Dense(512, input_shape=(784,), activation='relu'))
     #model.add(Dropout(0.2))
