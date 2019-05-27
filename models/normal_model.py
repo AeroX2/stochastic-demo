@@ -2,11 +2,13 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.optimizers import RMSprop,Adadelta,Adagrad,Adam
 
-def model():
+def model(dense_size=512):
+    print("Using a dense size of {}".format(dense_size))
+
     model = Sequential()
-    model.add(Dense(512, input_shape=(784,), activation='relu'))
+    model.add(Dense(dense_size, input_shape=(784,), activation='relu'))
     model.add(Dropout(0.2))
-    model.add(Dense(512, activation='relu'))
+    model.add(Dense(dense_size, activation='relu'))
     model.add(Dropout(0.2))
     model.add(Dense(10, activation='softmax'))
 
