@@ -11,8 +11,4 @@ def data():
     x_train /= 255
     x_test /= 255
 
-    from keras.utils import to_categorical
-    y_train = to_categorical(y_train, 10)
-    y_test = to_categorical(y_test, 10)
-
     return (x_train, y_train), (x_test, y_test)

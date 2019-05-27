@@ -3,8 +3,8 @@ batch_size = 128
 num_classes = 10
 epochs = 20
 
-from data import normal_mnist
-(x_train, y_train), (x_test, y_test) = normal_mnist.data()
+from data import fashion_mnist
+(x_train, y_train), (x_test, y_test) = fashion_mnist.data()
 
 from keras.models import Sequential
 from keras.layers import Dense,Dropout,Conv2D,MaxPooling2D,Flatten,Reshape
@@ -60,22 +60,22 @@ score = model_stochastic.evaluate(x_test, y_test, verbose=verbose)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
 
-from data import noisy_mnist
-(_, _), (x_test, y_test) = noisy_mnist.data()
-score = model.evaluate(x_test, y_test, verbose=verbose)
-print('Conv2D Noisy Test loss:', score[0])
-print('Conv2D Noisy Test accuracy:', score[1])
-for _ in range(10):
-    score = model_stochastic.evaluate(x_test, y_test, verbose=verbose)
-    print('Stochastic Conv2D Noisy Test loss:', score[0])
-    print('Stochastic Conv2D Noisy Test accuracy:', score[1])
-
-from data import custom_mnist
-(_, _), (x_test, y_test) = custom_mnist.data()
-score = model.evaluate(x_test, y_test, verbose=verbose)
-print('Conv2D Custom Test loss:', score[0])
-print('Conv2D Custom Test accuracy:', score[1])
-for _ in range(10):
-    score = model_stochastic.evaluate(x_test, y_test, verbose=verbose)
-    print('Stochastic Conv2D Custom Test loss:', score[0])
-    print('Stochastic Conv2D Custom Test accuracy:', score[1])
+#from data import noisy_mnist
+#(_, _), (x_test, y_test) = noisy_mnist.data()
+#score = model.evaluate(x_test, y_test, verbose=verbose)
+#print('Conv2D Noisy Test loss:', score[0])
+#print('Conv2D Noisy Test accuracy:', score[1])
+#for _ in range(10):
+#    score = model_stochastic.evaluate(x_test, y_test, verbose=verbose)
+#    print('Stochastic Conv2D Noisy Test loss:', score[0])
+#    print('Stochastic Conv2D Noisy Test accuracy:', score[1])
+#
+#from data import custom_mnist
+#(_, _), (x_test, y_test) = custom_mnist.data()
+#score = model.evaluate(x_test, y_test, verbose=verbose)
+#print('Conv2D Custom Test loss:', score[0])
+#print('Conv2D Custom Test accuracy:', score[1])
+#for _ in range(10):
+#    score = model_stochastic.evaluate(x_test, y_test, verbose=verbose)
+#    print('Stochastic Conv2D Custom Test loss:', score[0])
+#    print('Stochastic Conv2D Custom Test accuracy:', score[1])
