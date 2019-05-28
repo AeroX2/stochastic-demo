@@ -2,8 +2,8 @@ verbose = 2
 batch_size = 128
 epochs = 20
 
-from data import normal_mnist
-(x_train, y_train), (x_test, y_test) = normal_mnist.data()
+from data import fashion_mnist
+(x_train, y_train), (x_test, y_test) = fashion_mnist.data()
 
 try:
     import sys
