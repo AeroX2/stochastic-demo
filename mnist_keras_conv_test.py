@@ -10,13 +10,21 @@ from keras.models import Sequential
 from keras.layers import Dense,Dropout,Conv2D,MaxPooling2D,Flatten,Reshape
 from keras.optimizers import RMSprop,Adadelta,Adagrad,Adam
 
+try:
+    import sys
+    convsize = 2**(int(sys.argv[1])+3)
+except:
+    convsize = 32
+
+print("Using conv size of {}".format(convsize))
+
 model = Sequential()
 model.add(Reshape((28,28,1)))
-model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)))
+model.add(Conv2D(convsize, (3, 3), activation='relu', input_shape=(28, 28, 1)))
 model.add(MaxPooling2D((2, 2)))
-model.add(Conv2D(64, (3, 3), activation='relu'))
+model.add(Conv2D(convsize*2, (3, 3), activation='relu'))
 model.add(MaxPooling2D((2, 2)))
-model.add(Conv2D(64, (3, 3), activation='relu'))
+model.add(Conv2D(convsize*2, (3, 3), activation='relu'))
 model.add(Flatten())
 model.add(Dense(64, activation='relu'))
 model.add(Dense(10, activation='softmax'))
@@ -39,11 +47,11 @@ from models import StochasticLayer
 model_stochastic = Sequential()
 model_stochastic.add(StochasticLayer(784, input_shape=(784,), trainable=False))
 model_stochastic.add(Reshape((28,28,1)))
-model_stochastic.add(Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)))
+model_stochastic.add(Conv2D(convsize, (3, 3), activation='relu', input_shape=(28, 28, 1)))
 model_stochastic.add(MaxPooling2D((2, 2)))
-model_stochastic.add(Conv2D(64, (3, 3), activation='relu'))
+model_stochastic.add(Conv2D(convsize*2, (3, 3), activation='relu'))
 model_stochastic.add(MaxPooling2D((2, 2)))
-model_stochastic.add(Conv2D(64, (3, 3), activation='relu'))
+model_stochastic.add(Conv2D(convsize*2, (3, 3), activation='relu'))
 model_stochastic.add(Flatten())
 model_stochastic.add(Dense(64, activation='relu'))
 model_stochastic.add(Dense(10, activation='softmax'))
