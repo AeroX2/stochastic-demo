@@ -1,0 +1,2643 @@
+================
+Start of new run
+================
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 8s - loss: 0.2472 - acc: 0.9223 - val_loss: 0.0743 - val_acc: 0.9758
+Epoch 2/20
+ - 4s - loss: 0.0576 - acc: 0.9817 - val_loss: 0.0402 - val_acc: 0.9867
+Epoch 3/20
+ - 4s - loss: 0.0384 - acc: 0.9886 - val_loss: 0.0352 - val_acc: 0.9895
+Epoch 4/20
+ - 4s - loss: 0.0288 - acc: 0.9907 - val_loss: 0.0288 - val_acc: 0.9899
+Epoch 5/20
+ - 4s - loss: 0.0223 - acc: 0.9932 - val_loss: 0.0371 - val_acc: 0.9885
+Epoch 6/20
+ - 4s - loss: 0.0176 - acc: 0.9946 - val_loss: 0.0261 - val_acc: 0.9918
+Epoch 7/20
+ - 3s - loss: 0.0141 - acc: 0.9956 - val_loss: 0.0268 - val_acc: 0.9921
+Epoch 8/20
+ - 3s - loss: 0.0122 - acc: 0.9960 - val_loss: 0.0293 - val_acc: 0.9915
+Epoch 9/20
+ - 3s - loss: 0.0095 - acc: 0.9970 - val_loss: 0.0260 - val_acc: 0.9919
+Epoch 10/20
+ - 3s - loss: 0.0080 - acc: 0.9974 - val_loss: 0.0304 - val_acc: 0.9921
+Epoch 11/20
+ - 3s - loss: 0.0074 - acc: 0.9979 - val_loss: 0.0339 - val_acc: 0.9919
+Epoch 12/20
+ - 3s - loss: 0.0058 - acc: 0.9981 - val_loss: 0.0334 - val_acc: 0.9917
+Epoch 13/20
+ - 3s - loss: 0.0057 - acc: 0.9983 - val_loss: 0.0381 - val_acc: 0.9916
+Epoch 14/20
+ - 3s - loss: 0.0050 - acc: 0.9986 - val_loss: 0.0386 - val_acc: 0.9918
+Epoch 15/20
+ - 3s - loss: 0.0040 - acc: 0.9987 - val_loss: 0.0381 - val_acc: 0.9923
+Epoch 16/20
+ - 3s - loss: 0.0043 - acc: 0.9988 - val_loss: 0.0401 - val_acc: 0.9921
+Epoch 17/20
+ - 3s - loss: 0.0040 - acc: 0.9987 - val_loss: 0.0407 - val_acc: 0.9923
+Epoch 18/20
+ - 3s - loss: 0.0035 - acc: 0.9989 - val_loss: 0.0415 - val_acc: 0.9925
+Epoch 19/20
+ - 3s - loss: 0.0027 - acc: 0.9992 - val_loss: 0.0374 - val_acc: 0.9936
+Epoch 20/20
+ - 3s - loss: 0.0028 - acc: 0.9992 - val_loss: 0.0419 - val_acc: 0.9921
+Test loss: nan
+Test accuracy: 0.9918
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2879 - acc: 0.9108 - val_loss: 0.0549 - val_acc: 0.9839
+Epoch 2/20
+ - 4s - loss: 0.0602 - acc: 0.9818 - val_loss: 0.0355 - val_acc: 0.9887
+Epoch 3/20
+ - 4s - loss: 0.0416 - acc: 0.9872 - val_loss: 0.1397 - val_acc: 0.9603
+Epoch 4/20
+ - 4s - loss: 0.0320 - acc: 0.9901 - val_loss: 0.0783 - val_acc: 0.9779
+Epoch 5/20
+ - 4s - loss: 0.0253 - acc: 0.9921 - val_loss: 0.0342 - val_acc: 0.9891
+Epoch 6/20
+ - 4s - loss: 0.0223 - acc: 0.9928 - val_loss: 0.0263 - val_acc: 0.9912
+Epoch 7/20
+ - 4s - loss: 0.0181 - acc: 0.9942 - val_loss: 0.0271 - val_acc: 0.9925
+Epoch 8/20
+ - 4s - loss: 0.0154 - acc: 0.9950 - val_loss: 0.0299 - val_acc: 0.9912
+Epoch 9/20
+ - 4s - loss: 0.0131 - acc: 0.9957 - val_loss: 0.0316 - val_acc: 0.9917
+Epoch 10/20
+ - 4s - loss: 0.0118 - acc: 0.9961 - val_loss: 0.0424 - val_acc: 0.9900
+Epoch 11/20
+ - 4s - loss: 0.0102 - acc: 0.9966 - val_loss: 0.0276 - val_acc: 0.9924
+Epoch 12/20
+ - 4s - loss: 0.0098 - acc: 0.9970 - val_loss: 0.0369 - val_acc: 0.9908
+Epoch 13/20
+ - 4s - loss: 0.0078 - acc: 0.9973 - val_loss: 0.0322 - val_acc: 0.9914
+Epoch 14/20
+ - 4s - loss: 0.0077 - acc: 0.9977 - val_loss: 0.0275 - val_acc: 0.9933
+Epoch 15/20
+ - 4s - loss: 0.0069 - acc: 0.9978 - val_loss: 0.0363 - val_acc: 0.9920
+Epoch 16/20
+ - 4s - loss: 0.0067 - acc: 0.9979 - val_loss: 0.0384 - val_acc: 0.9922
+Epoch 17/20
+ - 4s - loss: 0.0065 - acc: 0.9980 - val_loss: 0.0360 - val_acc: 0.9912
+Epoch 18/20
+ - 4s - loss: 0.0056 - acc: 0.9983 - val_loss: 0.0335 - val_acc: 0.9930
+Epoch 19/20
+ - 4s - loss: 0.0050 - acc: 0.9985 - val_loss: 0.0348 - val_acc: 0.9932
+Epoch 20/20
+ - 4s - loss: 0.0052 - acc: 0.9984 - val_loss: 0.0405 - val_acc: 0.9925
+Test loss: 0.043641316711318726
+Test accuracy: 0.9922
+Conv2D Noisy Test loss: 0.09635377017471473
+Conv2D Noisy Test accuracy: 0.9754
+Stochastic Conv2D Noisy Test loss: 0.18779095418490468
+Stochastic Conv2D Noisy Test accuracy: 0.9487
+Stochastic Conv2D Noisy Test loss: 0.2007711088143289
+Stochastic Conv2D Noisy Test accuracy: 0.9487
+Stochastic Conv2D Noisy Test loss: 0.19727271473389119
+Stochastic Conv2D Noisy Test accuracy: 0.9479
+Stochastic Conv2D Noisy Test loss: 0.20466605698047205
+Stochastic Conv2D Noisy Test accuracy: 0.9446
+Stochastic Conv2D Noisy Test loss: 0.19862438849695027
+Stochastic Conv2D Noisy Test accuracy: 0.9489
+Stochastic Conv2D Noisy Test loss: 0.20182603085618467
+Stochastic Conv2D Noisy Test accuracy: 0.9461
+Stochastic Conv2D Noisy Test loss: 0.19754022860266268
+Stochastic Conv2D Noisy Test accuracy: 0.9493
+Stochastic Conv2D Noisy Test loss: 0.1942057369428687
+Stochastic Conv2D Noisy Test accuracy: 0.9472
+Stochastic Conv2D Noisy Test loss: 0.19857178617399185
+Stochastic Conv2D Noisy Test accuracy: 0.9463
+Stochastic Conv2D Noisy Test loss: 0.19999557551033795
+Stochastic Conv2D Noisy Test accuracy: 0.947
+Conv2D Custom Test loss: 0.3040144145488739
+Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.20148229598999023
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.48723798990249634
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.37397459149360657
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.3662793040275574
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.500802218914032
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.2839512526988983
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.15267029404640198
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.28225886821746826
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.20569834113121033
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.3776930868625641
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 8s - loss: 0.2345 - acc: 0.9259 - val_loss: 0.0541 - val_acc: 0.9822
+Epoch 2/20
+ - 3s - loss: 0.0566 - acc: 0.9823 - val_loss: 0.0366 - val_acc: 0.9867
+Epoch 3/20
+ - 3s - loss: 0.0380 - acc: 0.9882 - val_loss: 0.0395 - val_acc: 0.9867
+Epoch 4/20
+ - 3s - loss: 0.0292 - acc: 0.9907 - val_loss: 0.0289 - val_acc: 0.9903
+Epoch 5/20
+ - 3s - loss: 0.0222 - acc: 0.9931 - val_loss: 0.0300 - val_acc: 0.9906
+Epoch 6/20
+ - 3s - loss: 0.0181 - acc: 0.9941 - val_loss: 0.0309 - val_acc: 0.9908
+Epoch 7/20
+ - 3s - loss: 0.0146 - acc: 0.9954 - val_loss: 0.0251 - val_acc: 0.9920
+Epoch 8/20
+ - 3s - loss: 0.0112 - acc: 0.9963 - val_loss: 0.0246 - val_acc: 0.9929
+Epoch 9/20
+ - 3s - loss: 0.0098 - acc: 0.9968 - val_loss: 0.0301 - val_acc: 0.9923
+Epoch 10/20
+ - 3s - loss: 0.0081 - acc: 0.9977 - val_loss: 0.0289 - val_acc: 0.9934
+Epoch 11/20
+ - 3s - loss: 0.0070 - acc: 0.9977 - val_loss: 0.0280 - val_acc: 0.9933
+Epoch 12/20
+ - 3s - loss: 0.0060 - acc: 0.9981 - val_loss: 0.0397 - val_acc: 0.9915
+Epoch 13/20
+ - 3s - loss: 0.0053 - acc: 0.9983 - val_loss: 0.0331 - val_acc: 0.9926
+Epoch 14/20
+ - 3s - loss: 0.0043 - acc: 0.9987 - val_loss: 0.0379 - val_acc: 0.9919
+Epoch 15/20
+ - 3s - loss: 0.0044 - acc: 0.9985 - val_loss: 0.0399 - val_acc: 0.9914
+Epoch 16/20
+ - 3s - loss: 0.0034 - acc: 0.9990 - val_loss: 0.0373 - val_acc: 0.9928
+Epoch 17/20
+ - 3s - loss: 0.0033 - acc: 0.9990 - val_loss: 0.0437 - val_acc: 0.9924
+Epoch 18/20
+ - 3s - loss: 0.0035 - acc: 0.9989 - val_loss: 0.0437 - val_acc: 0.9925
+Epoch 19/20
+ - 3s - loss: 0.0036 - acc: 0.9988 - val_loss: 0.0544 - val_acc: 0.9910
+Epoch 20/20
+ - 3s - loss: 0.0023 - acc: 0.9993 - val_loss: 0.0489 - val_acc: 0.9924
+Test loss: 0.0489344312401121
+Test accuracy: 0.9924
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2711 - acc: 0.9163 - val_loss: 0.0645 - val_acc: 0.9795
+Epoch 2/20
+ - 4s - loss: 0.0568 - acc: 0.9823 - val_loss: 0.0342 - val_acc: 0.9891
+Epoch 3/20
+ - 4s - loss: 0.0385 - acc: 0.9878 - val_loss: 0.0280 - val_acc: 0.9897
+Epoch 4/20
+ - 4s - loss: 0.0297 - acc: 0.9908 - val_loss: 0.0349 - val_acc: 0.9885
+Epoch 5/20
+ - 4s - loss: 0.0231 - acc: 0.9927 - val_loss: 0.0275 - val_acc: 0.9910
+Epoch 6/20
+ - 4s - loss: 0.0198 - acc: 0.9937 - val_loss: 0.0258 - val_acc: 0.9920
+Epoch 7/20
+ - 4s - loss: 0.0165 - acc: 0.9949 - val_loss: 0.0318 - val_acc: 0.9901
+Epoch 8/20
+ - 4s - loss: 0.0146 - acc: 0.9953 - val_loss: 0.0450 - val_acc: 0.9883
+Epoch 9/20
+ - 4s - loss: 0.0122 - acc: 0.9962 - val_loss: 0.0292 - val_acc: 0.9921
+Epoch 10/20
+ - 4s - loss: 0.0108 - acc: 0.9967 - val_loss: 0.0292 - val_acc: 0.9932
+Epoch 11/20
+ - 4s - loss: 0.0097 - acc: 0.9968 - val_loss: 0.0558 - val_acc: 0.9876
+Epoch 12/20
+ - 4s - loss: 0.0083 - acc: 0.9974 - val_loss: 0.0288 - val_acc: 0.9933
+Epoch 13/20
+ - 4s - loss: 0.0082 - acc: 0.9972 - val_loss: 0.0519 - val_acc: 0.9899
+Epoch 14/20
+ - 4s - loss: 0.0073 - acc: 0.9976 - val_loss: 0.0875 - val_acc: 0.9834
+Epoch 15/20
+ - 4s - loss: 0.0074 - acc: 0.9978 - val_loss: 0.0422 - val_acc: 0.9911
+Epoch 16/20
+ - 4s - loss: 0.0065 - acc: 0.9979 - val_loss: 0.0499 - val_acc: 0.9914
+Epoch 17/20
+ - 4s - loss: 0.0066 - acc: 0.9980 - val_loss: 0.0359 - val_acc: 0.9929
+Epoch 18/20
+ - 4s - loss: 0.0059 - acc: 0.9982 - val_loss: 0.0551 - val_acc: 0.9901
+Epoch 19/20
+ - 4s - loss: 0.0038 - acc: 0.9987 - val_loss: 0.0736 - val_acc: 0.9851
+Epoch 20/20
+ - 4s - loss: 0.0053 - acc: 0.9983 - val_loss: 0.0446 - val_acc: 0.9927
+Test loss: 0.04340433395806758
+Test accuracy: 0.9929
+Conv2D Noisy Test loss: 0.1388596676844987
+Conv2D Noisy Test accuracy: 0.9679
+Stochastic Conv2D Noisy Test loss: 0.10406258166551124
+Stochastic Conv2D Noisy Test accuracy: 0.9733
+Stochastic Conv2D Noisy Test loss: 0.10683860191158019
+Stochastic Conv2D Noisy Test accuracy: 0.9727
+Stochastic Conv2D Noisy Test loss: 0.10795446735867299
+Stochastic Conv2D Noisy Test accuracy: 0.9716
+Stochastic Conv2D Noisy Test loss: 0.11091609763505403
+Stochastic Conv2D Noisy Test accuracy: 0.9721
+Stochastic Conv2D Noisy Test loss: 0.1075430846584728
+Stochastic Conv2D Noisy Test accuracy: 0.9713
+Stochastic Conv2D Noisy Test loss: 0.10825517758326605
+Stochastic Conv2D Noisy Test accuracy: 0.9719
+Stochastic Conv2D Noisy Test loss: 0.10593269149893894
+Stochastic Conv2D Noisy Test accuracy: 0.9728
+Stochastic Conv2D Noisy Test loss: 0.10646864448301493
+Stochastic Conv2D Noisy Test accuracy: 0.9729
+Stochastic Conv2D Noisy Test loss: 0.1065609884585254
+Stochastic Conv2D Noisy Test accuracy: 0.9723
+Stochastic Conv2D Noisy Test loss: 0.10236260963053209
+Stochastic Conv2D Noisy Test accuracy: 0.9727
+Conv2D Custom Test loss: 0.4832117259502411
+Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 1.394149899482727
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 1.949414610862732
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 1.0561325550079346
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 1.0010380744934082
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 0.9106464385986328
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 1.6485693454742432
+Stochastic Conv2D Custom Test accuracy: 0.5555555820465088
+Stochastic Conv2D Custom Test loss: 1.2797894477844238
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 1.0951517820358276
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 1.2529921531677246
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 1.113681674003601
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 8s - loss: 0.2327 - acc: 0.9271 - val_loss: 0.0503 - val_acc: 0.9843
+Epoch 2/20
+ - 3s - loss: 0.0519 - acc: 0.9838 - val_loss: 0.0406 - val_acc: 0.9871
+Epoch 3/20
+ - 3s - loss: 0.0349 - acc: 0.9891 - val_loss: 0.0316 - val_acc: 0.9902
+Epoch 4/20
+ - 3s - loss: 0.0257 - acc: 0.9916 - val_loss: 0.0267 - val_acc: 0.9915
+Epoch 5/20
+ - 3s - loss: 0.0203 - acc: 0.9933 - val_loss: 0.0275 - val_acc: 0.9918
+Epoch 6/20
+ - 3s - loss: 0.0160 - acc: 0.9950 - val_loss: 0.0268 - val_acc: 0.9918
+Epoch 7/20
+ - 3s - loss: 0.0136 - acc: 0.9959 - val_loss: 0.0281 - val_acc: 0.9917
+Epoch 8/20
+ - 3s - loss: 0.0108 - acc: 0.9965 - val_loss: 0.0321 - val_acc: 0.9924
+Epoch 9/20
+ - 3s - loss: 0.0088 - acc: 0.9971 - val_loss: 0.0371 - val_acc: 0.9909
+Epoch 10/20
+ - 4s - loss: 0.0085 - acc: 0.9973 - val_loss: 0.0286 - val_acc: 0.9927
+Epoch 11/20
+ - 4s - loss: 0.0059 - acc: 0.9982 - val_loss: 0.0337 - val_acc: 0.9915
+Epoch 12/20
+ - 3s - loss: 0.0053 - acc: 0.9984 - val_loss: 0.0341 - val_acc: 0.9918
+Epoch 13/20
+ - 3s - loss: 0.0048 - acc: 0.9986 - val_loss: 0.0343 - val_acc: 0.9931
+Epoch 14/20
+ - 3s - loss: 0.0044 - acc: 0.9986 - val_loss: 0.0415 - val_acc: 0.9913
+Epoch 15/20
+ - 4s - loss: 0.0038 - acc: 0.9986 - val_loss: 0.0431 - val_acc: 0.9920
+Epoch 16/20
+ - 4s - loss: 0.0036 - acc: 0.9988 - val_loss: 0.0422 - val_acc: 0.9926
+Epoch 17/20
+ - 3s - loss: 0.0036 - acc: 0.9989 - val_loss: 0.0416 - val_acc: 0.9923
+Epoch 18/20
+ - 3s - loss: 0.0028 - acc: 0.9990 - val_loss: 0.0449 - val_acc: 0.9927
+Epoch 19/20
+ - 4s - loss: 0.0027 - acc: 0.9991 - val_loss: 0.0536 - val_acc: 0.9908
+Epoch 20/20
+ - 4s - loss: 0.0035 - acc: 0.9991 - val_loss: 0.0475 - val_acc: 0.9920
+Test loss: 0.04750207532451095
+Test accuracy: 0.992
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2834 - acc: 0.9103 - val_loss: 0.1039 - val_acc: 0.9669
+Epoch 2/20
+ - 4s - loss: 0.0597 - acc: 0.9818 - val_loss: 0.0380 - val_acc: 0.9879
+Epoch 3/20
+ - 4s - loss: 0.0410 - acc: 0.9873 - val_loss: 0.0536 - val_acc: 0.9839
+Epoch 4/20
+ - 4s - loss: 0.0300 - acc: 0.9912 - val_loss: 0.0346 - val_acc: 0.9881
+Epoch 5/20
+ - 4s - loss: 0.0252 - acc: 0.9923 - val_loss: 0.0772 - val_acc: 0.9743
+Epoch 6/20
+ - 4s - loss: 0.0203 - acc: 0.9937 - val_loss: 0.0240 - val_acc: 0.9925
+Epoch 7/20
+ - 4s - loss: 0.0174 - acc: 0.9947 - val_loss: 0.0263 - val_acc: 0.9915
+Epoch 8/20
+ - 4s - loss: 0.0145 - acc: 0.9955 - val_loss: 0.0283 - val_acc: 0.9929
+Epoch 9/20
+ - 4s - loss: 0.0125 - acc: 0.9960 - val_loss: 0.0302 - val_acc: 0.9924
+Epoch 10/20
+ - 4s - loss: 0.0112 - acc: 0.9963 - val_loss: 0.0318 - val_acc: 0.9912
+Epoch 11/20
+ - 4s - loss: 0.0098 - acc: 0.9969 - val_loss: 0.0430 - val_acc: 0.9891
+Epoch 12/20
+ - 4s - loss: 0.0088 - acc: 0.9974 - val_loss: 0.0367 - val_acc: 0.9904
+Epoch 13/20
+ - 4s - loss: 0.0079 - acc: 0.9976 - val_loss: 0.0318 - val_acc: 0.9925
+Epoch 14/20
+ - 4s - loss: 0.0072 - acc: 0.9979 - val_loss: 0.0525 - val_acc: 0.9878
+Epoch 15/20
+ - 4s - loss: 0.0063 - acc: 0.9980 - val_loss: 0.0476 - val_acc: 0.9902
+Epoch 16/20
+ - 4s - loss: 0.0061 - acc: 0.9982 - val_loss: 0.0340 - val_acc: 0.9925
+Epoch 17/20
+ - 4s - loss: 0.0067 - acc: 0.9979 - val_loss: 0.0369 - val_acc: 0.9918
+Epoch 18/20
+ - 4s - loss: 0.0055 - acc: 0.9985 - val_loss: 0.0386 - val_acc: 0.9924
+Epoch 19/20
+ - 4s - loss: 0.0051 - acc: 0.9984 - val_loss: 0.0413 - val_acc: 0.9914
+Epoch 20/20
+ - 4s - loss: 0.0049 - acc: 0.9987 - val_loss: 0.0705 - val_acc: 0.9882
+Test loss: 0.0709699562552727
+Test accuracy: 0.9888
+Conv2D Noisy Test loss: 0.1324935274945805
+Conv2D Noisy Test accuracy: 0.9685
+Stochastic Conv2D Noisy Test loss: 0.5842766045832075
+Stochastic Conv2D Noisy Test accuracy: 0.8838
+Stochastic Conv2D Noisy Test loss: 0.6038692004665732
+Stochastic Conv2D Noisy Test accuracy: 0.8799
+Stochastic Conv2D Noisy Test loss: 0.5734195625692606
+Stochastic Conv2D Noisy Test accuracy: 0.8832
+Stochastic Conv2D Noisy Test loss: 0.570280688168481
+Stochastic Conv2D Noisy Test accuracy: 0.8893
+Stochastic Conv2D Noisy Test loss: 0.5881678354263306
+Stochastic Conv2D Noisy Test accuracy: 0.8827
+Stochastic Conv2D Noisy Test loss: 0.5854569036863744
+Stochastic Conv2D Noisy Test accuracy: 0.8852
+Stochastic Conv2D Noisy Test loss: 0.5892794646263123
+Stochastic Conv2D Noisy Test accuracy: 0.8791
+Stochastic Conv2D Noisy Test loss: 0.600608889119979
+Stochastic Conv2D Noisy Test accuracy: 0.8808
+Stochastic Conv2D Noisy Test loss: 0.5782803648896515
+Stochastic Conv2D Noisy Test accuracy: 0.8833
+Stochastic Conv2D Noisy Test loss: 0.5760013782858848
+Stochastic Conv2D Noisy Test accuracy: 0.8854
+Conv2D Custom Test loss: 6.19227933883667
+Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.3368135392665863
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.5970743894577026
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.49809524416923523
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.3186107575893402
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.2202308177947998
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.12075302004814148
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.27699217200279236
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.23260951042175293
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.4053577184677124
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.5223621726036072
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 8s - loss: 0.2267 - acc: 0.9294 - val_loss: 0.0574 - val_acc: 0.9824
+Epoch 2/20
+ - 4s - loss: 0.0546 - acc: 0.9830 - val_loss: 0.0430 - val_acc: 0.9859
+Epoch 3/20
+ - 3s - loss: 0.0367 - acc: 0.9886 - val_loss: 0.0300 - val_acc: 0.9906
+Epoch 4/20
+ - 4s - loss: 0.0280 - acc: 0.9912 - val_loss: 0.0294 - val_acc: 0.9909
+Epoch 5/20
+ - 3s - loss: 0.0218 - acc: 0.9933 - val_loss: 0.0252 - val_acc: 0.9919
+Epoch 6/20
+ - 3s - loss: 0.0170 - acc: 0.9945 - val_loss: 0.0256 - val_acc: 0.9923
+Epoch 7/20
+ - 4s - loss: 0.0141 - acc: 0.9955 - val_loss: 0.0329 - val_acc: 0.9906
+Epoch 8/20
+ - 4s - loss: 0.0119 - acc: 0.9962 - val_loss: 0.0322 - val_acc: 0.9909
+Epoch 9/20
+ - 3s - loss: 0.0096 - acc: 0.9971 - val_loss: 0.0290 - val_acc: 0.9928
+Epoch 10/20
+ - 3s - loss: 0.0084 - acc: 0.9974 - val_loss: 0.0321 - val_acc: 0.9912
+Epoch 11/20
+ - 4s - loss: 0.0067 - acc: 0.9979 - val_loss: 0.0343 - val_acc: 0.9916
+Epoch 12/20
+ - 4s - loss: 0.0065 - acc: 0.9980 - val_loss: 0.0542 - val_acc: 0.9879
+Epoch 13/20
+ - 4s - loss: 0.0052 - acc: 0.9983 - val_loss: 0.0366 - val_acc: 0.9921
+Epoch 14/20
+ - 4s - loss: 0.0049 - acc: 0.9985 - val_loss: 0.0524 - val_acc: 0.9905
+Epoch 15/20
+ - 4s - loss: 0.0048 - acc: 0.9984 - val_loss: 0.0489 - val_acc: 0.9913
+Epoch 16/20
+ - 4s - loss: 0.0041 - acc: 0.9989 - val_loss: 0.0560 - val_acc: 0.9911
+Epoch 17/20
+ - 4s - loss: 0.0040 - acc: 0.9988 - val_loss: 0.0527 - val_acc: 0.9910
+Epoch 18/20
+ - 4s - loss: 0.0030 - acc: 0.9990 - val_loss: 0.0533 - val_acc: 0.9917
+Epoch 19/20
+ - 4s - loss: 0.0035 - acc: 0.9990 - val_loss: 0.0463 - val_acc: 0.9920
+Epoch 20/20
+ - 3s - loss: 0.0031 - acc: 0.9990 - val_loss: 0.0499 - val_acc: 0.9919
+Test loss: 0.04988040548176286
+Test accuracy: 0.9919
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2969 - acc: 0.9071 - val_loss: 0.0722 - val_acc: 0.9767
+Epoch 2/20
+ - 4s - loss: 0.0622 - acc: 0.9807 - val_loss: 0.1329 - val_acc: 0.9612
+Epoch 3/20
+ - 4s - loss: 0.0433 - acc: 0.9869 - val_loss: 0.0309 - val_acc: 0.9895
+Epoch 4/20
+ - 4s - loss: 0.0358 - acc: 0.9889 - val_loss: 0.0321 - val_acc: 0.9898
+Epoch 5/20
+ - 4s - loss: 0.0286 - acc: 0.9914 - val_loss: 0.0241 - val_acc: 0.9921
+Epoch 6/20
+ - 4s - loss: 0.0229 - acc: 0.9925 - val_loss: 0.0306 - val_acc: 0.9903
+Epoch 7/20
+ - 4s - loss: 0.0186 - acc: 0.9941 - val_loss: 0.0448 - val_acc: 0.9878
+Epoch 8/20
+ - 4s - loss: 0.0157 - acc: 0.9950 - val_loss: 0.0343 - val_acc: 0.9911
+Epoch 9/20
+ - 4s - loss: 0.0140 - acc: 0.9954 - val_loss: 0.0266 - val_acc: 0.9933
+Epoch 10/20
+ - 4s - loss: 0.0122 - acc: 0.9959 - val_loss: 0.0288 - val_acc: 0.9911
+Epoch 11/20
+ - 4s - loss: 0.0104 - acc: 0.9964 - val_loss: 0.0720 - val_acc: 0.9862
+Epoch 12/20
+ - 4s - loss: 0.0085 - acc: 0.9973 - val_loss: 0.0379 - val_acc: 0.9919
+Epoch 13/20
+ - 4s - loss: 0.0094 - acc: 0.9971 - val_loss: 0.0309 - val_acc: 0.9926
+Epoch 14/20
+ - 4s - loss: 0.0080 - acc: 0.9973 - val_loss: 0.0325 - val_acc: 0.9922
+Epoch 15/20
+ - 4s - loss: 0.0077 - acc: 0.9975 - val_loss: 0.0409 - val_acc: 0.9916
+Epoch 16/20
+ - 4s - loss: 0.0068 - acc: 0.9978 - val_loss: 0.0454 - val_acc: 0.9922
+Epoch 17/20
+ - 4s - loss: 0.0067 - acc: 0.9978 - val_loss: 0.0328 - val_acc: 0.9925
+Epoch 18/20
+ - 4s - loss: 0.0062 - acc: 0.9981 - val_loss: 0.0378 - val_acc: 0.9927
+Epoch 19/20
+ - 4s - loss: 0.0058 - acc: 0.9982 - val_loss: 0.0382 - val_acc: 0.9934
+Epoch 20/20
+ - 4s - loss: 0.0059 - acc: 0.9981 - val_loss: 0.0407 - val_acc: 0.9927
+Test loss: 0.041923776172240836
+Test accuracy: 0.9922
+Conv2D Noisy Test loss: 0.13797142299714032
+Conv2D Noisy Test accuracy: 0.9626
+Stochastic Conv2D Noisy Test loss: 0.3670643869839609
+Stochastic Conv2D Noisy Test accuracy: 0.8979
+Stochastic Conv2D Noisy Test loss: 0.37242562046051025
+Stochastic Conv2D Noisy Test accuracy: 0.8988
+Stochastic Conv2D Noisy Test loss: 0.36206484640985725
+Stochastic Conv2D Noisy Test accuracy: 0.9007
+Stochastic Conv2D Noisy Test loss: 0.3757042895719409
+Stochastic Conv2D Noisy Test accuracy: 0.897
+Stochastic Conv2D Noisy Test loss: 0.37429607444033025
+Stochastic Conv2D Noisy Test accuracy: 0.8986
+Stochastic Conv2D Noisy Test loss: 0.3724700864922255
+Stochastic Conv2D Noisy Test accuracy: 0.8969
+Stochastic Conv2D Noisy Test loss: 0.3725504701510072
+Stochastic Conv2D Noisy Test accuracy: 0.8975
+Stochastic Conv2D Noisy Test loss: 0.37234804608412087
+Stochastic Conv2D Noisy Test accuracy: 0.8995
+Stochastic Conv2D Noisy Test loss: 0.36680202000886203
+Stochastic Conv2D Noisy Test accuracy: 0.9003
+Stochastic Conv2D Noisy Test loss: 0.37748178852796554
+Stochastic Conv2D Noisy Test accuracy: 0.8993
+Conv2D Custom Test loss: 0.08231652528047562
+Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.3605242073535919
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.23211616277694702
+Stochastic Conv2D Custom Test accuracy: 1.0
+Stochastic Conv2D Custom Test loss: 0.33717620372772217
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.2500511407852173
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.35854366421699524
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.505993127822876
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.23428161442279816
+Stochastic Conv2D Custom Test accuracy: 1.0
+Stochastic Conv2D Custom Test loss: 0.4530954957008362
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.4431271553039551
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.2251124382019043
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 7s - loss: 0.2275 - acc: 0.9294 - val_loss: 0.0629 - val_acc: 0.9809
+Epoch 2/20
+ - 3s - loss: 0.0547 - acc: 0.9828 - val_loss: 0.0339 - val_acc: 0.9881
+Epoch 3/20
+ - 3s - loss: 0.0365 - acc: 0.9887 - val_loss: 0.0308 - val_acc: 0.9896
+Epoch 4/20
+ - 3s - loss: 0.0278 - acc: 0.9917 - val_loss: 0.0333 - val_acc: 0.9888
+Epoch 5/20
+ - 3s - loss: 0.0228 - acc: 0.9930 - val_loss: 0.0301 - val_acc: 0.9899
+Epoch 6/20
+ - 3s - loss: 0.0174 - acc: 0.9942 - val_loss: 0.0272 - val_acc: 0.9914
+Epoch 7/20
+ - 3s - loss: 0.0145 - acc: 0.9953 - val_loss: 0.0332 - val_acc: 0.9904
+Epoch 8/20
+ - 3s - loss: 0.0121 - acc: 0.9961 - val_loss: 0.0356 - val_acc: 0.9905
+Epoch 9/20
+ - 3s - loss: 0.0095 - acc: 0.9970 - val_loss: 0.0283 - val_acc: 0.9927
+Epoch 10/20
+ - 3s - loss: 0.0080 - acc: 0.9975 - val_loss: 0.0364 - val_acc: 0.9916
+Epoch 11/20
+ - 3s - loss: 0.0062 - acc: 0.9980 - val_loss: 0.0403 - val_acc: 0.9911
+Epoch 12/20
+ - 3s - loss: 0.0057 - acc: 0.9981 - val_loss: 0.0359 - val_acc: 0.9927
+Epoch 13/20
+ - 3s - loss: 0.0053 - acc: 0.9983 - val_loss: 0.0402 - val_acc: 0.9929
+Epoch 14/20
+ - 3s - loss: 0.0041 - acc: 0.9988 - val_loss: 0.0446 - val_acc: 0.9920
+Epoch 15/20
+ - 3s - loss: 0.0040 - acc: 0.9987 - val_loss: 0.0476 - val_acc: 0.9924
+Epoch 16/20
+ - 3s - loss: 0.0042 - acc: 0.9987 - val_loss: 0.0431 - val_acc: 0.9926
+Epoch 17/20
+ - 3s - loss: 0.0040 - acc: 0.9987 - val_loss: 0.0443 - val_acc: 0.9918
+Epoch 18/20
+ - 3s - loss: 0.0032 - acc: 0.9990 - val_loss: 0.0490 - val_acc: 0.9922
+Epoch 19/20
+ - 3s - loss: 0.0032 - acc: 0.9991 - val_loss: 0.0544 - val_acc: 0.9922
+Epoch 20/20
+ - 3s - loss: 0.0026 - acc: 0.9992 - val_loss: 0.0583 - val_acc: 0.9899
+Test loss: 0.058287730990458295
+Test accuracy: 0.9899
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2689 - acc: 0.9185 - val_loss: 0.0775 - val_acc: 0.9757
+Epoch 2/20
+ - 4s - loss: 0.0580 - acc: 0.9821 - val_loss: 0.0461 - val_acc: 0.9847
+Epoch 3/20
+ - 4s - loss: 0.0390 - acc: 0.9876 - val_loss: 0.0387 - val_acc: 0.9867
+Epoch 4/20
+ - 4s - loss: 0.0296 - acc: 0.9909 - val_loss: 0.0308 - val_acc: 0.9902
+Epoch 5/20
+ - 4s - loss: 0.0239 - acc: 0.9924 - val_loss: 0.0343 - val_acc: 0.9897
+Epoch 6/20
+ - 4s - loss: 0.0204 - acc: 0.9934 - val_loss: 0.0318 - val_acc: 0.9894
+Epoch 7/20
+ - 4s - loss: 0.0161 - acc: 0.9948 - val_loss: 0.0305 - val_acc: 0.9907
+Epoch 8/20
+ - 4s - loss: 0.0152 - acc: 0.9953 - val_loss: 0.0365 - val_acc: 0.9899
+Epoch 9/20
+ - 4s - loss: 0.0122 - acc: 0.9963 - val_loss: 0.0336 - val_acc: 0.9907
+Epoch 10/20
+ - 4s - loss: 0.0106 - acc: 0.9967 - val_loss: 0.0568 - val_acc: 0.9858
+Epoch 11/20
+ - 4s - loss: 0.0100 - acc: 0.9969 - val_loss: 0.0347 - val_acc: 0.9914
+Epoch 12/20
+ - 4s - loss: 0.0089 - acc: 0.9973 - val_loss: 0.0351 - val_acc: 0.9908
+Epoch 13/20
+ - 4s - loss: 0.0085 - acc: 0.9971 - val_loss: 0.0375 - val_acc: 0.9903
+Epoch 14/20
+ - 4s - loss: 0.0077 - acc: 0.9977 - val_loss: 0.0349 - val_acc: 0.9914
+Epoch 15/20
+ - 4s - loss: 0.0067 - acc: 0.9978 - val_loss: 0.0361 - val_acc: 0.9916
+Epoch 16/20
+ - 4s - loss: 0.0062 - acc: 0.9978 - val_loss: 0.0436 - val_acc: 0.9910
+Epoch 17/20
+ - 4s - loss: 0.0059 - acc: 0.9982 - val_loss: 0.0392 - val_acc: 0.9914
+Epoch 18/20
+ - 4s - loss: 0.0054 - acc: 0.9985 - val_loss: 0.0378 - val_acc: 0.9926
+Epoch 19/20
+ - 4s - loss: 0.0056 - acc: 0.9982 - val_loss: 0.0376 - val_acc: 0.9920
+Epoch 20/20
+ - 4s - loss: 0.0048 - acc: 0.9984 - val_loss: 0.0664 - val_acc: 0.9889
+Test loss: 0.06959245701702058
+Test accuracy: 0.9899
+Conv2D Noisy Test loss: 0.28987717376723887
+Conv2D Noisy Test accuracy: 0.9364
+Stochastic Conv2D Noisy Test loss: 0.21022587455362082
+Stochastic Conv2D Noisy Test accuracy: 0.9485
+Stochastic Conv2D Noisy Test loss: 0.21458121170401573
+Stochastic Conv2D Noisy Test accuracy: 0.9477
+Stochastic Conv2D Noisy Test loss: 0.22880276871654204
+Stochastic Conv2D Noisy Test accuracy: 0.9461
+Stochastic Conv2D Noisy Test loss: 0.21285422854721547
+Stochastic Conv2D Noisy Test accuracy: 0.9476
+Stochastic Conv2D Noisy Test loss: 0.20794835605677217
+Stochastic Conv2D Noisy Test accuracy: 0.9485
+Stochastic Conv2D Noisy Test loss: 0.2220536171939224
+Stochastic Conv2D Noisy Test accuracy: 0.9483
+Stochastic Conv2D Noisy Test loss: 0.21884760221242905
+Stochastic Conv2D Noisy Test accuracy: 0.9444
+Stochastic Conv2D Noisy Test loss: 0.21825816723746247
+Stochastic Conv2D Noisy Test accuracy: 0.9495
+Stochastic Conv2D Noisy Test loss: 0.22004447276084685
+Stochastic Conv2D Noisy Test accuracy: 0.9463
+Stochastic Conv2D Noisy Test loss: 0.21866417839564384
+Stochastic Conv2D Noisy Test accuracy: 0.9472
+Conv2D Custom Test loss: 0.3104771077632904
+Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 1.5638221502304077
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 1.4354729652404785
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 1.722238540649414
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 1.2915202379226685
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.8475954532623291
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 1.5306297540664673
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 1.1831212043762207
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 1.4451212882995605
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 0.5772363543510437
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 1.4384549856185913
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 7s - loss: 0.2289 - acc: 0.9299 - val_loss: 0.0528 - val_acc: 0.9821
+Epoch 2/20
+ - 3s - loss: 0.0537 - acc: 0.9833 - val_loss: 0.0383 - val_acc: 0.9873
+Epoch 3/20
+ - 3s - loss: 0.0367 - acc: 0.9886 - val_loss: 0.0251 - val_acc: 0.9916
+Epoch 4/20
+ - 3s - loss: 0.0270 - acc: 0.9919 - val_loss: 0.0237 - val_acc: 0.9926
+Epoch 5/20
+ - 3s - loss: 0.0219 - acc: 0.9935 - val_loss: 0.0312 - val_acc: 0.9899
+Epoch 6/20
+ - 3s - loss: 0.0174 - acc: 0.9950 - val_loss: 0.0351 - val_acc: 0.9897
+Epoch 7/20
+ - 3s - loss: 0.0142 - acc: 0.9955 - val_loss: 0.0234 - val_acc: 0.9935
+Epoch 8/20
+ - 3s - loss: 0.0109 - acc: 0.9966 - val_loss: 0.0282 - val_acc: 0.9918
+Epoch 9/20
+ - 3s - loss: 0.0096 - acc: 0.9968 - val_loss: 0.0253 - val_acc: 0.9922
+Epoch 10/20
+ - 3s - loss: 0.0077 - acc: 0.9975 - val_loss: 0.0282 - val_acc: 0.9933
+Epoch 11/20
+ - 3s - loss: 0.0076 - acc: 0.9976 - val_loss: 0.0286 - val_acc: 0.9932
+Epoch 12/20
+ - 3s - loss: 0.0062 - acc: 0.9981 - val_loss: 0.0287 - val_acc: 0.9925
+Epoch 13/20
+ - 3s - loss: 0.0056 - acc: 0.9983 - val_loss: 0.0290 - val_acc: 0.9931
+Epoch 14/20
+ - 3s - loss: 0.0052 - acc: 0.9985 - val_loss: 0.0333 - val_acc: 0.9928
+Epoch 15/20
+ - 3s - loss: 0.0044 - acc: 0.9983 - val_loss: 0.0362 - val_acc: 0.9929
+Epoch 16/20
+ - 3s - loss: 0.0040 - acc: 0.9987 - val_loss: 0.0391 - val_acc: 0.9911
+Epoch 17/20
+ - 3s - loss: 0.0034 - acc: 0.9991 - val_loss: 0.0404 - val_acc: 0.9929
+Epoch 18/20
+ - 3s - loss: 0.0030 - acc: 0.9990 - val_loss: 0.0466 - val_acc: 0.9924
+Epoch 19/20
+ - 3s - loss: 0.0032 - acc: 0.9992 - val_loss: 0.0447 - val_acc: 0.9929
+Epoch 20/20
+ - 3s - loss: 0.0037 - acc: 0.9988 - val_loss: 0.0492 - val_acc: 0.9916
+Test loss: 0.04916471482877714
+Test accuracy: 0.9916
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2718 - acc: 0.9163 - val_loss: 0.0689 - val_acc: 0.9769
+Epoch 2/20
+ - 4s - loss: 0.0605 - acc: 0.9810 - val_loss: 0.0557 - val_acc: 0.9830
+Epoch 3/20
+ - 4s - loss: 0.0415 - acc: 0.9868 - val_loss: 0.0425 - val_acc: 0.9867
+Epoch 4/20
+ - 4s - loss: 0.0319 - acc: 0.9901 - val_loss: 0.0362 - val_acc: 0.9890
+Epoch 5/20
+ - 4s - loss: 0.0248 - acc: 0.9920 - val_loss: 0.0319 - val_acc: 0.9899
+Epoch 6/20
+ - 4s - loss: 0.0203 - acc: 0.9935 - val_loss: 0.0463 - val_acc: 0.9859
+Epoch 7/20
+ - 4s - loss: 0.0166 - acc: 0.9946 - val_loss: 0.0275 - val_acc: 0.9917
+Epoch 8/20
+ - 4s - loss: 0.0151 - acc: 0.9953 - val_loss: 0.0292 - val_acc: 0.9913
+Epoch 9/20
+ - 4s - loss: 0.0129 - acc: 0.9957 - val_loss: 0.0274 - val_acc: 0.9927
+Epoch 10/20
+ - 4s - loss: 0.0116 - acc: 0.9961 - val_loss: 0.0281 - val_acc: 0.9920
+Epoch 11/20
+ - 4s - loss: 0.0104 - acc: 0.9965 - val_loss: 0.0367 - val_acc: 0.9912
+Epoch 12/20
+ - 4s - loss: 0.0082 - acc: 0.9975 - val_loss: 0.0346 - val_acc: 0.9918
+Epoch 13/20
+ - 4s - loss: 0.0080 - acc: 0.9972 - val_loss: 0.0339 - val_acc: 0.9924
+Epoch 14/20
+ - 4s - loss: 0.0078 - acc: 0.9976 - val_loss: 0.0369 - val_acc: 0.9919
+Epoch 15/20
+ - 4s - loss: 0.0067 - acc: 0.9979 - val_loss: 0.0383 - val_acc: 0.9913
+Epoch 16/20
+ - 4s - loss: 0.0064 - acc: 0.9979 - val_loss: 0.0608 - val_acc: 0.9903
+Epoch 17/20
+ - 4s - loss: 0.0059 - acc: 0.9982 - val_loss: 0.0445 - val_acc: 0.9910
+Epoch 18/20
+ - 4s - loss: 0.0065 - acc: 0.9984 - val_loss: 0.0450 - val_acc: 0.9912
+Epoch 19/20
+ - 4s - loss: 0.0060 - acc: 0.9981 - val_loss: 0.0401 - val_acc: 0.9920
+Epoch 20/20
+ - 4s - loss: 0.0047 - acc: 0.9985 - val_loss: 0.0422 - val_acc: 0.9920
+Test loss: 0.04421400710103153
+Test accuracy: 0.9918
+Conv2D Noisy Test loss: 0.1832696712742909
+Conv2D Noisy Test accuracy: 0.9538
+Stochastic Conv2D Noisy Test loss: 0.12589008118454367
+Stochastic Conv2D Noisy Test accuracy: 0.9664
+Stochastic Conv2D Noisy Test loss: 0.12582081374619156
+Stochastic Conv2D Noisy Test accuracy: 0.9689
+Stochastic Conv2D Noisy Test loss: 0.11859047615244053
+Stochastic Conv2D Noisy Test accuracy: 0.9703
+Stochastic Conv2D Noisy Test loss: 0.12178011055346578
+Stochastic Conv2D Noisy Test accuracy: 0.9688
+Stochastic Conv2D Noisy Test loss: 0.1245404579142807
+Stochastic Conv2D Noisy Test accuracy: 0.9685
+Stochastic Conv2D Noisy Test loss: 0.11548388174066786
+Stochastic Conv2D Noisy Test accuracy: 0.97
+Stochastic Conv2D Noisy Test loss: 0.11313641701047308
+Stochastic Conv2D Noisy Test accuracy: 0.9712
+Stochastic Conv2D Noisy Test loss: 0.12512518438966944
+Stochastic Conv2D Noisy Test accuracy: 0.9693
+Stochastic Conv2D Noisy Test loss: 0.12227251899044494
+Stochastic Conv2D Noisy Test accuracy: 0.9676
+Stochastic Conv2D Noisy Test loss: 0.11714997829338536
+Stochastic Conv2D Noisy Test accuracy: 0.9686
+Conv2D Custom Test loss: 0.18234746158123016
+Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.2084406316280365
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.7272005677223206
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 0.3071926534175873
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.3823535144329071
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.6619114279747009
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.2470736801624298
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.2613595724105835
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.2795909643173218
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.6775878667831421
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.8142462968826294
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 8s - loss: 0.2231 - acc: 0.9321 - val_loss: 0.0580 - val_acc: 0.9818
+Epoch 2/20
+ - 3s - loss: 0.0529 - acc: 0.9839 - val_loss: 0.0382 - val_acc: 0.9878
+Epoch 3/20
+ - 3s - loss: 0.0361 - acc: 0.9889 - val_loss: 0.0276 - val_acc: 0.9909
+Epoch 4/20
+ - 3s - loss: 0.0271 - acc: 0.9915 - val_loss: 0.0313 - val_acc: 0.9888
+Epoch 5/20
+ - 3s - loss: 0.0212 - acc: 0.9933 - val_loss: 0.0251 - val_acc: 0.9916
+Epoch 6/20
+ - 3s - loss: 0.0171 - acc: 0.9945 - val_loss: 0.0256 - val_acc: 0.9917
+Epoch 7/20
+ - 3s - loss: 0.0134 - acc: 0.9956 - val_loss: 0.0284 - val_acc: 0.9919
+Epoch 8/20
+ - 3s - loss: 0.0110 - acc: 0.9966 - val_loss: 0.0425 - val_acc: 0.9890
+Epoch 9/20
+ - 3s - loss: 0.0091 - acc: 0.9970 - val_loss: 0.0332 - val_acc: 0.9917
+Epoch 10/20
+ - 3s - loss: 0.0083 - acc: 0.9973 - val_loss: 0.0457 - val_acc: 0.9898
+Epoch 11/20
+ - 3s - loss: 0.0067 - acc: 0.9977 - val_loss: 0.0398 - val_acc: 0.9920
+Epoch 12/20
+ - 3s - loss: 0.0056 - acc: 0.9983 - val_loss: 0.0335 - val_acc: 0.9925
+Epoch 13/20
+ - 3s - loss: 0.0053 - acc: 0.9983 - val_loss: 0.0433 - val_acc: 0.9920
+Epoch 14/20
+ - 3s - loss: 0.0043 - acc: 0.9987 - val_loss: 0.0437 - val_acc: 0.9917
+Epoch 15/20
+ - 3s - loss: 0.0041 - acc: 0.9989 - val_loss: 0.0451 - val_acc: 0.9925
+Epoch 16/20
+ - 3s - loss: 0.0045 - acc: 0.9986 - val_loss: 0.0455 - val_acc: 0.9919
+Epoch 17/20
+ - 3s - loss: 0.0029 - acc: 0.9991 - val_loss: 0.0426 - val_acc: 0.9929
+Epoch 18/20
+ - 3s - loss: 0.0032 - acc: 0.9991 - val_loss: 0.0456 - val_acc: 0.9925
+Epoch 19/20
+ - 3s - loss: 0.0033 - acc: 0.9989 - val_loss: 0.0450 - val_acc: 0.9920
+Epoch 20/20
+ - 3s - loss: 0.0025 - acc: 0.9993 - val_loss: 0.0500 - val_acc: 0.9928
+Test loss: 0.050032148246008365
+Test accuracy: 0.9928
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2653 - acc: 0.9184 - val_loss: 0.0617 - val_acc: 0.9811
+Epoch 2/20
+ - 4s - loss: 0.0587 - acc: 0.9824 - val_loss: 0.0403 - val_acc: 0.9869
+Epoch 3/20
+ - 4s - loss: 0.0408 - acc: 0.9874 - val_loss: 0.0315 - val_acc: 0.9892
+Epoch 4/20
+ - 4s - loss: 0.0311 - acc: 0.9901 - val_loss: 0.0319 - val_acc: 0.9894
+Epoch 5/20
+ - 4s - loss: 0.0255 - acc: 0.9922 - val_loss: 0.0282 - val_acc: 0.9904
+Epoch 6/20
+ - 4s - loss: 0.0214 - acc: 0.9930 - val_loss: 0.0259 - val_acc: 0.9916
+Epoch 7/20
+ - 4s - loss: 0.0172 - acc: 0.9949 - val_loss: 0.0508 - val_acc: 0.9862
+Epoch 8/20
+ - 4s - loss: 0.0155 - acc: 0.9948 - val_loss: 0.0289 - val_acc: 0.9913
+Epoch 9/20
+ - 4s - loss: 0.0135 - acc: 0.9958 - val_loss: 0.0570 - val_acc: 0.9860
+Epoch 10/20
+ - 4s - loss: 0.0111 - acc: 0.9965 - val_loss: 0.0305 - val_acc: 0.9917
+Epoch 11/20
+ - 4s - loss: 0.0112 - acc: 0.9963 - val_loss: 0.0453 - val_acc: 0.9883
+Epoch 12/20
+ - 4s - loss: 0.0098 - acc: 0.9969 - val_loss: 0.0372 - val_acc: 0.9901
+Epoch 13/20
+ - 4s - loss: 0.0086 - acc: 0.9972 - val_loss: 0.0335 - val_acc: 0.9917
+Epoch 14/20
+ - 4s - loss: 0.0074 - acc: 0.9977 - val_loss: 0.0308 - val_acc: 0.9921
+Epoch 15/20
+ - 4s - loss: 0.0068 - acc: 0.9978 - val_loss: 0.0346 - val_acc: 0.9921
+Epoch 16/20
+ - 4s - loss: 0.0063 - acc: 0.9981 - val_loss: 0.0454 - val_acc: 0.9916
+Epoch 17/20
+ - 4s - loss: 0.0059 - acc: 0.9983 - val_loss: 0.0338 - val_acc: 0.9923
+Epoch 18/20
+ - 4s - loss: 0.0054 - acc: 0.9984 - val_loss: 0.0498 - val_acc: 0.9911
+Epoch 19/20
+ - 4s - loss: 0.0058 - acc: 0.9986 - val_loss: 0.0502 - val_acc: 0.9906
+Epoch 20/20
+ - 4s - loss: 0.0053 - acc: 0.9984 - val_loss: 0.0405 - val_acc: 0.9906
+Test loss: 0.04197060893822054
+Test accuracy: 0.9911
+Conv2D Noisy Test loss: 0.16114118860886084
+Conv2D Noisy Test accuracy: 0.9648
+Stochastic Conv2D Noisy Test loss: 0.34704431017637255
+Stochastic Conv2D Noisy Test accuracy: 0.9044
+Stochastic Conv2D Noisy Test loss: 0.3464355685979128
+Stochastic Conv2D Noisy Test accuracy: 0.9036
+Stochastic Conv2D Noisy Test loss: -0.16672149864509703
+Stochastic Conv2D Noisy Test accuracy: 0.9059
+Stochastic Conv2D Noisy Test loss: 0.3467838666036725
+Stochastic Conv2D Noisy Test accuracy: 0.9024
+Stochastic Conv2D Noisy Test loss: 0.35594164925962685
+Stochastic Conv2D Noisy Test accuracy: 0.9044
+Stochastic Conv2D Noisy Test loss: 0.3431844605900347
+Stochastic Conv2D Noisy Test accuracy: 0.9048
+Stochastic Conv2D Noisy Test loss: 0.347972878600657
+Stochastic Conv2D Noisy Test accuracy: 0.9021
+Stochastic Conv2D Noisy Test loss: 0.34850724585056303
+Stochastic Conv2D Noisy Test accuracy: 0.9039
+Stochastic Conv2D Noisy Test loss: 0.34675906382203103
+Stochastic Conv2D Noisy Test accuracy: 0.9079
+Stochastic Conv2D Noisy Test loss: 0.34043307321593164
+Stochastic Conv2D Noisy Test accuracy: 0.9057
+Conv2D Custom Test loss: 0.05293814465403557
+Conv2D Custom Test accuracy: 1.0
+Stochastic Conv2D Custom Test loss: 1.4777977466583252
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 1.7820286750793457
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 1.5790635347366333
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 1.622823715209961
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 1.448561191558838
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 1.5184402465820312
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 1.7148905992507935
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 3.0201892852783203
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 1.3380545377731323
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 1.5006872415542603
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 8s - loss: 0.2332 - acc: 0.9272 - val_loss: 0.0465 - val_acc: 0.9838
+Epoch 2/20
+ - 3s - loss: 0.0562 - acc: 0.9823 - val_loss: 0.0598 - val_acc: 0.9819
+Epoch 3/20
+ - 3s - loss: 0.0380 - acc: 0.9885 - val_loss: 0.0288 - val_acc: 0.9897
+Epoch 4/20
+ - 3s - loss: 0.0276 - acc: 0.9916 - val_loss: 0.0317 - val_acc: 0.9901
+Epoch 5/20
+ - 3s - loss: 0.0218 - acc: 0.9935 - val_loss: 0.0285 - val_acc: 0.9910
+Epoch 6/20
+ - 3s - loss: 0.0181 - acc: 0.9945 - val_loss: 0.0238 - val_acc: 0.9926
+Epoch 7/20
+ - 3s - loss: 0.0147 - acc: 0.9954 - val_loss: 0.0266 - val_acc: 0.9924
+Epoch 8/20
+ - 3s - loss: 0.0121 - acc: 0.9960 - val_loss: 0.0359 - val_acc: 0.9900
+Epoch 9/20
+ - 3s - loss: 0.0105 - acc: 0.9970 - val_loss: 0.0353 - val_acc: 0.9888
+Epoch 10/20
+ - 3s - loss: 0.0084 - acc: 0.9972 - val_loss: 0.0360 - val_acc: 0.9912
+Epoch 11/20
+ - 3s - loss: 0.0072 - acc: 0.9978 - val_loss: 0.0305 - val_acc: 0.9926
+Epoch 12/20
+ - 3s - loss: 0.0060 - acc: 0.9981 - val_loss: 0.0310 - val_acc: 0.9926
+Epoch 13/20
+ - 3s - loss: 0.0055 - acc: 0.9983 - val_loss: 0.0323 - val_acc: 0.9922
+Epoch 14/20
+ - 3s - loss: 0.0054 - acc: 0.9982 - val_loss: 0.0333 - val_acc: 0.9926
+Epoch 15/20
+ - 3s - loss: 0.0037 - acc: 0.9988 - val_loss: 0.0510 - val_acc: 0.9904
+Epoch 16/20
+ - 3s - loss: 0.0041 - acc: 0.9989 - val_loss: 0.0437 - val_acc: 0.9917
+Epoch 17/20
+ - 3s - loss: 0.0032 - acc: 0.9989 - val_loss: 0.0447 - val_acc: 0.9921
+Epoch 18/20
+ - 3s - loss: 0.0034 - acc: 0.9990 - val_loss: 0.0505 - val_acc: 0.9918
+Epoch 19/20
+ - 3s - loss: 0.0039 - acc: 0.9988 - val_loss: 0.0590 - val_acc: 0.9902
+Epoch 20/20
+ - 3s - loss: 0.0028 - acc: 0.9992 - val_loss: 0.0487 - val_acc: 0.9917
+Test loss: 0.04865392429148087
+Test accuracy: 0.9917
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2655 - acc: 0.9165 - val_loss: 0.0817 - val_acc: 0.9757
+Epoch 2/20
+ - 4s - loss: 0.0580 - acc: 0.9820 - val_loss: 0.0363 - val_acc: 0.9892
+Epoch 3/20
+ - 4s - loss: 0.0391 - acc: 0.9883 - val_loss: 0.0459 - val_acc: 0.9864
+Epoch 4/20
+ - 4s - loss: 0.0289 - acc: 0.9911 - val_loss: 0.0272 - val_acc: 0.9909
+Epoch 5/20
+ - 4s - loss: 0.0251 - acc: 0.9919 - val_loss: 0.0253 - val_acc: 0.9921
+Epoch 6/20
+ - 4s - loss: 0.0200 - acc: 0.9940 - val_loss: 0.0251 - val_acc: 0.9922
+Epoch 7/20
+ - 4s - loss: 0.0177 - acc: 0.9945 - val_loss: 0.0911 - val_acc: 0.9790
+Epoch 8/20
+ - 4s - loss: 0.0150 - acc: 0.9953 - val_loss: 0.0370 - val_acc: 0.9895
+Epoch 9/20
+ - 4s - loss: 0.0132 - acc: 0.9954 - val_loss: 0.0479 - val_acc: 0.9879
+Epoch 10/20
+ - 4s - loss: 0.0114 - acc: 0.9965 - val_loss: 0.0311 - val_acc: 0.9923
+Epoch 11/20
+ - 4s - loss: 0.0103 - acc: 0.9968 - val_loss: 0.0284 - val_acc: 0.9921
+Epoch 12/20
+ - 4s - loss: 0.0086 - acc: 0.9972 - val_loss: 0.0384 - val_acc: 0.9905
+Epoch 13/20
+ - 4s - loss: 0.0080 - acc: 0.9977 - val_loss: 0.0332 - val_acc: 0.9927
+Epoch 14/20
+ - 4s - loss: 0.0075 - acc: 0.9976 - val_loss: 0.0677 - val_acc: 0.9862
+Epoch 15/20
+ - 4s - loss: 0.0061 - acc: 0.9982 - val_loss: 0.0447 - val_acc: 0.9899
+Epoch 16/20
+ - 4s - loss: 0.0070 - acc: 0.9979 - val_loss: 0.0409 - val_acc: 0.9920
+Epoch 17/20
+ - 4s - loss: 0.0070 - acc: 0.9979 - val_loss: 0.0415 - val_acc: 0.9917
+Epoch 18/20
+ - 4s - loss: 0.0054 - acc: 0.9982 - val_loss: 0.0451 - val_acc: 0.9908
+Epoch 19/20
+ - 4s - loss: 0.0054 - acc: 0.9984 - val_loss: 0.0532 - val_acc: 0.9916
+Epoch 20/20
+ - 4s - loss: 0.0055 - acc: 0.9983 - val_loss: 0.0440 - val_acc: 0.9917
+Test loss: 0.038984466545763645
+Test accuracy: 0.9928
+Conv2D Noisy Test loss: nan
+Conv2D Noisy Test accuracy: 0.9685
+Stochastic Conv2D Noisy Test loss: 0.24743296919964486
+Stochastic Conv2D Noisy Test accuracy: 0.939
+Stochastic Conv2D Noisy Test loss: 0.2421716057626065
+Stochastic Conv2D Noisy Test accuracy: 0.9402
+Stochastic Conv2D Noisy Test loss: 0.25563733584430304
+Stochastic Conv2D Noisy Test accuracy: 0.9371
+Stochastic Conv2D Noisy Test loss: 0.25413595241773873
+Stochastic Conv2D Noisy Test accuracy: 0.9387
+Stochastic Conv2D Noisy Test loss: 0.2496442840998294
+Stochastic Conv2D Noisy Test accuracy: 0.9372
+Stochastic Conv2D Noisy Test loss: 0.23940484857596456
+Stochastic Conv2D Noisy Test accuracy: 0.9407
+Stochastic Conv2D Noisy Test loss: 0.24791334560711403
+Stochastic Conv2D Noisy Test accuracy: 0.9393
+Stochastic Conv2D Noisy Test loss: 0.2507448625319172
+Stochastic Conv2D Noisy Test accuracy: 0.9377
+Stochastic Conv2D Noisy Test loss: 0.2510352739416994
+Stochastic Conv2D Noisy Test accuracy: 0.939
+Stochastic Conv2D Noisy Test loss: 0.24389823023434729
+Stochastic Conv2D Noisy Test accuracy: 0.9369
+Conv2D Custom Test loss: 0.43863722681999207
+Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.31240537762641907
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.5122357606887817
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.46327126026153564
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.8486778736114502
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.8719569444656372
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.4802626371383667
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.4289652109146118
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.9629809856414795
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 0.5475173592567444
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 1.288774013519287
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 8s - loss: 0.2240 - acc: 0.9305 - val_loss: 0.0578 - val_acc: 0.9814
+Epoch 2/20
+ - 3s - loss: 0.0551 - acc: 0.9826 - val_loss: 0.0456 - val_acc: 0.9843
+Epoch 3/20
+ - 3s - loss: 0.0363 - acc: 0.9886 - val_loss: 0.0364 - val_acc: 0.9894
+Epoch 4/20
+ - 3s - loss: 0.0279 - acc: 0.9912 - val_loss: 0.0283 - val_acc: 0.9914
+Epoch 5/20
+ - 3s - loss: 0.0211 - acc: 0.9935 - val_loss: 0.0247 - val_acc: 0.9921
+Epoch 6/20
+ - 3s - loss: 0.0173 - acc: 0.9946 - val_loss: 0.0273 - val_acc: 0.9923
+Epoch 7/20
+ - 3s - loss: 0.0145 - acc: 0.9953 - val_loss: 0.0314 - val_acc: 0.9914
+Epoch 8/20
+ - 3s - loss: 0.0120 - acc: 0.9963 - val_loss: 0.0278 - val_acc: 0.9933
+Epoch 9/20
+ - 3s - loss: 0.0099 - acc: 0.9971 - val_loss: 0.0299 - val_acc: 0.9924
+Epoch 10/20
+ - 3s - loss: 0.0078 - acc: 0.9974 - val_loss: 0.0328 - val_acc: 0.9918
+Epoch 11/20
+ - 3s - loss: 0.0065 - acc: 0.9978 - val_loss: 0.0420 - val_acc: 0.9906
+Epoch 12/20
+ - 3s - loss: 0.0061 - acc: 0.9981 - val_loss: 0.0334 - val_acc: 0.9935
+Epoch 13/20
+ - 3s - loss: 0.0054 - acc: 0.9983 - val_loss: 0.0376 - val_acc: 0.9930
+Epoch 14/20
+ - 3s - loss: 0.0048 - acc: 0.9985 - val_loss: 0.0423 - val_acc: 0.9918
+Epoch 15/20
+ - 3s - loss: 0.0041 - acc: 0.9986 - val_loss: 0.0377 - val_acc: 0.9933
+Epoch 16/20
+ - 3s - loss: 0.0035 - acc: 0.9989 - val_loss: 0.0382 - val_acc: 0.9924
+Epoch 17/20
+ - 3s - loss: 0.0030 - acc: 0.9991 - val_loss: 0.0494 - val_acc: 0.9922
+Epoch 18/20
+ - 3s - loss: 0.0031 - acc: 0.9990 - val_loss: 0.0559 - val_acc: 0.9902
+Epoch 19/20
+ - 3s - loss: 0.0043 - acc: 0.9986 - val_loss: 0.0439 - val_acc: 0.9929
+Epoch 20/20
+ - 3s - loss: 0.0026 - acc: 0.9992 - val_loss: 0.0459 - val_acc: 0.9929
+Test loss: nan
+Test accuracy: 0.9926
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.3087 - acc: 0.9009 - val_loss: 0.0724 - val_acc: 0.9780
+Epoch 2/20
+ - 4s - loss: 0.0639 - acc: 0.9803 - val_loss: 0.1339 - val_acc: 0.9585
+Epoch 3/20
+ - 4s - loss: 0.0434 - acc: 0.9861 - val_loss: 0.0546 - val_acc: 0.9845
+Epoch 4/20
+ - 4s - loss: 0.0322 - acc: 0.9898 - val_loss: 0.0283 - val_acc: 0.9906
+Epoch 5/20
+ - 4s - loss: 0.0268 - acc: 0.9915 - val_loss: 0.0799 - val_acc: 0.9784
+Epoch 6/20
+ - 4s - loss: 0.0192 - acc: 0.9942 - val_loss: 0.0377 - val_acc: 0.9882
+Epoch 7/20
+ - 4s - loss: 0.0196 - acc: 0.9937 - val_loss: 0.0350 - val_acc: 0.9893
+Epoch 8/20
+ - 4s - loss: 0.0171 - acc: 0.9948 - val_loss: 0.0317 - val_acc: 0.9915
+Epoch 9/20
+ - 4s - loss: 0.0153 - acc: 0.9951 - val_loss: 0.0429 - val_acc: 0.9898
+Epoch 10/20
+ - 4s - loss: 0.0121 - acc: 0.9961 - val_loss: 0.0264 - val_acc: 0.9930
+Epoch 11/20
+ - 4s - loss: 0.0114 - acc: 0.9962 - val_loss: 0.0375 - val_acc: 0.9890
+Epoch 12/20
+ - 4s - loss: 0.0098 - acc: 0.9968 - val_loss: 0.0326 - val_acc: 0.9916
+Epoch 13/20
+ - 4s - loss: 0.0095 - acc: 0.9969 - val_loss: 0.0274 - val_acc: 0.9927
+Epoch 14/20
+ - 4s - loss: 0.0082 - acc: 0.9972 - val_loss: 0.0307 - val_acc: 0.9920
+Epoch 15/20
+ - 4s - loss: 0.0072 - acc: 0.9976 - val_loss: 0.0290 - val_acc: 0.9928
+Epoch 16/20
+ - 4s - loss: 0.0065 - acc: 0.9980 - val_loss: 0.0434 - val_acc: 0.9914
+Epoch 17/20
+ - 4s - loss: 0.0062 - acc: 0.9980 - val_loss: 0.0324 - val_acc: 0.9923
+Epoch 18/20
+ - 4s - loss: 0.0055 - acc: 0.9981 - val_loss: 0.0362 - val_acc: 0.9912
+Epoch 19/20
+ - 4s - loss: 0.0051 - acc: 0.9983 - val_loss: 0.0426 - val_acc: 0.9914
+Epoch 20/20
+ - 4s - loss: 0.0052 - acc: 0.9982 - val_loss: 0.0511 - val_acc: 0.9911
+Test loss: 0.05172001205875568
+Test accuracy: 0.9901
+Conv2D Noisy Test loss: 0.21738312679342925
+Conv2D Noisy Test accuracy: 0.9462
+Stochastic Conv2D Noisy Test loss: 0.4790652518837014
+Stochastic Conv2D Noisy Test accuracy: 0.903
+Stochastic Conv2D Noisy Test loss: 0.4719967473655939
+Stochastic Conv2D Noisy Test accuracy: 0.9026
+Stochastic Conv2D Noisy Test loss: 0.4856103114947677
+Stochastic Conv2D Noisy Test accuracy: 0.9007
+Stochastic Conv2D Noisy Test loss: 0.4779429329559207
+Stochastic Conv2D Noisy Test accuracy: 0.901
+Stochastic Conv2D Noisy Test loss: 0.4853586434265599
+Stochastic Conv2D Noisy Test accuracy: 0.9034
+Stochastic Conv2D Noisy Test loss: 0.4774520496015437
+Stochastic Conv2D Noisy Test accuracy: 0.9017
+Stochastic Conv2D Noisy Test loss: 0.46660508594093847
+Stochastic Conv2D Noisy Test accuracy: 0.9019
+Stochastic Conv2D Noisy Test loss: 0.46585143885090946
+Stochastic Conv2D Noisy Test accuracy: 0.9028
+Stochastic Conv2D Noisy Test loss: 0.4567093010984361
+Stochastic Conv2D Noisy Test accuracy: 0.9054
+Stochastic Conv2D Noisy Test loss: 0.47123955685850233
+Stochastic Conv2D Noisy Test accuracy: 0.9046
+Conv2D Custom Test loss: 0.07796276360750198
+Conv2D Custom Test accuracy: 1.0
+Stochastic Conv2D Custom Test loss: 0.3871866464614868
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.21284984052181244
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.393775999546051
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 1.3693546056747437
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.3741013705730438
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.5165164470672607
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.13755522668361664
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.39937910437583923
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.24598868191242218
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.38822609186172485
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 7s - loss: 0.2392 - acc: 0.9243 - val_loss: 0.0571 - val_acc: 0.9813
+Epoch 2/20
+ - 3s - loss: 0.0574 - acc: 0.9819 - val_loss: 0.0345 - val_acc: 0.9883
+Epoch 3/20
+ - 3s - loss: 0.0389 - acc: 0.9880 - val_loss: 0.0331 - val_acc: 0.9895
+Epoch 4/20
+ - 3s - loss: 0.0288 - acc: 0.9910 - val_loss: 0.0270 - val_acc: 0.9907
+Epoch 5/20
+ - 3s - loss: 0.0231 - acc: 0.9929 - val_loss: 0.0283 - val_acc: 0.9915
+Epoch 6/20
+ - 3s - loss: 0.0182 - acc: 0.9939 - val_loss: 0.0283 - val_acc: 0.9924
+Epoch 7/20
+ - 3s - loss: 0.0146 - acc: 0.9952 - val_loss: 0.0298 - val_acc: 0.9919
+Epoch 8/20
+ - 3s - loss: 0.0116 - acc: 0.9963 - val_loss: 0.0348 - val_acc: 0.9905
+Epoch 9/20
+ - 3s - loss: 0.0093 - acc: 0.9971 - val_loss: 0.0289 - val_acc: 0.9929
+Epoch 10/20
+ - 3s - loss: 0.0079 - acc: 0.9975 - val_loss: 0.0342 - val_acc: 0.9929
+Epoch 11/20
+ - 3s - loss: 0.0070 - acc: 0.9978 - val_loss: 0.0306 - val_acc: 0.9929
+Epoch 12/20
+ - 3s - loss: 0.0057 - acc: 0.9981 - val_loss: 0.0413 - val_acc: 0.9905
+Epoch 13/20
+ - 3s - loss: 0.0051 - acc: 0.9986 - val_loss: 0.0397 - val_acc: 0.9914
+Epoch 14/20
+ - 3s - loss: 0.0049 - acc: 0.9985 - val_loss: 0.0432 - val_acc: 0.9904
+Epoch 15/20
+ - 3s - loss: 0.0043 - acc: 0.9986 - val_loss: 0.0386 - val_acc: 0.9938
+Epoch 16/20
+ - 3s - loss: 0.0041 - acc: 0.9987 - val_loss: 0.0517 - val_acc: 0.9902
+Epoch 17/20
+ - 3s - loss: 0.0038 - acc: 0.9988 - val_loss: 0.0451 - val_acc: 0.9925
+Epoch 18/20
+ - 3s - loss: 0.0030 - acc: 0.9991 - val_loss: 0.0413 - val_acc: 0.9929
+Epoch 19/20
+ - 3s - loss: 0.0030 - acc: 0.9992 - val_loss: 0.0517 - val_acc: 0.9931
+Epoch 20/20
+ - 3s - loss: 0.0024 - acc: 0.9993 - val_loss: 0.0467 - val_acc: 0.9930
+Test loss: 0.04670162500851329
+Test accuracy: 0.993
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2777 - acc: 0.9139 - val_loss: 0.0721 - val_acc: 0.9761
+Epoch 2/20
+ - 4s - loss: 0.0593 - acc: 0.9822 - val_loss: 0.0594 - val_acc: 0.9808
+Epoch 3/20
+ - 4s - loss: 0.0399 - acc: 0.9872 - val_loss: 0.0380 - val_acc: 0.9872
+Epoch 4/20
+ - 4s - loss: 0.0311 - acc: 0.9904 - val_loss: 0.0293 - val_acc: 0.9902
+Epoch 5/20
+ - 4s - loss: 0.0247 - acc: 0.9920 - val_loss: 0.0347 - val_acc: 0.9895
+Epoch 6/20
+ - 4s - loss: 0.0201 - acc: 0.9931 - val_loss: 0.0375 - val_acc: 0.9888
+Epoch 7/20
+ - 4s - loss: 0.0173 - acc: 0.9943 - val_loss: 0.0278 - val_acc: 0.9917
+Epoch 8/20
+ - 4s - loss: 0.0141 - acc: 0.9953 - val_loss: 0.0432 - val_acc: 0.9864
+Epoch 9/20
+ - 4s - loss: 0.0128 - acc: 0.9960 - val_loss: 0.0323 - val_acc: 0.9921
+Epoch 10/20
+ - 4s - loss: 0.0115 - acc: 0.9963 - val_loss: 0.0351 - val_acc: 0.9912
+Epoch 11/20
+ - 4s - loss: 0.0102 - acc: 0.9969 - val_loss: 0.0640 - val_acc: 0.9876
+Epoch 12/20
+ - 4s - loss: 0.0088 - acc: 0.9971 - val_loss: 0.0374 - val_acc: 0.9907
+Epoch 13/20
+ - 4s - loss: 0.0089 - acc: 0.9971 - val_loss: 0.0336 - val_acc: 0.9921
+Epoch 14/20
+ - 4s - loss: 0.0072 - acc: 0.9974 - val_loss: 0.0325 - val_acc: 0.9922
+Epoch 15/20
+ - 4s - loss: 0.0075 - acc: 0.9976 - val_loss: 0.0401 - val_acc: 0.9898
+Epoch 16/20
+ - 4s - loss: 0.0066 - acc: 0.9978 - val_loss: 0.0440 - val_acc: 0.9908
+Epoch 17/20
+ - 4s - loss: 0.0062 - acc: 0.9980 - val_loss: 0.0499 - val_acc: 0.9903
+Epoch 18/20
+ - 4s - loss: 0.0061 - acc: 0.9981 - val_loss: 0.0472 - val_acc: 0.9910
+Epoch 19/20
+ - 4s - loss: 0.0060 - acc: 0.9983 - val_loss: 0.0401 - val_acc: 0.9918
+Epoch 20/20
+ - 4s - loss: 0.0055 - acc: 0.9983 - val_loss: 0.0406 - val_acc: 0.9923
+Test loss: 0.04466894912168791
+Test accuracy: 0.9913
+Conv2D Noisy Test loss: 0.18526225609174
+Conv2D Noisy Test accuracy: 0.953
+Stochastic Conv2D Noisy Test loss: 0.14898070876970887
+Stochastic Conv2D Noisy Test accuracy: 0.9586
+Stochastic Conv2D Noisy Test loss: 0.1419144917577505
+Stochastic Conv2D Noisy Test accuracy: 0.9593
+Stochastic Conv2D Noisy Test loss: 0.14612693049889058
+Stochastic Conv2D Noisy Test accuracy: 0.9591
+Stochastic Conv2D Noisy Test loss: 0.14306181224547326
+Stochastic Conv2D Noisy Test accuracy: 0.9585
+Stochastic Conv2D Noisy Test loss: 0.14973584276593757
+Stochastic Conv2D Noisy Test accuracy: 0.9582
+Stochastic Conv2D Noisy Test loss: 0.15004610066874885
+Stochastic Conv2D Noisy Test accuracy: 0.959
+Stochastic Conv2D Noisy Test loss: 0.14555958551904186
+Stochastic Conv2D Noisy Test accuracy: 0.9587
+Stochastic Conv2D Noisy Test loss: 0.15082213625218718
+Stochastic Conv2D Noisy Test accuracy: 0.959
+Stochastic Conv2D Noisy Test loss: 0.14523402355182916
+Stochastic Conv2D Noisy Test accuracy: 0.9591
+Stochastic Conv2D Noisy Test loss: 0.14444626887133344
+Stochastic Conv2D Noisy Test accuracy: 0.9594
+Conv2D Custom Test loss: 0.2899779975414276
+Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.48703670501708984
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.6330209374427795
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 0.35088661313056946
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.40538424253463745
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.45390987396240234
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.4085126519203186
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.42084741592407227
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.2854057550430298
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.49391597509384155
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.2592865228652954
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 7s - loss: 0.2335 - acc: 0.9275 - val_loss: 0.1011 - val_acc: 0.9683
+Epoch 2/20
+ - 3s - loss: 0.0597 - acc: 0.9816 - val_loss: 0.0435 - val_acc: 0.9863
+Epoch 3/20
+ - 3s - loss: 0.0403 - acc: 0.9872 - val_loss: 0.0332 - val_acc: 0.9896
+Epoch 4/20
+ - 3s - loss: 0.0297 - acc: 0.9905 - val_loss: 0.0435 - val_acc: 0.9859
+Epoch 5/20
+ - 3s - loss: 0.0234 - acc: 0.9922 - val_loss: 0.0240 - val_acc: 0.9919
+Epoch 6/20
+ - 3s - loss: 0.0185 - acc: 0.9942 - val_loss: 0.0297 - val_acc: 0.9910
+Epoch 7/20
+ - 3s - loss: 0.0155 - acc: 0.9951 - val_loss: 0.0258 - val_acc: 0.9921
+Epoch 8/20
+ - 3s - loss: 0.0125 - acc: 0.9961 - val_loss: 0.0240 - val_acc: 0.9925
+Epoch 9/20
+ - 3s - loss: 0.0098 - acc: 0.9971 - val_loss: 0.0264 - val_acc: 0.9926
+Epoch 10/20
+ - 3s - loss: 0.0086 - acc: 0.9973 - val_loss: 0.0295 - val_acc: 0.9919
+Epoch 11/20
+ - 3s - loss: 0.0073 - acc: 0.9976 - val_loss: 0.0354 - val_acc: 0.9923
+Epoch 12/20
+ - 3s - loss: 0.0057 - acc: 0.9980 - val_loss: 0.0307 - val_acc: 0.9933
+Epoch 13/20
+ - 3s - loss: 0.0060 - acc: 0.9980 - val_loss: 0.0367 - val_acc: 0.9923
+Epoch 14/20
+ - 3s - loss: 0.0048 - acc: 0.9983 - val_loss: 0.0587 - val_acc: 0.9902
+Epoch 15/20
+ - 3s - loss: 0.0052 - acc: 0.9983 - val_loss: 0.0392 - val_acc: 0.9925
+Epoch 16/20
+ - 3s - loss: 0.0040 - acc: 0.9989 - val_loss: 0.0504 - val_acc: 0.9901
+Epoch 17/20
+ - 3s - loss: 0.0035 - acc: 0.9989 - val_loss: 0.0463 - val_acc: 0.9924
+Epoch 18/20
+ - 3s - loss: 0.0028 - acc: 0.9990 - val_loss: 0.0524 - val_acc: 0.9925
+Epoch 19/20
+ - 3s - loss: 0.0037 - acc: 0.9988 - val_loss: 0.0393 - val_acc: 0.9922
+Epoch 20/20
+ - 3s - loss: 0.0030 - acc: 0.9990 - val_loss: 0.0486 - val_acc: 0.9928
+Test loss: nan
+Test accuracy: 0.9925
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2968 - acc: 0.9069 - val_loss: 0.2558 - val_acc: 0.9169
+Epoch 2/20
+ - 4s - loss: 0.0621 - acc: 0.9811 - val_loss: 0.0553 - val_acc: 0.9828
+Epoch 3/20
+ - 4s - loss: 0.0419 - acc: 0.9874 - val_loss: 0.0417 - val_acc: 0.9867
+Epoch 4/20
+ - 4s - loss: 0.0327 - acc: 0.9896 - val_loss: 0.0278 - val_acc: 0.9914
+Epoch 5/20
+ - 4s - loss: 0.0256 - acc: 0.9921 - val_loss: 0.0262 - val_acc: 0.9912
+Epoch 6/20
+ - 4s - loss: 0.0217 - acc: 0.9933 - val_loss: 0.0257 - val_acc: 0.9922
+Epoch 7/20
+ - 4s - loss: 0.0177 - acc: 0.9942 - val_loss: 0.0291 - val_acc: 0.9914
+Epoch 8/20
+ - 4s - loss: 0.0153 - acc: 0.9952 - val_loss: 0.0246 - val_acc: 0.9932
+Epoch 9/20
+ - 4s - loss: 0.0136 - acc: 0.9958 - val_loss: 0.0289 - val_acc: 0.9914
+Epoch 10/20
+ - 4s - loss: 0.0110 - acc: 0.9966 - val_loss: 0.0692 - val_acc: 0.9842
+Epoch 11/20
+ - 4s - loss: 0.0110 - acc: 0.9965 - val_loss: 0.0328 - val_acc: 0.9916
+Epoch 12/20
+ - 4s - loss: 0.0093 - acc: 0.9972 - val_loss: 0.0274 - val_acc: 0.9922
+Epoch 13/20
+ - 4s - loss: 0.0079 - acc: 0.9970 - val_loss: 0.0330 - val_acc: 0.9919
+Epoch 14/20
+ - 4s - loss: 0.0077 - acc: 0.9975 - val_loss: 0.0341 - val_acc: 0.9921
+Epoch 15/20
+ - 4s - loss: 0.0067 - acc: 0.9978 - val_loss: 0.0680 - val_acc: 0.9882
+Epoch 16/20
+ - 4s - loss: 0.0071 - acc: 0.9979 - val_loss: 0.0358 - val_acc: 0.9925
+Epoch 17/20
+ - 4s - loss: 0.0051 - acc: 0.9982 - val_loss: 0.0432 - val_acc: 0.9915
+Epoch 18/20
+ - 4s - loss: 0.0059 - acc: 0.9981 - val_loss: 0.0478 - val_acc: 0.9914
+Epoch 19/20
+ - 4s - loss: 0.0049 - acc: 0.9984 - val_loss: 0.0388 - val_acc: 0.9924
+Epoch 20/20
+ - 4s - loss: 0.0055 - acc: 0.9983 - val_loss: 0.0407 - val_acc: 0.9923
+Test loss: 0.03700702106687786
+Test accuracy: 0.9936
+Conv2D Noisy Test loss: 0.19744859257114586
+Conv2D Noisy Test accuracy: 0.9551
+Stochastic Conv2D Noisy Test loss: 0.1479443005124107
+Stochastic Conv2D Noisy Test accuracy: 0.9612
+Stochastic Conv2D Noisy Test loss: 0.14378470945334992
+Stochastic Conv2D Noisy Test accuracy: 0.964
+Stochastic Conv2D Noisy Test loss: 0.1481173665849492
+Stochastic Conv2D Noisy Test accuracy: 0.9636
+Stochastic Conv2D Noisy Test loss: 0.140696788591519
+Stochastic Conv2D Noisy Test accuracy: 0.9631
+Stochastic Conv2D Noisy Test loss: 0.1401106132686604
+Stochastic Conv2D Noisy Test accuracy: 0.9629
+Stochastic Conv2D Noisy Test loss: 0.14714510635249317
+Stochastic Conv2D Noisy Test accuracy: 0.9635
+Stochastic Conv2D Noisy Test loss: 0.1395005065965932
+Stochastic Conv2D Noisy Test accuracy: 0.9632
+Stochastic Conv2D Noisy Test loss: 0.1468037670982769
+Stochastic Conv2D Noisy Test accuracy: 0.963
+Stochastic Conv2D Noisy Test loss: 0.146211355134286
+Stochastic Conv2D Noisy Test accuracy: 0.963
+Stochastic Conv2D Noisy Test loss: 0.1455383479224518
+Stochastic Conv2D Noisy Test accuracy: 0.9628
+Conv2D Custom Test loss: 0.21058529615402222
+Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.3921507000923157
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.20574863255023956
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.4155280888080597
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.46359312534332275
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.40388330817222595
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 1.0545902252197266
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.39647191762924194
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.4260823428630829
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.5133568644523621
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.44261565804481506
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 7s - loss: 0.2295 - acc: 0.9286 - val_loss: 0.0870 - val_acc: 0.9724
+Epoch 2/20
+ - 3s - loss: 0.0544 - acc: 0.9829 - val_loss: 0.0435 - val_acc: 0.9853
+Epoch 3/20
+ - 3s - loss: 0.0368 - acc: 0.9883 - val_loss: 0.0255 - val_acc: 0.9907
+Epoch 4/20
+ - 3s - loss: 0.0278 - acc: 0.9916 - val_loss: 0.0240 - val_acc: 0.9916
+Epoch 5/20
+ - 3s - loss: 0.0204 - acc: 0.9933 - val_loss: 0.0325 - val_acc: 0.9911
+Epoch 6/20
+ - 3s - loss: 0.0165 - acc: 0.9944 - val_loss: 0.0227 - val_acc: 0.9935
+Epoch 7/20
+ - 3s - loss: 0.0141 - acc: 0.9954 - val_loss: 0.0321 - val_acc: 0.9903
+Epoch 8/20
+ - 3s - loss: 0.0110 - acc: 0.9966 - val_loss: 0.0294 - val_acc: 0.9911
+Epoch 9/20
+ - 3s - loss: 0.0091 - acc: 0.9969 - val_loss: 0.0301 - val_acc: 0.9926
+Epoch 10/20
+ - 3s - loss: 0.0079 - acc: 0.9974 - val_loss: 0.0339 - val_acc: 0.9922
+Epoch 11/20
+ - 3s - loss: 0.0070 - acc: 0.9978 - val_loss: 0.0305 - val_acc: 0.9923
+Epoch 12/20
+ - 3s - loss: 0.0052 - acc: 0.9985 - val_loss: 0.0362 - val_acc: 0.9923
+Epoch 13/20
+ - 3s - loss: 0.0054 - acc: 0.9982 - val_loss: 0.0448 - val_acc: 0.9905
+Epoch 14/20
+ - 3s - loss: 0.0047 - acc: 0.9984 - val_loss: 0.0401 - val_acc: 0.9915
+Epoch 15/20
+ - 3s - loss: 0.0042 - acc: 0.9986 - val_loss: 0.0473 - val_acc: 0.9925
+Epoch 16/20
+ - 3s - loss: 0.0036 - acc: 0.9989 - val_loss: 0.0400 - val_acc: 0.9932
+Epoch 17/20
+ - 3s - loss: 0.0032 - acc: 0.9990 - val_loss: 0.0410 - val_acc: 0.9913
+Epoch 18/20
+ - 3s - loss: 0.0032 - acc: 0.9990 - val_loss: 0.0389 - val_acc: 0.9931
+Epoch 19/20
+ - 3s - loss: 0.0030 - acc: 0.9993 - val_loss: 0.0478 - val_acc: 0.9920
+Epoch 20/20
+ - 3s - loss: 0.0031 - acc: 0.9991 - val_loss: 0.0487 - val_acc: 0.9934
+Test loss: 0.04865860331202348
+Test accuracy: 0.9934
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2835 - acc: 0.9115 - val_loss: 0.0672 - val_acc: 0.9785
+Epoch 2/20
+ - 4s - loss: 0.0602 - acc: 0.9811 - val_loss: 0.0693 - val_acc: 0.9769
+Epoch 3/20
+ - 4s - loss: 0.0418 - acc: 0.9871 - val_loss: 0.0361 - val_acc: 0.9883
+Epoch 4/20
+ - 4s - loss: 0.0313 - acc: 0.9905 - val_loss: 0.0382 - val_acc: 0.9888
+Epoch 5/20
+ - 4s - loss: 0.0247 - acc: 0.9921 - val_loss: 0.0410 - val_acc: 0.9879
+Epoch 6/20
+ - 4s - loss: 0.0209 - acc: 0.9935 - val_loss: 0.0320 - val_acc: 0.9903
+Epoch 7/20
+ - 4s - loss: 0.0169 - acc: 0.9944 - val_loss: 0.0521 - val_acc: 0.9859
+Epoch 8/20
+ - 4s - loss: 0.0151 - acc: 0.9955 - val_loss: 0.0302 - val_acc: 0.9909
+Epoch 9/20
+ - 4s - loss: 0.0129 - acc: 0.9959 - val_loss: 0.0497 - val_acc: 0.9862
+Epoch 10/20
+ - 4s - loss: 0.0118 - acc: 0.9961 - val_loss: 0.0523 - val_acc: 0.9883
+Epoch 11/20
+ - 4s - loss: 0.0102 - acc: 0.9964 - val_loss: 0.0497 - val_acc: 0.9877
+Epoch 12/20
+ - 4s - loss: 0.0095 - acc: 0.9970 - val_loss: 0.0508 - val_acc: 0.9864
+Epoch 13/20
+ - 4s - loss: 0.0084 - acc: 0.9972 - val_loss: 0.0318 - val_acc: 0.9923
+Epoch 14/20
+ - 4s - loss: 0.0083 - acc: 0.9970 - val_loss: 0.0353 - val_acc: 0.9908
+Epoch 15/20
+ - 4s - loss: 0.0064 - acc: 0.9980 - val_loss: 0.0320 - val_acc: 0.9935
+Epoch 16/20
+ - 4s - loss: 0.0068 - acc: 0.9978 - val_loss: 0.0337 - val_acc: 0.9923
+Epoch 17/20
+ - 4s - loss: 0.0059 - acc: 0.9981 - val_loss: 0.0499 - val_acc: 0.9890
+Epoch 18/20
+ - 4s - loss: 0.0054 - acc: 0.9983 - val_loss: 0.0372 - val_acc: 0.9926
+Epoch 19/20
+ - 4s - loss: 0.0048 - acc: 0.9986 - val_loss: 0.0732 - val_acc: 0.9860
+Epoch 20/20
+ - 4s - loss: 0.0048 - acc: 0.9985 - val_loss: 0.0480 - val_acc: 0.9922
+Test loss: 0.04611164452952289
+Test accuracy: 0.9915
+Conv2D Noisy Test loss: 0.12002127221413539
+Conv2D Noisy Test accuracy: 0.972
+Stochastic Conv2D Noisy Test loss: 0.20542563695050775
+Stochastic Conv2D Noisy Test accuracy: 0.9497
+Stochastic Conv2D Noisy Test loss: 0.1995980887465179
+Stochastic Conv2D Noisy Test accuracy: 0.9507
+Stochastic Conv2D Noisy Test loss: 0.20456648013715167
+Stochastic Conv2D Noisy Test accuracy: 0.9505
+Stochastic Conv2D Noisy Test loss: 0.20558631889289244
+Stochastic Conv2D Noisy Test accuracy: 0.9483
+Stochastic Conv2D Noisy Test loss: 0.21220925004985183
+Stochastic Conv2D Noisy Test accuracy: 0.9496
+Stochastic Conv2D Noisy Test loss: 0.19301346893818117
+Stochastic Conv2D Noisy Test accuracy: 0.9503
+Stochastic Conv2D Noisy Test loss: 0.19827687262929977
+Stochastic Conv2D Noisy Test accuracy: 0.9492
+Stochastic Conv2D Noisy Test loss: 0.2129474983772263
+Stochastic Conv2D Noisy Test accuracy: 0.951
+Stochastic Conv2D Noisy Test loss: 0.1995780429745093
+Stochastic Conv2D Noisy Test accuracy: 0.9523
+Stochastic Conv2D Noisy Test loss: 0.20336450797878206
+Stochastic Conv2D Noisy Test accuracy: 0.9498
+Conv2D Custom Test loss: 0.20664721727371216
+Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.7226012349128723
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.8252553939819336
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.6472955942153931
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.9353938698768616
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 0.6886109113693237
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.869553804397583
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 1.1294692754745483
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 1.0854086875915527
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 0.8041625618934631
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 0.9253775477409363
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 7s - loss: 0.2406 - acc: 0.9257 - val_loss: 0.0536 - val_acc: 0.9835
+Epoch 2/20
+ - 3s - loss: 0.0572 - acc: 0.9822 - val_loss: 0.0472 - val_acc: 0.9852
+Epoch 3/20
+ - 3s - loss: 0.0382 - acc: 0.9880 - val_loss: 0.0315 - val_acc: 0.9902
+Epoch 4/20
+ - 3s - loss: 0.0281 - acc: 0.9911 - val_loss: 0.0279 - val_acc: 0.9907
+Epoch 5/20
+ - 3s - loss: 0.0217 - acc: 0.9933 - val_loss: 0.0270 - val_acc: 0.9913
+Epoch 6/20
+ - 3s - loss: 0.0176 - acc: 0.9942 - val_loss: 0.0354 - val_acc: 0.9884
+Epoch 7/20
+ - 3s - loss: 0.0142 - acc: 0.9958 - val_loss: 0.0287 - val_acc: 0.9919
+Epoch 8/20
+ - 3s - loss: 0.0116 - acc: 0.9964 - val_loss: 0.0286 - val_acc: 0.9919
+Epoch 9/20
+ - 3s - loss: 0.0094 - acc: 0.9971 - val_loss: 0.0343 - val_acc: 0.9910
+Epoch 10/20
+ - 3s - loss: 0.0085 - acc: 0.9974 - val_loss: 0.0279 - val_acc: 0.9923
+Epoch 11/20
+ - 3s - loss: 0.0064 - acc: 0.9980 - val_loss: 0.0366 - val_acc: 0.9912
+Epoch 12/20
+ - 3s - loss: 0.0059 - acc: 0.9982 - val_loss: 0.0545 - val_acc: 0.9875
+Epoch 13/20
+ - 3s - loss: 0.0051 - acc: 0.9984 - val_loss: 0.0402 - val_acc: 0.9916
+Epoch 14/20
+ - 3s - loss: 0.0046 - acc: 0.9987 - val_loss: 0.0411 - val_acc: 0.9925
+Epoch 15/20
+ - 3s - loss: 0.0033 - acc: 0.9990 - val_loss: 0.0498 - val_acc: 0.9910
+Epoch 16/20
+ - 3s - loss: 0.0041 - acc: 0.9987 - val_loss: 0.0487 - val_acc: 0.9916
+Epoch 17/20
+ - 3s - loss: 0.0028 - acc: 0.9990 - val_loss: 0.0560 - val_acc: 0.9913
+Epoch 18/20
+ - 3s - loss: 0.0031 - acc: 0.9990 - val_loss: 0.0547 - val_acc: 0.9911
+Epoch 19/20
+ - 3s - loss: 0.0028 - acc: 0.9993 - val_loss: 0.0519 - val_acc: 0.9922
+Epoch 20/20
+ - 3s - loss: 0.0024 - acc: 0.9995 - val_loss: 0.0586 - val_acc: 0.9911
+Test loss: 0.0749681972051243
+Test accuracy: 0.9877
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2854 - acc: 0.9097 - val_loss: 0.0709 - val_acc: 0.9772
+Epoch 2/20
+ - 4s - loss: 0.0585 - acc: 0.9819 - val_loss: 0.0352 - val_acc: 0.9895
+Epoch 3/20
+ - 4s - loss: 0.0390 - acc: 0.9881 - val_loss: 0.0522 - val_acc: 0.9832
+Epoch 4/20
+ - 4s - loss: 0.0302 - acc: 0.9909 - val_loss: 0.0312 - val_acc: 0.9901
+Epoch 5/20
+ - 4s - loss: 0.0245 - acc: 0.9926 - val_loss: 0.0315 - val_acc: 0.9893
+Epoch 6/20
+ - 4s - loss: 0.0208 - acc: 0.9936 - val_loss: 0.0691 - val_acc: 0.9793
+Epoch 7/20
+ - 4s - loss: 0.0173 - acc: 0.9949 - val_loss: 0.0488 - val_acc: 0.9859
+Epoch 8/20
+ - 4s - loss: 0.0154 - acc: 0.9951 - val_loss: 0.0276 - val_acc: 0.9915
+Epoch 9/20
+ - 4s - loss: 0.0128 - acc: 0.9959 - val_loss: 0.1010 - val_acc: 0.9810
+Epoch 10/20
+ - 4s - loss: 0.0112 - acc: 0.9966 - val_loss: 0.0374 - val_acc: 0.9910
+Epoch 11/20
+ - 4s - loss: 0.0105 - acc: 0.9965 - val_loss: 0.0286 - val_acc: 0.9924
+Epoch 12/20
+ - 4s - loss: 0.0091 - acc: 0.9971 - val_loss: 0.0319 - val_acc: 0.9934
+Epoch 13/20
+ - 4s - loss: 0.0079 - acc: 0.9974 - val_loss: 0.0361 - val_acc: 0.9916
+Epoch 14/20
+ - 4s - loss: 0.0067 - acc: 0.9980 - val_loss: 0.0336 - val_acc: 0.9925
+Epoch 15/20
+ - 4s - loss: 0.0070 - acc: 0.9979 - val_loss: 0.0335 - val_acc: 0.9924
+Epoch 16/20
+ - 4s - loss: 0.0061 - acc: 0.9980 - val_loss: 0.0348 - val_acc: 0.9921
+Epoch 17/20
+ - 4s - loss: 0.0068 - acc: 0.9979 - val_loss: 0.0354 - val_acc: 0.9926
+Epoch 18/20
+ - 4s - loss: 0.0057 - acc: 0.9984 - val_loss: 0.0518 - val_acc: 0.9911
+Epoch 19/20
+ - 4s - loss: 0.0054 - acc: 0.9984 - val_loss: 0.0447 - val_acc: 0.9922
+Epoch 20/20
+ - 4s - loss: 0.0050 - acc: 0.9985 - val_loss: 0.0404 - val_acc: 0.9914
+Test loss: 0.03931183083695614
+Test accuracy: 0.9924
+Conv2D Noisy Test loss: nan
+Conv2D Noisy Test accuracy: 0.9532
+Stochastic Conv2D Noisy Test loss: 0.17041694418266415
+Stochastic Conv2D Noisy Test accuracy: 0.9503
+Stochastic Conv2D Noisy Test loss: 0.17743013711306266
+Stochastic Conv2D Noisy Test accuracy: 0.9497
+Stochastic Conv2D Noisy Test loss: 0.17697910405339207
+Stochastic Conv2D Noisy Test accuracy: 0.9488
+Stochastic Conv2D Noisy Test loss: 0.17905880811938552
+Stochastic Conv2D Noisy Test accuracy: 0.9506
+Stochastic Conv2D Noisy Test loss: 0.17822818276491015
+Stochastic Conv2D Noisy Test accuracy: 0.9497
+Stochastic Conv2D Noisy Test loss: 0.17409810359971598
+Stochastic Conv2D Noisy Test accuracy: 0.9506
+Stochastic Conv2D Noisy Test loss: 0.1676039795937948
+Stochastic Conv2D Noisy Test accuracy: 0.9528
+Stochastic Conv2D Noisy Test loss: 0.17475358112510295
+Stochastic Conv2D Noisy Test accuracy: 0.9514
+Stochastic Conv2D Noisy Test loss: 0.17352052152743563
+Stochastic Conv2D Noisy Test accuracy: 0.9487
+Stochastic Conv2D Noisy Test loss: 0.18144878073935397
+Stochastic Conv2D Noisy Test accuracy: 0.9506
+Conv2D Custom Test loss: 0.08295941352844238
+Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.41444632411003113
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.5490381717681885
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.43558236956596375
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.5010619759559631
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 0.5298737287521362
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.6110495924949646
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.5981935262680054
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.39112064242362976
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.35588720440864563
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.21098226308822632
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 7s - loss: 0.2303 - acc: 0.9295 - val_loss: 0.0830 - val_acc: 0.9736
+Epoch 2/20
+ - 3s - loss: 0.0574 - acc: 0.9824 - val_loss: 0.0389 - val_acc: 0.9874
+Epoch 3/20
+ - 3s - loss: 0.0375 - acc: 0.9881 - val_loss: 0.0737 - val_acc: 0.9777
+Epoch 4/20
+ - 3s - loss: 0.0289 - acc: 0.9910 - val_loss: 0.0271 - val_acc: 0.9913
+Epoch 5/20
+ - 3s - loss: 0.0226 - acc: 0.9927 - val_loss: 0.0261 - val_acc: 0.9920
+Epoch 6/20
+ - 3s - loss: 0.0170 - acc: 0.9948 - val_loss: 0.0309 - val_acc: 0.9913
+Epoch 7/20
+ - 3s - loss: 0.0137 - acc: 0.9958 - val_loss: 0.0307 - val_acc: 0.9912
+Epoch 8/20
+ - 3s - loss: 0.0119 - acc: 0.9962 - val_loss: 0.0259 - val_acc: 0.9921
+Epoch 9/20
+ - 3s - loss: 0.0101 - acc: 0.9964 - val_loss: 0.0245 - val_acc: 0.9926
+Epoch 10/20
+ - 3s - loss: 0.0083 - acc: 0.9975 - val_loss: 0.0325 - val_acc: 0.9921
+Epoch 11/20
+ - 3s - loss: 0.0077 - acc: 0.9975 - val_loss: 0.0363 - val_acc: 0.9915
+Epoch 12/20
+ - 3s - loss: 0.0067 - acc: 0.9977 - val_loss: 0.0306 - val_acc: 0.9928
+Epoch 13/20
+ - 3s - loss: 0.0050 - acc: 0.9984 - val_loss: 0.0366 - val_acc: 0.9914
+Epoch 14/20
+ - 3s - loss: 0.0052 - acc: 0.9984 - val_loss: 0.0297 - val_acc: 0.9935
+Epoch 15/20
+ - 3s - loss: 0.0042 - acc: 0.9989 - val_loss: 0.0436 - val_acc: 0.9906
+Epoch 16/20
+ - 3s - loss: 0.0041 - acc: 0.9987 - val_loss: 0.0357 - val_acc: 0.9931
+Epoch 17/20
+ - 3s - loss: 0.0038 - acc: 0.9990 - val_loss: 0.0494 - val_acc: 0.9903
+Epoch 18/20
+ - 3s - loss: 0.0034 - acc: 0.9990 - val_loss: 0.0416 - val_acc: 0.9924
+Epoch 19/20
+ - 3s - loss: 0.0026 - acc: 0.9992 - val_loss: 0.0538 - val_acc: 0.9914
+Epoch 20/20
+ - 3s - loss: 0.0031 - acc: 0.9991 - val_loss: 0.0458 - val_acc: 0.9931
+Test loss: 0.04582610224803175
+Test accuracy: 0.9931
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2807 - acc: 0.9122 - val_loss: 0.0649 - val_acc: 0.9803
+Epoch 2/20
+ - 4s - loss: 0.0566 - acc: 0.9821 - val_loss: 0.0382 - val_acc: 0.9864
+Epoch 3/20
+ - 4s - loss: 0.0387 - acc: 0.9877 - val_loss: 0.0324 - val_acc: 0.9898
+Epoch 4/20
+ - 4s - loss: 0.0291 - acc: 0.9913 - val_loss: 0.0362 - val_acc: 0.9892
+Epoch 5/20
+ - 4s - loss: 0.0243 - acc: 0.9920 - val_loss: 0.0454 - val_acc: 0.9872
+Epoch 6/20
+ - 4s - loss: 0.0194 - acc: 0.9938 - val_loss: 0.0367 - val_acc: 0.9896
+Epoch 7/20
+ - 4s - loss: 0.0175 - acc: 0.9946 - val_loss: 0.0277 - val_acc: 0.9914
+Epoch 8/20
+ - 4s - loss: 0.0143 - acc: 0.9954 - val_loss: 0.0297 - val_acc: 0.9903
+Epoch 9/20
+ - 4s - loss: 0.0123 - acc: 0.9963 - val_loss: 0.0348 - val_acc: 0.9913
+Epoch 10/20
+ - 4s - loss: 0.0108 - acc: 0.9965 - val_loss: 0.0250 - val_acc: 0.9937
+Epoch 11/20
+ - 4s - loss: 0.0094 - acc: 0.9971 - val_loss: 0.0363 - val_acc: 0.9908
+Epoch 12/20
+ - 4s - loss: 0.0089 - acc: 0.9970 - val_loss: 0.0349 - val_acc: 0.9921
+Epoch 13/20
+ - 4s - loss: 0.0076 - acc: 0.9977 - val_loss: 0.0483 - val_acc: 0.9899
+Epoch 14/20
+ - 4s - loss: 0.0060 - acc: 0.9982 - val_loss: 0.0541 - val_acc: 0.9887
+Epoch 15/20
+ - 4s - loss: 0.0078 - acc: 0.9977 - val_loss: 0.0305 - val_acc: 0.9925
+Epoch 16/20
+ - 4s - loss: 0.0058 - acc: 0.9980 - val_loss: 0.0401 - val_acc: 0.9922
+Epoch 17/20
+ - 4s - loss: 0.0054 - acc: 0.9983 - val_loss: 0.0427 - val_acc: 0.9922
+Epoch 18/20
+ - 4s - loss: 0.0058 - acc: 0.9980 - val_loss: 0.0445 - val_acc: 0.9923
+Epoch 19/20
+ - 4s - loss: 0.0048 - acc: 0.9987 - val_loss: 0.0435 - val_acc: 0.9916
+Epoch 20/20
+ - 4s - loss: 0.0051 - acc: 0.9981 - val_loss: 0.0463 - val_acc: 0.9923
+Test loss: 0.04741085529146403
+Test accuracy: 0.9919
+Conv2D Noisy Test loss: 0.2042273691708222
+Conv2D Noisy Test accuracy: 0.9455
+Stochastic Conv2D Noisy Test loss: 0.2612846225254238
+Stochastic Conv2D Noisy Test accuracy: 0.9343
+Stochastic Conv2D Noisy Test loss: 0.24914317020028828
+Stochastic Conv2D Noisy Test accuracy: 0.9373
+Stochastic Conv2D Noisy Test loss: 0.250610434978921
+Stochastic Conv2D Noisy Test accuracy: 0.9358
+Stochastic Conv2D Noisy Test loss: 0.25597087573073807
+Stochastic Conv2D Noisy Test accuracy: 0.9338
+Stochastic Conv2D Noisy Test loss: 0.26035573974773285
+Stochastic Conv2D Noisy Test accuracy: 0.9347
+Stochastic Conv2D Noisy Test loss: 0.3682986112553626
+Stochastic Conv2D Noisy Test accuracy: 0.9366
+Stochastic Conv2D Noisy Test loss: 0.25058351321071387
+Stochastic Conv2D Noisy Test accuracy: 0.937
+Stochastic Conv2D Noisy Test loss: 0.2471107418904081
+Stochastic Conv2D Noisy Test accuracy: 0.9358
+Stochastic Conv2D Noisy Test loss: 0.24655519957207142
+Stochastic Conv2D Noisy Test accuracy: 0.9343
+Stochastic Conv2D Noisy Test loss: 0.24096308495206759
+Stochastic Conv2D Noisy Test accuracy: 0.9368
+Conv2D Custom Test loss: 0.6230354309082031
+Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.5143080949783325
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 0.5821617245674133
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.3203006982803345
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.40350648760795593
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.33111801743507385
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.5433509349822998
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.20001748204231262
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.29269492626190186
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.9339035749435425
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 0.30774742364883423
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 8s - loss: 0.2249 - acc: 0.9294 - val_loss: 0.0688 - val_acc: 0.9774
+Epoch 2/20
+ - 3s - loss: 0.0544 - acc: 0.9829 - val_loss: 0.0566 - val_acc: 0.9796
+Epoch 3/20
+ - 3s - loss: 0.0364 - acc: 0.9887 - val_loss: 0.0396 - val_acc: 0.9868
+Epoch 4/20
+ - 3s - loss: 0.0275 - acc: 0.9915 - val_loss: 0.0288 - val_acc: 0.9909
+Epoch 5/20
+ - 3s - loss: 0.0212 - acc: 0.9933 - val_loss: 0.0393 - val_acc: 0.9885
+Epoch 6/20
+ - 3s - loss: 0.0171 - acc: 0.9947 - val_loss: 0.0286 - val_acc: 0.9920
+Epoch 7/20
+ - 3s - loss: 0.0134 - acc: 0.9959 - val_loss: 0.0429 - val_acc: 0.9891
+Epoch 8/20
+ - 3s - loss: 0.0111 - acc: 0.9964 - val_loss: 0.0304 - val_acc: 0.9910
+Epoch 9/20
+ - 3s - loss: 0.0089 - acc: 0.9972 - val_loss: 0.0321 - val_acc: 0.9913
+Epoch 10/20
+ - 3s - loss: 0.0079 - acc: 0.9975 - val_loss: 0.0345 - val_acc: 0.9916
+Epoch 11/20
+ - 3s - loss: 0.0063 - acc: 0.9981 - val_loss: 0.0394 - val_acc: 0.9909
+Epoch 12/20
+ - 3s - loss: 0.0059 - acc: 0.9982 - val_loss: 0.0393 - val_acc: 0.9913
+Epoch 13/20
+ - 3s - loss: 0.0053 - acc: 0.9983 - val_loss: 0.0442 - val_acc: 0.9910
+Epoch 14/20
+ - 3s - loss: 0.0043 - acc: 0.9985 - val_loss: 0.0382 - val_acc: 0.9924
+Epoch 15/20
+ - 3s - loss: 0.0040 - acc: 0.9987 - val_loss: 0.0347 - val_acc: 0.9941
+Epoch 16/20
+ - 3s - loss: 0.0031 - acc: 0.9991 - val_loss: 0.0433 - val_acc: 0.9928
+Epoch 17/20
+ - 3s - loss: 0.0034 - acc: 0.9990 - val_loss: 0.0416 - val_acc: 0.9923
+Epoch 18/20
+ - 3s - loss: 0.0030 - acc: 0.9991 - val_loss: 0.0419 - val_acc: 0.9938
+Epoch 19/20
+ - 3s - loss: 0.0028 - acc: 0.9991 - val_loss: 0.0455 - val_acc: 0.9932
+Epoch 20/20
+ - 3s - loss: 0.0030 - acc: 0.9993 - val_loss: 0.0560 - val_acc: 0.9914
+Test loss: 0.055970886599483856
+Test accuracy: 0.9914
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2554 - acc: 0.9201 - val_loss: 0.0618 - val_acc: 0.9810
+Epoch 2/20
+ - 4s - loss: 0.0585 - acc: 0.9819 - val_loss: 0.0334 - val_acc: 0.9886
+Epoch 3/20
+ - 4s - loss: 0.0395 - acc: 0.9877 - val_loss: 0.0292 - val_acc: 0.9900
+Epoch 4/20
+ - 4s - loss: 0.0313 - acc: 0.9904 - val_loss: 0.0247 - val_acc: 0.9918
+Epoch 5/20
+ - 4s - loss: 0.0251 - acc: 0.9919 - val_loss: 0.0611 - val_acc: 0.9839
+Epoch 6/20
+ - 4s - loss: 0.0212 - acc: 0.9932 - val_loss: 0.0307 - val_acc: 0.9896
+Epoch 7/20
+ - 4s - loss: 0.0181 - acc: 0.9944 - val_loss: 0.0340 - val_acc: 0.9894
+Epoch 8/20
+ - 4s - loss: 0.0157 - acc: 0.9951 - val_loss: 0.0319 - val_acc: 0.9900
+Epoch 9/20
+ - 4s - loss: 0.0131 - acc: 0.9960 - val_loss: 0.0329 - val_acc: 0.9910
+Epoch 10/20
+ - 4s - loss: 0.0133 - acc: 0.9957 - val_loss: 0.0262 - val_acc: 0.9918
+Epoch 11/20
+ - 4s - loss: 0.0103 - acc: 0.9967 - val_loss: 0.0440 - val_acc: 0.9883
+Epoch 12/20
+ - 4s - loss: 0.0079 - acc: 0.9973 - val_loss: 0.0439 - val_acc: 0.9888
+Epoch 13/20
+ - 4s - loss: 0.0096 - acc: 0.9970 - val_loss: 0.0839 - val_acc: 0.9773
+Epoch 14/20
+ - 4s - loss: 0.0076 - acc: 0.9975 - val_loss: 0.0410 - val_acc: 0.9924
+Epoch 15/20
+ - 4s - loss: 0.0077 - acc: 0.9974 - val_loss: 0.0327 - val_acc: 0.9921
+Epoch 16/20
+ - 4s - loss: 0.0064 - acc: 0.9978 - val_loss: 0.0410 - val_acc: 0.9919
+Epoch 17/20
+ - 4s - loss: 0.0061 - acc: 0.9980 - val_loss: 0.0420 - val_acc: 0.9915
+Epoch 18/20
+ - 4s - loss: 0.0060 - acc: 0.9981 - val_loss: 0.0663 - val_acc: 0.9892
+Epoch 19/20
+ - 4s - loss: 0.0059 - acc: 0.9981 - val_loss: 0.0779 - val_acc: 0.9818
+Epoch 20/20
+ - 4s - loss: 0.0060 - acc: 0.9981 - val_loss: 0.0615 - val_acc: 0.9882
+Test loss: 0.05668634569091737
+Test accuracy: 0.9891
+Conv2D Noisy Test loss: 0.20349040478835814
+Conv2D Noisy Test accuracy: 0.9548
+Stochastic Conv2D Noisy Test loss: 0.18954747741618194
+Stochastic Conv2D Noisy Test accuracy: 0.9545
+Stochastic Conv2D Noisy Test loss: 0.18200727668944747
+Stochastic Conv2D Noisy Test accuracy: 0.9554
+Stochastic Conv2D Noisy Test loss: 0.18391689409688114
+Stochastic Conv2D Noisy Test accuracy: 0.9525
+Stochastic Conv2D Noisy Test loss: 0.17845397031372412
+Stochastic Conv2D Noisy Test accuracy: 0.9537
+Stochastic Conv2D Noisy Test loss: 0.18451841517183928
+Stochastic Conv2D Noisy Test accuracy: 0.9532
+Stochastic Conv2D Noisy Test loss: 0.1796797339649871
+Stochastic Conv2D Noisy Test accuracy: 0.9535
+Stochastic Conv2D Noisy Test loss: 0.17941291038170457
+Stochastic Conv2D Noisy Test accuracy: 0.9554
+Stochastic Conv2D Noisy Test loss: 0.1820931188381277
+Stochastic Conv2D Noisy Test accuracy: 0.9555
+Stochastic Conv2D Noisy Test loss: 0.17691093443334102
+Stochastic Conv2D Noisy Test accuracy: 0.9539
+Stochastic Conv2D Noisy Test loss: 0.18215186457643284
+Stochastic Conv2D Noisy Test accuracy: 0.9523
+Conv2D Custom Test loss: 0.1874588131904602
+Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.27864450216293335
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.438067227602005
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.36961647868156433
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.554400622844696
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.5301910638809204
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 0.43002331256866455
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.5062966346740723
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 0.5035779476165771
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.38481536507606506
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.39579644799232483
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 8s - loss: 0.2349 - acc: 0.9281 - val_loss: 0.0611 - val_acc: 0.9801
+Epoch 2/20
+ - 3s - loss: 0.0564 - acc: 0.9828 - val_loss: 0.0430 - val_acc: 0.9856
+Epoch 3/20
+ - 3s - loss: 0.0381 - acc: 0.9882 - val_loss: 0.0307 - val_acc: 0.9903
+Epoch 4/20
+ - 3s - loss: 0.0281 - acc: 0.9913 - val_loss: 0.0293 - val_acc: 0.9909
+Epoch 5/20
+ - 3s - loss: 0.0227 - acc: 0.9928 - val_loss: 0.0261 - val_acc: 0.9917
+Epoch 6/20
+ - 3s - loss: 0.0178 - acc: 0.9944 - val_loss: 0.0277 - val_acc: 0.9916
+Epoch 7/20
+ - 3s - loss: 0.0149 - acc: 0.9953 - val_loss: 0.0335 - val_acc: 0.9904
+Epoch 8/20
+ - 3s - loss: 0.0121 - acc: 0.9961 - val_loss: 0.0290 - val_acc: 0.9916
+Epoch 9/20
+ - 3s - loss: 0.0099 - acc: 0.9968 - val_loss: 0.0511 - val_acc: 0.9887
+Epoch 10/20
+ - 3s - loss: 0.0085 - acc: 0.9973 - val_loss: 0.0290 - val_acc: 0.9933
+Epoch 11/20
+ - 3s - loss: 0.0073 - acc: 0.9977 - val_loss: 0.0402 - val_acc: 0.9901
+Epoch 12/20
+ - 3s - loss: 0.0067 - acc: 0.9978 - val_loss: 0.0373 - val_acc: 0.9915
+Epoch 13/20
+ - 3s - loss: 0.0049 - acc: 0.9985 - val_loss: 0.0491 - val_acc: 0.9906
+Epoch 14/20
+ - 3s - loss: 0.0054 - acc: 0.9982 - val_loss: 0.0344 - val_acc: 0.9923
+Epoch 15/20
+ - 3s - loss: 0.0039 - acc: 0.9988 - val_loss: 0.0355 - val_acc: 0.9935
+Epoch 16/20
+ - 3s - loss: 0.0040 - acc: 0.9988 - val_loss: 0.0395 - val_acc: 0.9933
+Epoch 17/20
+ - 3s - loss: 0.0035 - acc: 0.9990 - val_loss: 0.0486 - val_acc: 0.9920
+Epoch 18/20
+ - 3s - loss: 0.0034 - acc: 0.9989 - val_loss: 0.0417 - val_acc: 0.9933
+Epoch 19/20
+ - 3s - loss: 0.0031 - acc: 0.9991 - val_loss: 0.0514 - val_acc: 0.9921
+Epoch 20/20
+ - 3s - loss: 0.0026 - acc: 0.9992 - val_loss: 0.0530 - val_acc: 0.9924
+Test loss: 0.0530149676074303
+Test accuracy: 0.9924
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2793 - acc: 0.9132 - val_loss: 0.1407 - val_acc: 0.9598
+Epoch 2/20
+ - 4s - loss: 0.0603 - acc: 0.9812 - val_loss: 0.0486 - val_acc: 0.9843
+Epoch 3/20
+ - 4s - loss: 0.0410 - acc: 0.9872 - val_loss: 0.0531 - val_acc: 0.9839
+Epoch 4/20
+ - 4s - loss: 0.0316 - acc: 0.9900 - val_loss: 0.0295 - val_acc: 0.9904
+Epoch 5/20
+ - 4s - loss: 0.0260 - acc: 0.9917 - val_loss: 0.0324 - val_acc: 0.9900
+Epoch 6/20
+ - 4s - loss: 0.0204 - acc: 0.9938 - val_loss: 0.0256 - val_acc: 0.9919
+Epoch 7/20
+ - 4s - loss: 0.0176 - acc: 0.9943 - val_loss: 0.0345 - val_acc: 0.9888
+Epoch 8/20
+ - 4s - loss: 0.0147 - acc: 0.9952 - val_loss: 0.0320 - val_acc: 0.9905
+Epoch 9/20
+ - 4s - loss: 0.0134 - acc: 0.9959 - val_loss: 0.0352 - val_acc: 0.9892
+Epoch 10/20
+ - 4s - loss: 0.0112 - acc: 0.9965 - val_loss: 0.0390 - val_acc: 0.9904
+Epoch 11/20
+ - 4s - loss: 0.0096 - acc: 0.9970 - val_loss: 0.0564 - val_acc: 0.9874
+Epoch 12/20
+ - 4s - loss: 0.0093 - acc: 0.9970 - val_loss: 0.0829 - val_acc: 0.9799
+Epoch 13/20
+ - 4s - loss: 0.0081 - acc: 0.9974 - val_loss: 0.0313 - val_acc: 0.9914
+Epoch 14/20
+ - 4s - loss: 0.0077 - acc: 0.9976 - val_loss: 0.0412 - val_acc: 0.9916
+Epoch 15/20
+ - 4s - loss: 0.0051 - acc: 0.9983 - val_loss: 0.0375 - val_acc: 0.9912
+Epoch 16/20
+ - 4s - loss: 0.0071 - acc: 0.9979 - val_loss: 0.0438 - val_acc: 0.9908
+Epoch 17/20
+ - 4s - loss: 0.0069 - acc: 0.9978 - val_loss: 0.0367 - val_acc: 0.9914
+Epoch 18/20
+ - 4s - loss: 0.0065 - acc: 0.9978 - val_loss: 0.0407 - val_acc: 0.9908
+Epoch 19/20
+ - 4s - loss: 0.0057 - acc: 0.9982 - val_loss: 0.0359 - val_acc: 0.9925
+Epoch 20/20
+ - 4s - loss: 0.0057 - acc: 0.9982 - val_loss: 0.0359 - val_acc: 0.9927
+Test loss: 0.0366284667221913
+Test accuracy: 0.9929
+Conv2D Noisy Test loss: 0.15426895913034677
+Conv2D Noisy Test accuracy: 0.9637
+Stochastic Conv2D Noisy Test loss: 0.21025819040187635
+Stochastic Conv2D Noisy Test accuracy: 0.9455
+Stochastic Conv2D Noisy Test loss: 0.19832093756692484
+Stochastic Conv2D Noisy Test accuracy: 0.9484
+Stochastic Conv2D Noisy Test loss: 0.1949490493734367
+Stochastic Conv2D Noisy Test accuracy: 0.9492
+Stochastic Conv2D Noisy Test loss: 0.2082833691404434
+Stochastic Conv2D Noisy Test accuracy: 0.9467
+Stochastic Conv2D Noisy Test loss: 0.19833000475503504
+Stochastic Conv2D Noisy Test accuracy: 0.9492
+Stochastic Conv2D Noisy Test loss: 0.20414860266875476
+Stochastic Conv2D Noisy Test accuracy: 0.9465
+Stochastic Conv2D Noisy Test loss: 0.19586025437735952
+Stochastic Conv2D Noisy Test accuracy: 0.9483
+Stochastic Conv2D Noisy Test loss: 0.19939673169718589
+Stochastic Conv2D Noisy Test accuracy: 0.9467
+Stochastic Conv2D Noisy Test loss: 0.21112222125940025
+Stochastic Conv2D Noisy Test accuracy: 0.9469
+Stochastic Conv2D Noisy Test loss: 0.207152698986209
+Stochastic Conv2D Noisy Test accuracy: 0.9448
+Conv2D Custom Test loss: 0.281406432390213
+Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.7093629837036133
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 0.7236314415931702
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 0.5074772834777832
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.5444241762161255
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.451812744140625
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 0.3935675621032715
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.6724069118499756
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.7665884494781494
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 0.8586866855621338
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 0.29564234614372253
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 7s - loss: 0.2272 - acc: 0.9288 - val_loss: 0.0672 - val_acc: 0.9792
+Epoch 2/20
+ - 3s - loss: 0.0549 - acc: 0.9832 - val_loss: 0.0419 - val_acc: 0.9865
+Epoch 3/20
+ - 3s - loss: 0.0368 - acc: 0.9885 - val_loss: 0.0446 - val_acc: 0.9860
+Epoch 4/20
+ - 3s - loss: 0.0278 - acc: 0.9912 - val_loss: 0.0305 - val_acc: 0.9907
+Epoch 5/20
+ - 3s - loss: 0.0217 - acc: 0.9932 - val_loss: 0.0467 - val_acc: 0.9867
+Epoch 6/20
+ - 3s - loss: 0.0178 - acc: 0.9943 - val_loss: 0.0422 - val_acc: 0.9868
+Epoch 7/20
+ - 3s - loss: 0.0134 - acc: 0.9958 - val_loss: 0.0290 - val_acc: 0.9920
+Epoch 8/20
+ - 3s - loss: 0.0117 - acc: 0.9962 - val_loss: 0.0299 - val_acc: 0.9914
+Epoch 9/20
+ - 3s - loss: 0.0097 - acc: 0.9970 - val_loss: 0.0410 - val_acc: 0.9894
+Epoch 10/20
+ - 3s - loss: 0.0082 - acc: 0.9975 - val_loss: 0.0335 - val_acc: 0.9911
+Epoch 11/20
+ - 3s - loss: 0.0067 - acc: 0.9978 - val_loss: 0.0373 - val_acc: 0.9915
+Epoch 12/20
+ - 3s - loss: 0.0063 - acc: 0.9980 - val_loss: 0.0322 - val_acc: 0.9929
+Epoch 13/20
+ - 3s - loss: 0.0053 - acc: 0.9984 - val_loss: 0.0383 - val_acc: 0.9922
+Epoch 14/20
+ - 3s - loss: 0.0048 - acc: 0.9983 - val_loss: 0.0368 - val_acc: 0.9921
+Epoch 15/20
+ - 3s - loss: 0.0039 - acc: 0.9988 - val_loss: 0.0354 - val_acc: 0.9918
+Epoch 16/20
+ - 3s - loss: 0.0043 - acc: 0.9989 - val_loss: 0.0475 - val_acc: 0.9921
+Epoch 17/20
+ - 3s - loss: 0.0038 - acc: 0.9990 - val_loss: 0.0411 - val_acc: 0.9922
+Epoch 18/20
+ - 3s - loss: 0.0024 - acc: 0.9992 - val_loss: 0.0442 - val_acc: 0.9917
+Epoch 19/20
+ - 3s - loss: 0.0032 - acc: 0.9990 - val_loss: 0.0436 - val_acc: 0.9931
+Epoch 20/20
+ - 3s - loss: 0.0029 - acc: 0.9990 - val_loss: 0.0506 - val_acc: 0.9919
+Test loss: 0.0562598658979623
+Test accuracy: 0.9907
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.5165 - acc: 0.8524 - val_loss: 0.1224 - val_acc: 0.9622
+Epoch 2/20
+ - 4s - loss: 0.0944 - acc: 0.9708 - val_loss: 0.0501 - val_acc: 0.9835
+Epoch 3/20
+ - 4s - loss: 0.0587 - acc: 0.9816 - val_loss: 0.0397 - val_acc: 0.9872
+Epoch 4/20
+ - 4s - loss: 0.0442 - acc: 0.9866 - val_loss: 0.0336 - val_acc: 0.9893
+Epoch 5/20
+ - 4s - loss: 0.0358 - acc: 0.9886 - val_loss: 0.2642 - val_acc: 0.9364
+Epoch 6/20
+ - 4s - loss: 0.0309 - acc: 0.9908 - val_loss: 0.0300 - val_acc: 0.9899
+Epoch 7/20
+ - 4s - loss: 0.0257 - acc: 0.9921 - val_loss: 0.0458 - val_acc: 0.9882
+Epoch 8/20
+ - 4s - loss: 0.0234 - acc: 0.9924 - val_loss: 0.0333 - val_acc: 0.9907
+Epoch 9/20
+ - 4s - loss: 0.0206 - acc: 0.9936 - val_loss: 0.0368 - val_acc: 0.9899
+Epoch 10/20
+ - 4s - loss: 0.0193 - acc: 0.9940 - val_loss: 0.0315 - val_acc: 0.9915
+Epoch 11/20
+ - 4s - loss: 0.0170 - acc: 0.9945 - val_loss: 0.0341 - val_acc: 0.9898
+Epoch 12/20
+ - 4s - loss: 0.0147 - acc: 0.9954 - val_loss: 0.0371 - val_acc: 0.9904
+Epoch 13/20
+ - 4s - loss: 0.0143 - acc: 0.9956 - val_loss: 0.0352 - val_acc: 0.9903
+Epoch 14/20
+ - 4s - loss: 0.0132 - acc: 0.9960 - val_loss: 0.0399 - val_acc: 0.9888
+Epoch 15/20
+ - 4s - loss: 0.0134 - acc: 0.9960 - val_loss: 0.0398 - val_acc: 0.9904
+Epoch 16/20
+ - 4s - loss: 0.0121 - acc: 0.9966 - val_loss: 0.0514 - val_acc: 0.9910
+Epoch 17/20
+ - 4s - loss: 0.0109 - acc: 0.9967 - val_loss: 0.0723 - val_acc: 0.9871
+Epoch 18/20
+ - 4s - loss: 0.0118 - acc: 0.9965 - val_loss: 0.0337 - val_acc: 0.9919
+Epoch 19/20
+ - 4s - loss: 0.0100 - acc: 0.9970 - val_loss: 0.0333 - val_acc: 0.9913
+Epoch 20/20
+ - 4s - loss: 0.0087 - acc: 0.9973 - val_loss: 0.0359 - val_acc: 0.9917
+Test loss: 0.035403753677937494
+Test accuracy: 0.9914
+Conv2D Noisy Test loss: 0.15971638537243707
+Conv2D Noisy Test accuracy: 0.9608
+Stochastic Conv2D Noisy Test loss: 0.17439141282439233
+Stochastic Conv2D Noisy Test accuracy: 0.943
+Stochastic Conv2D Noisy Test loss: 0.17625309430360794
+Stochastic Conv2D Noisy Test accuracy: 0.9432
+Stochastic Conv2D Noisy Test loss: 0.17582356304228305
+Stochastic Conv2D Noisy Test accuracy: 0.9437
+Stochastic Conv2D Noisy Test loss: 0.17757754797935485
+Stochastic Conv2D Noisy Test accuracy: 0.9439
+Stochastic Conv2D Noisy Test loss: 0.17576771082282067
+Stochastic Conv2D Noisy Test accuracy: 0.9471
+Stochastic Conv2D Noisy Test loss: 0.17754017494022847
+Stochastic Conv2D Noisy Test accuracy: 0.9447
+Stochastic Conv2D Noisy Test loss: 0.17478111806511878
+Stochastic Conv2D Noisy Test accuracy: 0.9467
+Stochastic Conv2D Noisy Test loss: 0.1735779091536999
+Stochastic Conv2D Noisy Test accuracy: 0.9452
+Stochastic Conv2D Noisy Test loss: 0.1750972631752491
+Stochastic Conv2D Noisy Test accuracy: 0.944
+Stochastic Conv2D Noisy Test loss: 0.17406076075434684
+Stochastic Conv2D Noisy Test accuracy: 0.9467
+Conv2D Custom Test loss: 0.2468952089548111
+Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.8199437260627747
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 1.0718539953231812
+Stochastic Conv2D Custom Test accuracy: 0.5555555820465088
+Stochastic Conv2D Custom Test loss: 0.781440019607544
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 1.6488322019577026
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 0.7783140540122986
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 0.9645099639892578
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 1.2757731676101685
+Stochastic Conv2D Custom Test accuracy: 0.5555555820465088
+Stochastic Conv2D Custom Test loss: 0.8746508359909058
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 0.7812073826789856
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 1.0399938821792603
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 7s - loss: 0.2268 - acc: 0.9290 - val_loss: 0.0684 - val_acc: 0.9778
+Epoch 2/20
+ - 3s - loss: 0.0558 - acc: 0.9827 - val_loss: 0.0371 - val_acc: 0.9882
+Epoch 3/20
+ - 3s - loss: 0.0369 - acc: 0.9881 - val_loss: 0.0289 - val_acc: 0.9910
+Epoch 4/20
+ - 3s - loss: 0.0278 - acc: 0.9913 - val_loss: 0.0345 - val_acc: 0.9881
+Epoch 5/20
+ - 3s - loss: 0.0219 - acc: 0.9930 - val_loss: 0.0260 - val_acc: 0.9922
+Epoch 6/20
+ - 3s - loss: 0.0169 - acc: 0.9947 - val_loss: 0.0253 - val_acc: 0.9919
+Epoch 7/20
+ - 3s - loss: 0.0146 - acc: 0.9955 - val_loss: 0.0316 - val_acc: 0.9897
+Epoch 8/20
+ - 3s - loss: 0.0115 - acc: 0.9963 - val_loss: 0.0322 - val_acc: 0.9916
+Epoch 9/20
+ - 3s - loss: 0.0095 - acc: 0.9967 - val_loss: 0.0317 - val_acc: 0.9916
+Epoch 10/20
+ - 3s - loss: 0.0088 - acc: 0.9971 - val_loss: 0.0255 - val_acc: 0.9929
+Epoch 11/20
+ - 3s - loss: 0.0072 - acc: 0.9978 - val_loss: 0.0366 - val_acc: 0.9917
+Epoch 12/20
+ - 3s - loss: 0.0066 - acc: 0.9980 - val_loss: 0.0350 - val_acc: 0.9925
+Epoch 13/20
+ - 3s - loss: 0.0053 - acc: 0.9983 - val_loss: 0.0399 - val_acc: 0.9911
+Epoch 14/20
+ - 3s - loss: 0.0048 - acc: 0.9986 - val_loss: 0.0349 - val_acc: 0.9930
+Epoch 15/20
+ - 3s - loss: 0.0043 - acc: 0.9989 - val_loss: 0.0395 - val_acc: 0.9927
+Epoch 16/20
+ - 3s - loss: 0.0041 - acc: 0.9989 - val_loss: 0.0440 - val_acc: 0.9931
+Epoch 17/20
+ - 3s - loss: 0.0031 - acc: 0.9991 - val_loss: 0.0465 - val_acc: 0.9916
+Epoch 18/20
+ - 3s - loss: 0.0041 - acc: 0.9988 - val_loss: 0.0536 - val_acc: 0.9915
+Epoch 19/20
+ - 3s - loss: 0.0031 - acc: 0.9991 - val_loss: 0.0599 - val_acc: 0.9889
+Epoch 20/20
+ - 3s - loss: 0.0028 - acc: 0.9992 - val_loss: 0.0507 - val_acc: 0.9917
+Test loss: 0.050710492363752926
+Test accuracy: 0.9917
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2724 - acc: 0.9138 - val_loss: 0.2167 - val_acc: 0.9300
+Epoch 2/20
+ - 4s - loss: 0.0588 - acc: 0.9816 - val_loss: 0.0391 - val_acc: 0.9871
+Epoch 3/20
+ - 4s - loss: 0.0403 - acc: 0.9874 - val_loss: 0.0391 - val_acc: 0.9880
+Epoch 4/20
+ - 4s - loss: 0.0312 - acc: 0.9906 - val_loss: 0.0373 - val_acc: 0.9885
+Epoch 5/20
+ - 4s - loss: 0.0259 - acc: 0.9919 - val_loss: 0.0287 - val_acc: 0.9912
+Epoch 6/20
+ - 4s - loss: 0.0202 - acc: 0.9938 - val_loss: 0.0332 - val_acc: 0.9897
+Epoch 7/20
+ - 4s - loss: 0.0181 - acc: 0.9939 - val_loss: 0.0294 - val_acc: 0.9917
+Epoch 8/20
+ - 4s - loss: 0.0155 - acc: 0.9949 - val_loss: 0.0353 - val_acc: 0.9903
+Epoch 9/20
+ - 4s - loss: 0.0140 - acc: 0.9958 - val_loss: 0.0523 - val_acc: 0.9871
+Epoch 10/20
+ - 4s - loss: 0.0118 - acc: 0.9963 - val_loss: 0.0452 - val_acc: 0.9873
+Epoch 11/20
+ - 4s - loss: 0.0109 - acc: 0.9967 - val_loss: 0.0320 - val_acc: 0.9919
+Epoch 12/20
+ - 4s - loss: 0.0091 - acc: 0.9970 - val_loss: 0.0328 - val_acc: 0.9916
+Epoch 13/20
+ - 4s - loss: 0.0087 - acc: 0.9974 - val_loss: 0.0285 - val_acc: 0.9918
+Epoch 14/20
+ - 4s - loss: 0.0076 - acc: 0.9974 - val_loss: 0.0388 - val_acc: 0.9923
+Epoch 15/20
+ - 4s - loss: 0.0067 - acc: 0.9978 - val_loss: 0.0373 - val_acc: 0.9921
+Epoch 16/20
+ - 4s - loss: 0.0069 - acc: 0.9976 - val_loss: 0.0523 - val_acc: 0.9899
+Epoch 17/20
+ - 4s - loss: 0.0065 - acc: 0.9981 - val_loss: 0.0364 - val_acc: 0.9915
+Epoch 18/20
+ - 4s - loss: 0.0062 - acc: 0.9980 - val_loss: 0.0443 - val_acc: 0.9914
+Epoch 19/20
+ - 4s - loss: 0.0057 - acc: 0.9980 - val_loss: 0.0603 - val_acc: 0.9899
+Epoch 20/20
+ - 4s - loss: 0.0038 - acc: 0.9990 - val_loss: 0.0403 - val_acc: 0.9932
+Test loss: 0.04624524903525416
+Test accuracy: 0.9924
+Conv2D Noisy Test loss: 0.1704461801133497
+Conv2D Noisy Test accuracy: 0.9614
+Stochastic Conv2D Noisy Test loss: 0.17662081349361688
+Stochastic Conv2D Noisy Test accuracy: 0.954
+Stochastic Conv2D Noisy Test loss: 0.16304039150783792
+Stochastic Conv2D Noisy Test accuracy: 0.9552
+Stochastic Conv2D Noisy Test loss: 0.17724813244082033
+Stochastic Conv2D Noisy Test accuracy: 0.9522
+Stochastic Conv2D Noisy Test loss: 0.19062387494919822
+Stochastic Conv2D Noisy Test accuracy: 0.9499
+Stochastic Conv2D Noisy Test loss: 0.1709397514026612
+Stochastic Conv2D Noisy Test accuracy: 0.9557
+Stochastic Conv2D Noisy Test loss: 0.17721138853505253
+Stochastic Conv2D Noisy Test accuracy: 0.9525
+Stochastic Conv2D Noisy Test loss: 0.16925183697815518
+Stochastic Conv2D Noisy Test accuracy: 0.9533
+Stochastic Conv2D Noisy Test loss: 0.18101996578238905
+Stochastic Conv2D Noisy Test accuracy: 0.9507
+Stochastic Conv2D Noisy Test loss: 0.17822139679994434
+Stochastic Conv2D Noisy Test accuracy: 0.9523
+Stochastic Conv2D Noisy Test loss: 0.1746967354811728
+Stochastic Conv2D Noisy Test accuracy: 0.9525
+Conv2D Custom Test loss: 0.3607069253921509
+Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 2.3097145557403564
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 1.905495285987854
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 2.4346325397491455
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 2.2867648601531982
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 2.303605079650879
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 1.7010693550109863
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 1.4808847904205322
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 2.041844606399536
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 2.3325231075286865
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 1.9426727294921875
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 8s - loss: 0.2364 - acc: 0.9250 - val_loss: 0.0563 - val_acc: 0.9817
+Epoch 2/20
+ - 3s - loss: 0.0575 - acc: 0.9823 - val_loss: 0.0694 - val_acc: 0.9771
+Epoch 3/20
+ - 3s - loss: 0.0383 - acc: 0.9880 - val_loss: 0.0347 - val_acc: 0.9892
+Epoch 4/20
+ - 3s - loss: 0.0287 - acc: 0.9904 - val_loss: 0.0336 - val_acc: 0.9893
+Epoch 5/20
+ - 3s - loss: 0.0216 - acc: 0.9929 - val_loss: 0.0344 - val_acc: 0.9904
+Epoch 6/20
+ - 3s - loss: 0.0181 - acc: 0.9944 - val_loss: 0.0460 - val_acc: 0.9857
+Epoch 7/20
+ - 3s - loss: 0.0153 - acc: 0.9953 - val_loss: 0.0293 - val_acc: 0.9920
+Epoch 8/20
+ - 3s - loss: 0.0118 - acc: 0.9963 - val_loss: 0.0295 - val_acc: 0.9920
+Epoch 9/20
+ - 3s - loss: 0.0107 - acc: 0.9967 - val_loss: 0.0326 - val_acc: 0.9920
+Epoch 10/20
+ - 3s - loss: 0.0091 - acc: 0.9970 - val_loss: 0.0332 - val_acc: 0.9918
+Epoch 11/20
+ - 3s - loss: 0.0077 - acc: 0.9977 - val_loss: 0.0376 - val_acc: 0.9914
+Epoch 12/20
+ - 3s - loss: 0.0067 - acc: 0.9980 - val_loss: 0.0356 - val_acc: 0.9925
+Epoch 13/20
+ - 3s - loss: 0.0060 - acc: 0.9982 - val_loss: 0.0374 - val_acc: 0.9909
+Epoch 14/20
+ - 3s - loss: 0.0054 - acc: 0.9984 - val_loss: 0.0415 - val_acc: 0.9919
+Epoch 15/20
+ - 3s - loss: 0.0040 - acc: 0.9987 - val_loss: 0.0488 - val_acc: 0.9910
+Epoch 16/20
+ - 3s - loss: 0.0044 - acc: 0.9988 - val_loss: 0.0384 - val_acc: 0.9925
+Epoch 17/20
+ - 3s - loss: 0.0038 - acc: 0.9987 - val_loss: 0.0439 - val_acc: 0.9926
+Epoch 18/20
+ - 3s - loss: 0.0036 - acc: 0.9990 - val_loss: 0.0463 - val_acc: 0.9923
+Epoch 19/20
+ - 3s - loss: 0.0028 - acc: 0.9992 - val_loss: 0.0447 - val_acc: 0.9930
+Epoch 20/20
+ - 3s - loss: 0.0038 - acc: 0.9989 - val_loss: 0.0489 - val_acc: 0.9926
+Test loss: 0.048928888618179914
+Test accuracy: 0.9926
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2770 - acc: 0.9136 - val_loss: 0.0665 - val_acc: 0.9782
+Epoch 2/20
+ - 4s - loss: 0.0602 - acc: 0.9818 - val_loss: 0.0369 - val_acc: 0.9879
+Epoch 3/20
+ - 4s - loss: 0.0414 - acc: 0.9871 - val_loss: 0.0303 - val_acc: 0.9893
+Epoch 4/20
+ - 4s - loss: 0.0317 - acc: 0.9898 - val_loss: 0.0311 - val_acc: 0.9900
+Epoch 5/20
+ - 4s - loss: 0.0249 - acc: 0.9919 - val_loss: 0.0308 - val_acc: 0.9902
+Epoch 6/20
+ - 4s - loss: 0.0213 - acc: 0.9932 - val_loss: 0.0373 - val_acc: 0.9901
+Epoch 7/20
+ - 4s - loss: 0.0160 - acc: 0.9951 - val_loss: 0.0302 - val_acc: 0.9912
+Epoch 8/20
+ - 4s - loss: 0.0156 - acc: 0.9948 - val_loss: 0.0382 - val_acc: 0.9897
+Epoch 9/20
+ - 4s - loss: 0.0130 - acc: 0.9956 - val_loss: 0.0368 - val_acc: 0.9899
+Epoch 10/20
+ - 4s - loss: 0.0106 - acc: 0.9966 - val_loss: 0.0756 - val_acc: 0.9858
+Epoch 11/20
+ - 4s - loss: 0.0112 - acc: 0.9965 - val_loss: 0.0381 - val_acc: 0.9904
+Epoch 12/20
+ - 4s - loss: 0.0100 - acc: 0.9967 - val_loss: 0.0366 - val_acc: 0.9906
+Epoch 13/20
+ - 4s - loss: 0.0092 - acc: 0.9969 - val_loss: 0.0363 - val_acc: 0.9915
+Epoch 14/20
+ - 4s - loss: 0.0076 - acc: 0.9976 - val_loss: 0.0454 - val_acc: 0.9893
+Epoch 15/20
+ - 4s - loss: 0.0072 - acc: 0.9978 - val_loss: 0.0379 - val_acc: 0.9923
+Epoch 16/20
+ - 4s - loss: 0.0069 - acc: 0.9980 - val_loss: 0.0418 - val_acc: 0.9920
+Epoch 17/20
+ - 4s - loss: 0.0063 - acc: 0.9980 - val_loss: 0.0478 - val_acc: 0.9917
+Epoch 18/20
+ - 4s - loss: 0.0055 - acc: 0.9981 - val_loss: 0.0435 - val_acc: 0.9902
+Epoch 19/20
+ - 4s - loss: 0.0058 - acc: 0.9982 - val_loss: 0.0479 - val_acc: 0.9898
+Epoch 20/20
+ - 4s - loss: 0.0042 - acc: 0.9986 - val_loss: 0.0405 - val_acc: 0.9920
+Test loss: 0.043250831820204984
+Test accuracy: 0.9918
+Conv2D Noisy Test loss: 0.10619824355759193
+Conv2D Noisy Test accuracy: 0.9729
+Stochastic Conv2D Noisy Test loss: 0.197940877913218
+Stochastic Conv2D Noisy Test accuracy: 0.9467
+Stochastic Conv2D Noisy Test loss: 0.19498814146891236
+Stochastic Conv2D Noisy Test accuracy: 0.9486
+Stochastic Conv2D Noisy Test loss: 0.20244522803621368
+Stochastic Conv2D Noisy Test accuracy: 0.9451
+Stochastic Conv2D Noisy Test loss: 0.20959547116532923
+Stochastic Conv2D Noisy Test accuracy: 0.9454
+Stochastic Conv2D Noisy Test loss: 0.19526470815427602
+Stochastic Conv2D Noisy Test accuracy: 0.9493
+Stochastic Conv2D Noisy Test loss: 0.2014436322197318
+Stochastic Conv2D Noisy Test accuracy: 0.9458
+Stochastic Conv2D Noisy Test loss: 0.2075275932420045
+Stochastic Conv2D Noisy Test accuracy: 0.9462
+Stochastic Conv2D Noisy Test loss: 0.20726294430200942
+Stochastic Conv2D Noisy Test accuracy: 0.9451
+Stochastic Conv2D Noisy Test loss: 0.20810640602409838
+Stochastic Conv2D Noisy Test accuracy: 0.9437
+Stochastic Conv2D Noisy Test loss: 0.19503042676430196
+Stochastic Conv2D Noisy Test accuracy: 0.9473
+Conv2D Custom Test loss: 0.1333301067352295
+Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.8359612226486206
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.15343855321407318
+Stochastic Conv2D Custom Test accuracy: 1.0
+Stochastic Conv2D Custom Test loss: 0.21226866543293
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.15569791197776794
+Stochastic Conv2D Custom Test accuracy: 1.0
+Stochastic Conv2D Custom Test loss: 0.19168902933597565
+Stochastic Conv2D Custom Test accuracy: 1.0
+Stochastic Conv2D Custom Test loss: 0.14400257170200348
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.2918018102645874
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 0.22581328451633453
+Stochastic Conv2D Custom Test accuracy: 0.9444444179534912
+Stochastic Conv2D Custom Test loss: 0.14631611108779907
+Stochastic Conv2D Custom Test accuracy: 1.0
+Stochastic Conv2D Custom Test loss: 0.25704726576805115
+Stochastic Conv2D Custom Test accuracy: 0.8888888955116272
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 8s - loss: 0.2437 - acc: 0.9235 - val_loss: 0.0953 - val_acc: 0.9702
+Epoch 2/20
+ - 3s - loss: 0.0554 - acc: 0.9827 - val_loss: 0.0338 - val_acc: 0.9885
+Epoch 3/20
+ - 3s - loss: 0.0359 - acc: 0.9887 - val_loss: 0.0343 - val_acc: 0.9884
+Epoch 4/20
+ - 3s - loss: 0.0279 - acc: 0.9914 - val_loss: 0.0319 - val_acc: 0.9897
+Epoch 5/20
+ - 3s - loss: 0.0218 - acc: 0.9932 - val_loss: 0.0259 - val_acc: 0.9924
+Epoch 6/20
+ - 3s - loss: 0.0170 - acc: 0.9945 - val_loss: 0.0313 - val_acc: 0.9900
+Epoch 7/20
+ - 3s - loss: 0.0138 - acc: 0.9955 - val_loss: 0.0296 - val_acc: 0.9920
+Epoch 8/20
+ - 3s - loss: 0.0111 - acc: 0.9964 - val_loss: 0.0278 - val_acc: 0.9930
+Epoch 9/20
+ - 3s - loss: 0.0090 - acc: 0.9973 - val_loss: 0.0286 - val_acc: 0.9927
+Epoch 10/20
+ - 3s - loss: 0.0081 - acc: 0.9975 - val_loss: 0.0308 - val_acc: 0.9927
+Epoch 11/20
+ - 3s - loss: 0.0070 - acc: 0.9977 - val_loss: 0.0330 - val_acc: 0.9919
+Epoch 12/20
+ - 3s - loss: 0.0061 - acc: 0.9979 - val_loss: 0.0397 - val_acc: 0.9916
+Epoch 13/20
+ - 3s - loss: 0.0056 - acc: 0.9982 - val_loss: 0.0368 - val_acc: 0.9921
+Epoch 14/20
+ - 3s - loss: 0.0042 - acc: 0.9988 - val_loss: 0.0391 - val_acc: 0.9920
+Epoch 15/20
+ - 3s - loss: 0.0045 - acc: 0.9987 - val_loss: 0.0404 - val_acc: 0.9915
+Epoch 16/20
+ - 3s - loss: 0.0041 - acc: 0.9988 - val_loss: 0.0410 - val_acc: 0.9925
+Epoch 17/20
+ - 3s - loss: 0.0044 - acc: 0.9984 - val_loss: 0.0528 - val_acc: 0.9908
+Epoch 18/20
+ - 3s - loss: 0.0033 - acc: 0.9991 - val_loss: 0.0566 - val_acc: 0.9893
+Epoch 19/20
+ - 3s - loss: 0.0036 - acc: 0.9990 - val_loss: 0.0420 - val_acc: 0.9931
+Epoch 20/20
+ - 3s - loss: 0.0033 - acc: 0.9991 - val_loss: 0.0513 - val_acc: 0.9916
+Test loss: 0.05134636254335274
+Test accuracy: 0.9916
+Stochastic layer using a bit size of 8
+Stochastic layer inverted: True
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/20
+ - 4s - loss: 0.2803 - acc: 0.9133 - val_loss: 0.0842 - val_acc: 0.9734
+Epoch 2/20
+ - 4s - loss: 0.0620 - acc: 0.9807 - val_loss: 0.0367 - val_acc: 0.9887
+Epoch 3/20
+ - 4s - loss: 0.0406 - acc: 0.9872 - val_loss: 0.1634 - val_acc: 0.9540
+Epoch 4/20
+ - 4s - loss: 0.0325 - acc: 0.9896 - val_loss: 0.0487 - val_acc: 0.9832
+Epoch 5/20
+ - 4s - loss: 0.0261 - acc: 0.9920 - val_loss: 0.0346 - val_acc: 0.9891
+Epoch 6/20
+ - 4s - loss: 0.0207 - acc: 0.9929 - val_loss: 0.0231 - val_acc: 0.9928
+Epoch 7/20
+ - 4s - loss: 0.0187 - acc: 0.9941 - val_loss: 0.0395 - val_acc: 0.9886
+Epoch 8/20
+ - 4s - loss: 0.0151 - acc: 0.9954 - val_loss: 0.0529 - val_acc: 0.9862
+Epoch 9/20
+ - 4s - loss: 0.0126 - acc: 0.9960 - val_loss: 0.0280 - val_acc: 0.9923
+Epoch 10/20
+ - 4s - loss: 0.0117 - acc: 0.9963 - val_loss: 0.0286 - val_acc: 0.9921
+Epoch 11/20
+ - 4s - loss: 0.0104 - acc: 0.9965 - val_loss: 0.0289 - val_acc: 0.9921
+Epoch 12/20
+ - 4s - loss: 0.0097 - acc: 0.9970 - val_loss: 0.0297 - val_acc: 0.9919
+Epoch 13/20
+ - 4s - loss: 0.0077 - acc: 0.9975 - val_loss: 0.0773 - val_acc: 0.9846
+Epoch 14/20
+ - 4s - loss: 0.0060 - acc: 0.9982 - val_loss: 0.0468 - val_acc: 0.9906
+Epoch 15/20
+ - 4s - loss: 0.0075 - acc: 0.9976 - val_loss: 0.0343 - val_acc: 0.9919
+Epoch 16/20
+ - 4s - loss: 0.0072 - acc: 0.9976 - val_loss: 0.0372 - val_acc: 0.9917
+Epoch 17/20
+ - 4s - loss: 0.0064 - acc: 0.9978 - val_loss: 0.0348 - val_acc: 0.9934
+Epoch 18/20
+ - 4s - loss: 0.0064 - acc: 0.9978 - val_loss: 0.0324 - val_acc: 0.9937
+Epoch 19/20
+ - 4s - loss: 0.0057 - acc: 0.9982 - val_loss: 0.0402 - val_acc: 0.9924
+Epoch 20/20
+ - 4s - loss: 0.0059 - acc: 0.9981 - val_loss: 0.0430 - val_acc: 0.9913
+Test loss: 0.04369867417754722
+Test accuracy: 0.9915
+Conv2D Noisy Test loss: 0.17174833911531606
+Conv2D Noisy Test accuracy: 0.9572
+Stochastic Conv2D Noisy Test loss: 0.14877576600881293
+Stochastic Conv2D Noisy Test accuracy: 0.9613
+Stochastic Conv2D Noisy Test loss: 0.15875866545238532
+Stochastic Conv2D Noisy Test accuracy: 0.9573
+Stochastic Conv2D Noisy Test loss: 0.15653531039443333
+Stochastic Conv2D Noisy Test accuracy: 0.9602
+Stochastic Conv2D Noisy Test loss: 0.1537045334475115
+Stochastic Conv2D Noisy Test accuracy: 0.9577
+Stochastic Conv2D Noisy Test loss: 0.16841664243051782
+Stochastic Conv2D Noisy Test accuracy: 0.9539
+Stochastic Conv2D Noisy Test loss: 0.1528648433812894
+Stochastic Conv2D Noisy Test accuracy: 0.9594
+Stochastic Conv2D Noisy Test loss: 0.15314614530494436
+Stochastic Conv2D Noisy Test accuracy: 0.9604
+Stochastic Conv2D Noisy Test loss: 0.1510780381731689
+Stochastic Conv2D Noisy Test accuracy: 0.9597
+Stochastic Conv2D Noisy Test loss: 0.14680079175368882
+Stochastic Conv2D Noisy Test accuracy: 0.9616
+Stochastic Conv2D Noisy Test loss: 0.153437361792475
+Stochastic Conv2D Noisy Test accuracy: 0.96
+Conv2D Custom Test loss: 0.2882264256477356
+Conv2D Custom Test accuracy: 0.8888888955116272
+Stochastic Conv2D Custom Test loss: 1.2503708600997925
+Stochastic Conv2D Custom Test accuracy: 0.6111111044883728
+Stochastic Conv2D Custom Test loss: 0.7531931400299072
+Stochastic Conv2D Custom Test accuracy: 0.7777777910232544
+Stochastic Conv2D Custom Test loss: 1.4092379808425903
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 0.8093265891075134
+Stochastic Conv2D Custom Test accuracy: 0.8333333134651184
+Stochastic Conv2D Custom Test loss: 1.4485933780670166
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 0.7857611775398254
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 1.103418231010437
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
+Stochastic Conv2D Custom Test loss: 1.3263307809829712
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 1.1048005819320679
+Stochastic Conv2D Custom Test accuracy: 0.7222222089767456
+Stochastic Conv2D Custom Test loss: 1.006415843963623
+Stochastic Conv2D Custom Test accuracy: 0.6666666865348816
