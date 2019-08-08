@@ -14,6 +14,9 @@ def model(bit_size=None, dense_size=512):
         model.add(StochasticLayer(784, input_shape=(784,), bit_size=bit_size, trainable=False))
 
     model.add(Dense(dense_size, input_shape=(784,), activation='relu'))
+
+    model.add(StochasticLayer(dense_size, input_shape=(dense_size,), bit_size=bit_size, trainable=False))
+
     #model.add(Dropout(0.2))
     model.add(Dense(dense_size, activation='relu'))
     #model.add(Dropout(0.2))
