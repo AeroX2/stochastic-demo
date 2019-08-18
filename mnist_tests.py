@@ -10,13 +10,13 @@ from data import normal_mnist
 (x_train, y_train), (x_test, y_test) = normal_mnist.data()
 
 #Setup
-from models import normal_model
-model = normal_model.model()
-history = model.fit(x_train, y_train,
-                    batch_size=batch_size,
-                    epochs=epochs,
-                    verbose=verbose,
-                    validation_data=(x_test, y_test))
+#from models import normal_model
+#model = normal_model.model()
+#history = model.fit(x_train, y_train,
+#                    batch_size=batch_size,
+#                    epochs=epochs,
+#                    verbose=verbose,
+#                    validation_data=(x_test, y_test))
 
 from models import stochastic_model
 model_stochastic = stochastic_model.model()
@@ -27,10 +27,10 @@ history = model_stochastic.fit(x_train, y_train,
                     validation_data=(x_test, y_test))
 
 #Normal test
-print('Normal model')
-score = model.evaluate(x_test, y_test, verbose=verbose)
-print('Test loss:', score[0])
-print('Test accuracy:', score[1])
+#print('Normal model')
+#score = model.evaluate(x_test, y_test, verbose=verbose)
+#print('Test loss:', score[0])
+#print('Test accuracy:', score[1])
 
 print('Stochastic model')
 score = model_stochastic.evaluate(x_test, y_test, verbose=verbose)
