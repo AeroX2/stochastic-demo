@@ -8,7 +8,7 @@ from torch.autograd import Function
 from torchvision import datasets, transforms
 
 class LinearStochasticFunction(Function):
-    BIT_SIZE = 512;
+    BIT_SIZE = 64;
 
     # Note that both forward and backward are @staticmethods
     @staticmethod
@@ -16,52 +16,45 @@ class LinearStochasticFunction(Function):
     def forward(ctx, input, weight, bias=None):
         ctx.save_for_backward(input, weight, bias)
 
-        #inputz = torch.tensor([[1.0,0.5,0.6,0.7],[0.1,0.2,0.3,0.8]])
-        #weightz = torch.tensor([[0.5 for _ in range(4)] for _ in range(500)])
-        #weightz = weightz.t()
-
-        #print(input.shape)
-        #print(weight.shape)
-        weight = weight.t();
-
         # Normalize inputs and weights
-        input /= input.max()
-        weight /= weight.max()
+        #input += input.min(dim=1).values[:, None].abs()
+        #input /= input.max(dim=1).values[:, None]
 
-        # Ensure the addition of the inputs does not exceed 1
+        #weight += weight.min(dim=1).values[:, None].abs()
+        #weight /= weight.max(dim=1).values[:, None]
+        weight = weight.t()
+        weight = weight.clamp(-1,1)
+
+        #input = torch.tensor([[1.0,0.5,0.6,0.7],[0.1,0.2,0.3,0.8]])
+        #weight = torch.tensor([[0.5 for _ in range(4)] for _ in range(500)])
+        #weight = weight.t()
+
+        ## Ensure the addition of the inputs does not exceed 1
         input /= input.shape[1]
 
         # Convert input and weight to bitstreams
         input_expand = input[:, :, None]
         input_tiled = input_expand.repeat(1,1,LinearStochasticFunction.BIT_SIZE)
-        input_bitstream = torch.rand(input_tiled.shape) <= input_tiled
+        input_bitstream = torch.rand_like(input_tiled) <= input_tiled
 
         weight_expand = weight[:, :, None]
         weight_tiled = weight_expand.repeat(1,1,LinearStochasticFunction.BIT_SIZE)
-        weight_bitstream = torch.rand(weight_tiled.shape) <= weight_tiled
+        weight_bitstream = torch.rand_like(weight_tiled) <= weight_tiled
 
-        multiplication = input_bitstream[:, :, None, :] & weight_bitstream
-        
-        final_row = multiplication[:, 0, :, :]
-        final_shape = final_row.shape
-        for row_i in range(1, multiplication.shape[1]):
-            row = multiplication[:, row_i, :, :]
-            #select_line = torch.rand(final_shape) <= 0.5
-            #final_row = (select_line*final_row) + ((1-select_line) * row)
 
-            # Use a saturating addition considering addition shouldn't exceed 1
-            final_row = final_row | row
+        # Multiplication
+        multiplication = (input_bitstream[:, :, None, :] & weight_bitstream)
+
+        # Addition
+        final_row = multiplication.sum(dim=1) > 0
 
         output = torch.mean(final_row.float(), 2)
-        #print(final, final.shape)
-
         #output = input.mm(weight)
         #print(output, output.shape)
 
-        #print(output-final)
+        #if bias is not None:
+        #    output += bias.unsqueeze(0).expand_as(output)
 
-        if bias is not None:
-            output += bias.unsqueeze(0).expand_as(output)
         return output
 
     # This function has only a single output, so it gets only one gradient
@@ -122,17 +115,17 @@ class StochasticNet(nn.Module):
     def __init__(self):
         super(StochasticNet, self).__init__()
         self.d1 = nn.Linear(28*28, 512, False)
-        self.do1 = nn.Dropout(0.2)
+        #self.do1 = nn.Dropout(0.2)
         self.d2 = StochasticLinear(512, 500, False)
-        self.do2 = nn.Dropout(0.2)
+        #self.do2 = nn.Dropout(0.2)
         self.d3 = nn.Linear(500, 10, False)
 
     def forward(self, x):
         x = x.view(-1, 28*28)
         x = F.relu(self.d1(x))
-        x = self.do1(x)
+        #x = self.do1(x)
         x = F.relu(self.d2(x))
-        x = self.do2(x)
+        #x = self.do2(x)
         x = F.relu(self.d3(x))
         return F.log_softmax(x, dim=1)
 
@@ -165,8 +158,8 @@ def train(args, model, device, train_loader, optimizer, epoch):
         optimizer.step()
 
         # Ensure weights are positive
-        for p in model.parameters():
-            p.data.clamp_(0)
+        #for p in model.parameters():
+        #    p.data.clamp_(0)
 
         if batch_idx % args.log_interval == 0:
             print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(

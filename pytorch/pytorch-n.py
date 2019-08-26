@@ -11,17 +11,17 @@ class NormalNet(nn.Module):
     def __init__(self):
         super(NormalNet, self).__init__()
         self.d1 = nn.Linear(28*28, 512, False)
-        self.do1 = nn.Dropout(0.2)
+        #self.do1 = nn.Dropout(0.2)
         self.d2 = nn.Linear(512, 500, False)
-        self.do2 = nn.Dropout(0.2)
+        #self.do2 = nn.Dropout(0.2)
         self.d3 = nn.Linear(500, 10, False)
 
     def forward(self, x):
         x = x.view(-1, 28*28)
         x = F.relu(self.d1(x))
-        x = self.do1(x)
+        #x = self.do1(x)
         x = F.relu(self.d2(x))
-        x = self.do2(x)
+        #x = self.do2(x)
         x = F.relu(self.d3(x))
         return F.log_softmax(x, dim=1)
     
