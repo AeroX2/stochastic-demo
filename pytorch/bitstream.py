@@ -10,11 +10,11 @@ from torchvision import datasets, transforms
 class NormalNet(nn.Module):
     def __init__(self):
         super(NormalNet, self).__init__()
-        self.d1 = nn.Linear(512, 100)
+        self.d1 = nn.Linear(512, 512)
         #self.do1 = nn.Dropout(0.2)
-        self.d2 = nn.Linear(100, 100)
+        self.d2 = nn.Linear(512, 512)
         #self.do2 = nn.Dropout(0.2)
-        self.d3 = nn.Linear(100, 1)
+        self.d3 = nn.Linear(512, 1)
 
     def forward(self, x):
         x = F.relu(self.d1(x))
@@ -22,7 +22,7 @@ class NormalNet(nn.Module):
         x = F.relu(self.d2(x))
         #x = self.do2(x)
         x = F.relu(self.d3(x))
-        return F.log_softmax(x, dim=1)
+        return x.clamp(max=1)
     
 def train(args, model, device, train_loader, optimizer, epoch):
     model.train()
@@ -92,12 +92,11 @@ def main():
 
     kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
 
-    def gen():
-        r = torch.rand(1).float()
+    def gen(r):
         return ((torch.rand(512) <= r).float(),r)
 
-    train_loader = torch.utils.data.DataLoader([gen() for i in range(50000)], batch_size=args.batch_size, shuffle=True, **kwargs)
-    test_loader = torch.utils.data.DataLoader([gen() for i in range(10000)], batch_size=args.test_batch_size, shuffle=True, **kwargs)
+    train_loader = torch.utils.data.DataLoader([gen(torch.rand(1).float()) for i in range(50000)], batch_size=args.batch_size, shuffle=True, **kwargs)
+    test_loader = torch.utils.data.DataLoader([gen(torch.rand(1).float()) for i in range(10000)], batch_size=args.test_batch_size, shuffle=True, **kwargs)
 
     model = NormalNet().to(device)
     #model.load_state_dict(torch.load('mnist_cnn.pt'))
@@ -107,6 +106,12 @@ def main():
     for epoch in range(1, args.epochs + 1):
         train(args, model, device, train_loader, optimizer, epoch)
         test(args, model, device, test_loader)
+
+    while True:
+        r = float(input("Floating point?: "))
+        z = gen(r)[0].cuda().unsqueeze(0)
+        print("Normal results", torch.mean(z))
+        print("Neural network", model(z))
 
     if (args.save_model):
         torch.save(model.state_dict(),"mnist_cnn.pt")
