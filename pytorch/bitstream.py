@@ -10,17 +10,16 @@ from torchvision import datasets, transforms
 class NormalNet(nn.Module):
     def __init__(self):
         super(NormalNet, self).__init__()
-        self.d1 = nn.Linear(28*28, 512, False)
+        self.d1 = nn.Linear(512, 100)
         #self.do1 = nn.Dropout(0.2)
-        self.d2 = nn.Linear(512, 500, False)
+        self.d2 = nn.Linear(100, 100)
         #self.do2 = nn.Dropout(0.2)
-        self.d3 = nn.Linear(512, 10, False)
+        self.d3 = nn.Linear(100, 1)
 
     def forward(self, x):
-        x = x.view(-1, 28*28)
         x = F.relu(self.d1(x))
         #x = self.do1(x)
-        #x = F.relu(self.d2(x))
+        x = F.relu(self.d2(x))
         #x = self.do2(x)
         x = F.relu(self.d3(x))
         return F.log_softmax(x, dim=1)
@@ -31,13 +30,13 @@ def train(args, model, device, train_loader, optimizer, epoch):
         data, target = data.to(device), target.to(device)
         optimizer.zero_grad()
         output = model(data)
-        loss = F.nll_loss(output, target)
+        loss = F.mse_loss(output, target)
         loss.backward()
         optimizer.step()
 
         # Ensure weights are positive
-        for p in model.parameters():
-            p.data.clamp_(0)
+        #for p in model.parameters():
+        #    p.data.clamp_(0)
 
         if batch_idx % args.log_interval == 0:
             print('Train Epoch: {} [{}/{} ({:.0f}%)]\tLoss: {:.6f}'.format(
@@ -52,9 +51,9 @@ def test(args, model, device, test_loader):
         for data, target in test_loader:
             data, target = data.to(device), target.to(device)
             output = model(data)
-            test_loss += F.nll_loss(output, target, reduction='sum').item() # sum up batch loss
-            pred = output.argmax(dim=1, keepdim=True) # get the index of the max log-probability
-            correct += pred.eq(target.view_as(pred)).sum().item()
+            test_loss += F.mse_loss(output, target, reduction='sum').item() # sum up batch loss
+            #pred = output.argmax(dim=1, keepdim=True) # get the index of the max log-probability
+            correct += (output - target).abs().sum().item()
 
     test_loss /= len(test_loader.dataset)
 
@@ -67,7 +66,7 @@ def main():
     parser = argparse.ArgumentParser(description='PyTorch MNIST Example')
     parser.add_argument('--batch-size', type=int, default=64, metavar='N',
                         help='input batch size for training (default: 64)')
-    parser.add_argument('--test-batch-size', type=int, default=1000, metavar='N',
+    parser.add_argument('--test-batch-size', type=int, default=64, metavar='N',
                         help='input batch size for testing (default: 1000)')
     parser.add_argument('--epochs', type=int, default=10, metavar='N',
                         help='number of epochs to train (default: 10)')
@@ -87,27 +86,22 @@ def main():
     args = parser.parse_args()
     use_cuda = not args.no_cuda and torch.cuda.is_available()
 
-    #torch.manual_seed(args.seed)
+    torch.manual_seed(args.seed)
 
     device = torch.device("cuda" if use_cuda else "cpu")
 
     kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
-    train_loader = torch.utils.data.DataLoader(
-        datasets.MNIST('../data', train=True, download=True,
-                       transform=transforms.Compose([
-                           transforms.ToTensor(),
-                           transforms.Normalize((0.1307,), (0.3081,))
-                       ])),
-        batch_size=args.batch_size, shuffle=True, **kwargs)
-    test_loader = torch.utils.data.DataLoader(
-        datasets.MNIST('../data', train=False, transform=transforms.Compose([
-                           transforms.ToTensor(),
-                           transforms.Normalize((0.1307,), (0.3081,))
-                       ])),
-        batch_size=args.test_batch_size, shuffle=True, **kwargs)
 
+    def gen():
+        r = torch.rand(1).float()
+        return ((torch.rand(512) <= r).float(),r)
+
+    train_loader = torch.utils.data.DataLoader([gen() for i in range(50000)], batch_size=args.batch_size, shuffle=True, **kwargs)
+    test_loader = torch.utils.data.DataLoader([gen() for i in range(10000)], batch_size=args.test_batch_size, shuffle=True, **kwargs)
 
     model = NormalNet().to(device)
+    #model.load_state_dict(torch.load('mnist_cnn.pt'))
+
     optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum)
 
     for epoch in range(1, args.epochs + 1):

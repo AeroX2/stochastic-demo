@@ -8,48 +8,74 @@ from torch.autograd import Function
 from torchvision import datasets, transforms
 
 class LinearStochasticFunction(Function):
-    BIT_SIZE = 64;
+    BIT_SIZE = 512;
 
     # Note that both forward and backward are @staticmethods
     @staticmethod
     # bias is an optional argument
     def forward(ctx, input, weight, bias=None):
-        ctx.save_for_backward(input, weight, bias)
 
         # Normalize inputs and weights
-        #input += input.min(dim=1).values[:, None].abs()
-        #input /= input.max(dim=1).values[:, None]
 
-        #weight += weight.min(dim=1).values[:, None].abs()
-        #weight /= weight.max(dim=1).values[:, None]
-        weight = weight.t()
-        weight = weight.clamp(-1,1)
+        #weight += weight.min(dim=1)[0][:, None].abs()
+        #weight /= weight.max(dim=1)[0][:, None]
+        #weight = weight.clamp(0,1)
 
-        #input = torch.tensor([[1.0,0.5,0.6,0.7],[0.1,0.2,0.3,0.8]])
-        #weight = torch.tensor([[0.5 for _ in range(4)] for _ in range(500)])
+        ctx.save_for_backward(input, weight, bias)
+
+        # Test values
+        input = torch.tensor([[1.0,0.5,0.6,0.7],[0.1,0.2,0.3,0.8]])
+        weight = torch.tensor([[0.5 for _ in range(4)] for _ in range(500)])
         #weight = weight.t()
 
-        ## Ensure the addition of the inputs does not exceed 1
+        input /= input.max(dim=1)[0][:, None]
+        #input /= 2.0
+
+        # Ensure the addition of the inputs does not exceed 1
         input /= input.shape[1]
 
-        # Convert input and weight to bitstreams
+        #print(input.min())
+        #print(input.max())
+
+
+        weight = weight.t()
+
+        ## Convert input and weight to bitstreams
         input_expand = input[:, :, None]
         input_tiled = input_expand.repeat(1,1,LinearStochasticFunction.BIT_SIZE)
-        input_bitstream = torch.rand_like(input_tiled) <= input_tiled
+        input_bitstream = torch.rand_like(input_tiled) <= (input_tiled) #+1)/2
 
         weight_expand = weight[:, :, None]
         weight_tiled = weight_expand.repeat(1,1,LinearStochasticFunction.BIT_SIZE)
-        weight_bitstream = torch.rand_like(weight_tiled) <= weight_tiled
-
+        weight_bitstream = torch.rand_like(weight_tiled) <= (weight_tiled) #+1)/2
 
         # Multiplication
         multiplication = (input_bitstream[:, :, None, :] & weight_bitstream)
 
         # Addition
+
+        # Saturating addition
         final_row = multiplication.sum(dim=1) > 0
 
+        # Non-saturating addition
+        #final_row = multiplication[:, 0, :, :]
+        #exceeding = torch.Tensor(final_row.shape)
+
+        #for row_i in range(1, multiplication.shape[1]):
+        #    row = multiplication[:, row_i, :, :]
+        #    select_line = torch.rand_like(final_row) <= 0.5
+        #    final_row = (select_line*final_row) + ((1-select_line) * row)
+
+
+        # Convert bitstream to floating point
         output = torch.mean(final_row.float(), 2)
+
         #output = input.mm(weight)
+
+        print(output)
+        output *= input.shape[1]
+        print(output)
+
         #print(output, output.shape)
 
         #if bias is not None:
@@ -116,15 +142,15 @@ class StochasticNet(nn.Module):
         super(StochasticNet, self).__init__()
         self.d1 = nn.Linear(28*28, 512, False)
         #self.do1 = nn.Dropout(0.2)
-        self.d2 = StochasticLinear(512, 500, False)
+        self.d3 = StochasticLinear(512, 10, False)
         #self.do2 = nn.Dropout(0.2)
-        self.d3 = nn.Linear(500, 10, False)
+        #self.d3 = nn.Linear(500, 10, False)
 
     def forward(self, x):
         x = x.view(-1, 28*28)
         x = F.relu(self.d1(x))
         #x = self.do1(x)
-        x = F.relu(self.d2(x))
+        #x = F.relu(self.d2(x))
         #x = self.do2(x)
         x = F.relu(self.d3(x))
         return F.log_softmax(x, dim=1)
@@ -230,6 +256,8 @@ def main():
 
 
     model = StochasticNet().to(device)
+    #model.load_state_dict(torch.load('mnist_cnn.pt'))
+
     optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum)
 
     for epoch in range(1, args.epochs + 1):
