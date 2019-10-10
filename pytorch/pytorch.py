@@ -8,7 +8,7 @@ from torch.autograd import Function
 from torchvision import datasets, transforms
 
 class LinearStochasticFunction(Function):
-    BIT_SIZE = 512;
+    BIT_SIZE = 1000;
 
     # Note that both forward and backward are @staticmethods
     @staticmethod
@@ -17,66 +17,72 @@ class LinearStochasticFunction(Function):
 
         # Normalize inputs and weights
 
-        #weight += weight.min(dim=1)[0][:, None].abs()
         #weight /= weight.max(dim=1)[0][:, None]
         #weight = weight.clamp(0,1)
 
         ctx.save_for_backward(input, weight, bias)
 
+        #print(weight.shape)
+        #print(weight.min(dim=1))
+
         # Test values
-        input = torch.tensor([[1.0,0.5,0.6,0.7],[0.1,0.2,0.3,0.8]])
-        weight = torch.tensor([[0.5 for _ in range(4)] for _ in range(500)])
-        #weight = weight.t()
+        #input = torch.tensor([[1.0,0.5,0.6,0.7],[0.1,0.2,0.3,0.8]])
+        #weight = torch.tensor([[0.5 for _ in range(5)] for _ in range(4)])
 
-        input /= input.max(dim=1)[0][:, None]
-        #input /= 2.0
+        #print(input.mm(weight.t()))
 
-        # Ensure the addition of the inputs does not exceed 1
-        input /= input.shape[1]
-
-        #print(input.min())
-        #print(input.max())
-
-
+        # Remove negative values
+        input -= input.min(dim=1)[0].clamp(max=0)[:, None]
+        weight -= weight.min(dim=1)[0].clamp(max=0)[:, None]
         weight = weight.t()
 
-        ## Convert input and weight to bitstreams
+        # Normalize
+        #input /= input.max(dim=1)[0][:, None]
+        #weight /= weight.max(dim=1)[0][:, None]
+        #input /= 15
+        #weight /= 20
+
+        #print("i", input[0])
+        #print("w", weight[0])
+        #print("m", input.mm(weight)*20*20)
+        #import pdb; pdb.set_trace()
+
+        # Convert input and weight to bitstreams
         input_expand = input[:, :, None]
         input_tiled = input_expand.repeat(1,1,LinearStochasticFunction.BIT_SIZE)
-        input_bitstream = torch.rand_like(input_tiled) <= (input_tiled) #+1)/2
+        input_bitstream = torch.rand_like(input_tiled) <= (input_tiled)
+        #print(torch.mean(input_bitstream.float(), 2))
 
         weight_expand = weight[:, :, None]
         weight_tiled = weight_expand.repeat(1,1,LinearStochasticFunction.BIT_SIZE)
-        weight_bitstream = torch.rand_like(weight_tiled) <= (weight_tiled) #+1)/2
+        weight_bitstream = torch.rand_like(weight_tiled) <= (weight_tiled)
+        #print(torch.mean(weight_bitstream.float(), 2))
 
         # Multiplication
         multiplication = (input_bitstream[:, :, None, :] & weight_bitstream)
+        #print(multiplication.shape)
+        #print(torch.mean(multiplication.float(), 3))
 
         # Addition
 
         # Saturating addition
-        final_row = multiplication.sum(dim=1) > 0
+        final_row = multiplication.sum(dim=1)
+        #print(final_row)
+        #print((final_row == 2).nonzero())
 
         # Non-saturating addition
         #final_row = multiplication[:, 0, :, :]
-        #exceeding = torch.Tensor(final_row.shape)
-
+        #final_shape = final_row.shape
         #for row_i in range(1, multiplication.shape[1]):
         #    row = multiplication[:, row_i, :, :]
-        #    select_line = torch.rand_like(final_row) <= 0.5
+        #    select_line = torch.rand(final_shape) <= 0.5
         #    final_row = (select_line*final_row) + ((1-select_line) * row)
-
 
         # Convert bitstream to floating point
         output = torch.mean(final_row.float(), 2)
-
-        #output = input.mm(weight)
-
-        print(output)
-        output *= input.shape[1]
-        print(output)
-
-        #print(output, output.shape)
+        #print(output)
+        #print('m',output*13*13)
+        #print([(((output*i)-(input.mm(weight))).abs() > 0.1).sum() for i in range(0,500)])
 
         #if bias is not None:
         #    output += bias.unsqueeze(0).expand_as(output)
@@ -235,7 +241,7 @@ def main():
     args = parser.parse_args()
     use_cuda = not args.no_cuda and torch.cuda.is_available()
 
-    #torch.manual_seed(args.seed)
+    torch.manual_seed(args.seed)
 
     device = torch.device("cuda" if use_cuda else "cpu")
 
