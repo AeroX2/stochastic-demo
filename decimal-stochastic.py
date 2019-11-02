@@ -3,7 +3,7 @@ import random
 import secrets
 import matplotlib.pyplot as plt
 
-RANDOM_RANGE = 20
+RANDOM_RANGE = 1
 BIT_LENGTH_DECIMAL = 1000
 BIT_LENGTH_FLOAT = 1000
 
@@ -21,20 +21,16 @@ def test():
 
   random_ = lambda: random.random()
   
-  #sf1 = [random_() < f1 for _ in range(BIT_LENGTH_FLOAT)]
-  #sf2 = [random_() < f2 for _ in range(BIT_LENGTH_FLOAT)]
+  sf1 = [random_() < f1 for _ in range(BIT_LENGTH_FLOAT)]
+  sf2 = [random_() < f2 for _ in range(BIT_LENGTH_FLOAT)]
   
-  sd1 = [random_() < v1*2/float(RANDOM_RANGE) for _ in range(BIT_LENGTH_DECIMAL)]
-  sd2 = [random_() < v2*2/float(RANDOM_RANGE) for _ in range(BIT_LENGTH_DECIMAL)]
-
-  print(v1,v2)
-  print(sum(sd1),sum(sd2))
-  print(sum(sd1)/BIT_LENGTH_DECIMAL,sum(sd2)/BIT_LENGTH_DECIMAL)
-  print(sum(sd1)/BIT_LENGTH_DECIMAL*RANDOM_RANGE,sum(sd2)/BIT_LENGTH_DECIMAL*RANDOM_RANGE)
+  sd1 = [random_() < d1/float(RANDOM_RANGE) for _ in range(BIT_LENGTH_DECIMAL)]
+  sd2 = [random_() < d2/float(RANDOM_RANGE) for _ in range(BIT_LENGTH_DECIMAL)]
 
   # Do addition
-  #sfo = [sf1[i] | sf2[i] for i in range(BIT_LENGTH_FLOAT)]
-  #carry = sum(sf1) + sum(sf2) >= BIT_LENGTH_FLOAT/2  
+  rb = [random_() < 0.5 for _ in range(BIT_LENGTH_DECIMAL)]
+  sfo = [sf1[i] if rb[i] else sf2[i] for i in range(BIT_LENGTH_FLOAT)]
+  carry = sum(sf1) + sum(sf2) >= BIT_LENGTH_FLOAT/2  
 
   rb = [random_() < 0.5 for _ in range(BIT_LENGTH_DECIMAL)]
   sdo = [sd1[i] if rb[i] else sd2[i] for i in range(BIT_LENGTH_DECIMAL)]
@@ -43,27 +39,58 @@ def test():
   #  gh = [random_() <= 1/float(RANDOM_RANGE) for _ in range(BIT_LENGTH_DECIMAL)]
   #  sdo = [sdo[i] | gh[i] for i in range(BIT_LENGTH_DECIMAL)]
 
-  #sfa = [sf1[i] & sf2[i] for i in range(BIT_LENGTH_FLOAT)]
-  #sda = [sd1[i] & sd2[i] for i in range(BIT_LENGTH_DECIMAL)]
+  sfa = [sf1[i] & sf2[i] for i in range(BIT_LENGTH_FLOAT)]
+  sda = [sd1[i] & sd2[i] for i in range(BIT_LENGTH_DECIMAL)]
   
   mult = 0 #sum(sda)/float(BIT_LENGTH_DECIMAL)*float(RANDOM_RANGE) + (sum(sfa)/float(BIT_LENGTH_FLOAT))
-  add = sum(sdo)/float(BIT_LENGTH_DECIMAL)*float(RANDOM_RANGE)# + (sum(sfo)/float(BIT_LENGTH_FLOAT))
+  add = sum(sdo)/float(BIT_LENGTH_DECIMAL)*float(RANDOM_RANGE) + (sum(sfo)/float(BIT_LENGTH_FLOAT))
 
-  return actual_mult, actual_add, mult, add
+  sd1 = [random_() <= v1/float(RANDOM_RANGE) for _ in range(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)]
+  sd2 = [random_() <= v2/float(RANDOM_RANGE) for _ in range(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)]
+
+  #print(v1,v2)
+  #print(sum(sd1)/float(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)*float(RANDOM_RANGE))
+  #print(sum(sd2)/float(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)*float(RANDOM_RANGE))
+
+  rb = [random_() <= 0.5 for _ in range(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)]
+  sdo = [sd1[i] if rb[i] else sd2[i] for i in range(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)]
+  #print(sum(sdo))
+  #print(sum(sdo)/float(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)*float(RANDOM_RANGE))
+
+  nmult = 0
+  nadd = sum(sdo)/float(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)*float(RANDOM_RANGE)# + (sum(sfo)/float(BIT_LENGTH_FLOAT))
+
+  return actual_mult, actual_add, mult, add, nmult, nadd
 
 #plt.figure()
 
-actual_mult, actual_add, stochastic_mult, stochastic_add = test()
+aa = []
+ast = []
+anst = []
+for i in range(10000):
+  actual_mult, actual_add, stochastic_mult, stochastic_add, nstochastic_mult, nstochastic_add = test()
 
-print("Actual multiplication: ", actual_mult)
-print("Actual addition: ", actual_add)
+  if (i%1000==0):
+    print(i)
 
-print("Stocas multiplication: ", stochastic_mult)
-print("Stocas addition: ", stochastic_add)
+  aa.append(actual_add)
+  ast.append(abs(actual_add-stochastic_add*2))
+  #print('a',actual_add)
+  #print(nstochastic_add)
+  anst.append(abs(actual_add-nstochastic_add*2))
 
-#plt.plot(actual_mult)
-#plt.plot(actual_add)
-#plt.plot(stochastic_mult)
-#plt.plot(stochastic_add)
-#
-#plt.show()
+#print("Actual multiplication: ", actual_mult)
+#print("Actual addition: ", actual_add)
+
+#print("Stocas multiplication: ", stochastic_mult)
+#print("Normal Stocas addition: ", nstochastic_add*2)
+#print("Stocas addition: ", stochastic_add*2)
+
+width = 6.4*2
+height = 4.8*2
+plt.figure(frameon=False, figsize=(width, height))
+#plt.plot(aa, label='Actual addition result')
+plt.plot(ast, label='Split stochastic result')
+plt.plot(anst, label='Normal stochastic result')
+plt.legend()
+plt.show()
