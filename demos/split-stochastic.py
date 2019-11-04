@@ -42,7 +42,7 @@ def test():
   sfa = [sf1[i] & sf2[i] for i in range(BIT_LENGTH_FLOAT)]
   sda = [sd1[i] & sd2[i] for i in range(BIT_LENGTH_DECIMAL)]
   
-  mult = 0 #sum(sda)/float(BIT_LENGTH_DECIMAL)*float(RANDOM_RANGE) + (sum(sfa)/float(BIT_LENGTH_FLOAT))
+  mult = sum(sda)/float(BIT_LENGTH_DECIMAL)*float(RANDOM_RANGE) + (sum(sfa)/float(BIT_LENGTH_FLOAT))
   add = sum(sdo)/float(BIT_LENGTH_DECIMAL)*float(RANDOM_RANGE) + (sum(sfo)/float(BIT_LENGTH_FLOAT))
 
   sd1 = [random_() <= v1/float(RANDOM_RANGE) for _ in range(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)]
@@ -57,8 +57,10 @@ def test():
   #print(sum(sdo))
   #print(sum(sdo)/float(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)*float(RANDOM_RANGE))
 
-  nmult = 0
-  nadd = sum(sdo)/float(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)*float(RANDOM_RANGE)# + (sum(sfo)/float(BIT_LENGTH_FLOAT))
+  sda = [sd1[i] & sd2[i] for i in range(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)]
+
+  nmult = sum(sda)/float(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)*float(RANDOM_RANGE)
+  nadd = sum(sdo)/float(BIT_LENGTH_DECIMAL+BIT_LENGTH_FLOAT)*float(RANDOM_RANGE)
 
   return actual_mult, actual_add, mult, add, nmult, nadd
 
@@ -73,11 +75,13 @@ for i in range(10000):
   if (i%1000==0):
     print(i)
 
-  aa.append(actual_add)
-  ast.append(abs(actual_add-stochastic_add*2))
-  #print('a',actual_add)
-  #print(nstochastic_add)
-  anst.append(abs(actual_add-nstochastic_add*2))
+  #aa.append(actual_add)
+  #ast.append(abs(actual_add-stochastic_add))
+  #anst.append(abs(actual_add-nstochastic_add))
+
+  aa.append(actual_mult)
+  ast.append(abs(actual_mult-stochastic_mult))
+  anst.append(abs(actual_mult-nstochastic_mult))
 
 #print("Actual multiplication: ", actual_mult)
 #print("Actual addition: ", actual_add)
