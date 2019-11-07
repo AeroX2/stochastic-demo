@@ -8,7 +8,7 @@ The stochastic bit stream outputs are converted back to a probability for ease
 of visualisation. The plots show the probabilities vary around their ideal 
 value.
 
-@author: tarah
+@author: Tarah, James
 """
 import math
 import random
@@ -86,50 +86,59 @@ class BiStochasticNumber:
         prob_out = (sum(out) + -1*(self.length-sum(out)))/float(self.length)
         return (prob_out) #*2)-1
 
-prob1 = 0.5  #random.random()*2-1 #(-1 to 1)
-prob2 = 0.25 #random.random()*2-1 #(-1 to 1)
+iters = 10000
 
-result_add = []
-result_mul = []
+add_abs = []
+mul_abs = []
 
-actual_add = []
-actual_mul = []
-
-for bit_length in range(1,10000):
+for bit_length in range(1,iters):
     if (bit_length%1000==0):
         print(bit_length)
-    #SN = StochasticNumber(bit_length,prob1,prob2)
-    SN = BiStochasticNumber(bit_length,prob1,prob2)
 
-    add = SN.add()
-    multiply = SN.multiply()
+    add_abs.append(0)
+    mul_abs.append(0)
 
-    result_add.append(add*2)
-    result_mul.append(multiply)
+    for ii in range(10):
+        prob1 = random.random()
+        prob2 = random.random()
 
-    actual_add.append((prob1+prob2))
-    actual_mul.append(prob1*prob2)
+        #SN = StochasticNumber(bit_length,prob1,prob2)
+        SN = BiStochasticNumber(bit_length,prob1,prob2)
 
+        add = SN.add()
+        multiply = SN.multiply()
+
+        add_abs[-1] += abs(add*2-(prob1+prob2))
+        mul_abs[-1] += abs(multiply-(prob1*prob2))
+
+for i in range(len(add_abs)):
+    add_abs[i] /= 10
+    mul_abs[i] /= 10
 
 width = 6.4*2
 height = 4.8*2
 
 plt.figure(frameon=False, figsize=(width, height))
-plt.plot(result_mul, label='Stochastic multiplication result')
-plt.plot(actual_mul, label='Actual multiplication result')
-plt.ylim(bottom=0, top=0.35)
+plt.ylim(top=0.125)
+plt.bar([i for i in range(1,iters)], mul_abs, label='Multiplication Absolute Difference', width=1.0)
 plt.legend()
 plt.xlabel('Bit Length')
 plt.ylabel('Value')
 #plt.show()
-plt.savefig('mult-bi.png')
+plt.savefig('mult-bi-abs.png')
 
 plt.figure(frameon=False, figsize=(width, height))
-plt.plot(result_add, label='Stochastic addition result')
-plt.plot(actual_add, label='Actual addition result')
+plt.ylim(top=0.35)
+plt.bar([i for i in range(1,iters)], add_abs, label='Addition Absolute Difference', width=1.0)
 plt.legend()
 plt.xlabel('Bit Length')
 plt.ylabel('Value')
 #plt.show()
-plt.savefig('add-bi.png')
+plt.savefig('add-bi-abs.png')
 
+import pickle
+with open('mult-bi', 'wb') as fp:
+    pickle.dump(mul_abs, fp)
+
+with open('add-bi', 'wb') as fp:
+    pickle.dump(add_abs, fp)
