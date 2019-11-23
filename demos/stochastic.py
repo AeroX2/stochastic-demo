@@ -113,6 +113,7 @@ for bit_length in range(1,10000):
 
 width = 6.4*2
 height = 4.8*2
+plt.rcParams.update({'font.size': 22})
 
 plt.figure(frameon=False, figsize=(width, height))
 plt.plot(result_mul, label='Stochastic multiplication result')

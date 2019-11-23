@@ -91,32 +91,37 @@ iters = 10000
 add_abs = []
 mul_abs = []
 
-for bit_length in range(1,iters):
-    if (bit_length%1000==0):
-        print(bit_length)
+#for bit_length in range(1,iters):
+#    if (bit_length%1000==0):
+#        print(bit_length)
+#
+#    add_abs.append(0)
+#    mul_abs.append(0)
+#
+#    for ii in range(10):
+#        prob1 = random.random()
+#        prob2 = random.random()
+#
+#        #SN = StochasticNumber(bit_length,prob1,prob2)
+#        SN = BiStochasticNumber(bit_length,prob1,prob2)
+#
+#        add = SN.add()
+#        multiply = SN.multiply()
+#
+#        add_abs[-1] += abs(add*2-(prob1+prob2))
+#        mul_abs[-1] += abs(multiply-(prob1*prob2))
+#
+#for i in range(len(add_abs)):
+#    add_abs[i] /= 10
+#    mul_abs[i] /= 10
 
-    add_abs.append(0)
-    mul_abs.append(0)
-
-    for ii in range(10):
-        prob1 = random.random()
-        prob2 = random.random()
-
-        #SN = StochasticNumber(bit_length,prob1,prob2)
-        SN = BiStochasticNumber(bit_length,prob1,prob2)
-
-        add = SN.add()
-        multiply = SN.multiply()
-
-        add_abs[-1] += abs(add*2-(prob1+prob2))
-        mul_abs[-1] += abs(multiply-(prob1*prob2))
-
-for i in range(len(add_abs)):
-    add_abs[i] /= 10
-    mul_abs[i] /= 10
+import pickle
+mul_abs = pickle.load(open('mult-bi','rb'))
+add_abs = pickle.load(open('add-bi','rb'))
 
 width = 6.4*2
 height = 4.8*2
+plt.rcParams.update({'font.size': 22})
 
 plt.figure(frameon=False, figsize=(width, height))
 plt.ylim(top=0.125)
